@@ -1,0 +1,17 @@
+.button{
+    &-primary{
+        @include button($color-primary, $color-white);
+
+        &:hover{
+            @include button($color-white, $color-primary);
+        }
+    }
+
+    &-secondary{
+        @include button($color-secondary, transparent);
+
+        &:hover{
+            @include button($color-white, $color-secondary);
+        }
+    }
+}

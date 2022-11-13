@@ -1,0 +1,190 @@
+.container-home{
+    max-width: 80vw;
+    margin: auto;
+}
+
+.main{
+    width: 100%;
+    position: relative;
+    margin-top: -11.5rem;
+}
+
+.data-section{
+    position: relative;
+    .container-home{
+        background: $color-white;
+        padding: 6rem;
+    }
+    .items-image{
+        position: absolute;
+        bottom: 0;
+        right: -5rem;
+        z-index: 0;
+        max-height: 40rem;
+        height: 40rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .data-group{
+        z-index: 999;
+        .grid{
+            @include grid(4);
+        }
+    }
+    
+    .data-info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+        color: $color-black;
+        img{
+            height: 45px;
+        }
+        &-number{
+            font-family: 'Montserrat Bold';
+            font-size: 4rem;
+            padding: 1rem 0;
+        }
+    }
+}
+
+
+.category-section{
+    background: $color-grey-light;
+    .container-home{
+        background: $color-grey-light;
+        padding: 6rem;
+    }
+    .grid{
+        @include grid(6);
+    }
+    .category-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        text-align: center;
+
+        img{
+            max-height: 30px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.newsletter{
+    &-section{
+        background: $color-primary;
+
+        .container-home{
+            background: $color-primary;
+            padding:3rem 6rem; 
+        }
+    }
+
+    &-info{
+        @include grid(2);
+
+
+        img{
+            width: 50px;
+            margin-right: 1rem;
+        }
+    }
+
+    &-title{
+        font-size: 1.6rem;
+        font-family: 'Montserrat SemiBold';
+        color: $color-white;
+    }
+
+    &-subtitle{
+        font-size: 1.2rem;
+        font-family: 'Work Sans';
+        color: $color-white;
+
+        a{
+            color: $color-secondary;
+        }
+    }
+
+    &-input{
+        outline: none;
+        background: transparent;
+        border: 1px solid $color-white;
+        color: $color-white;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+        font-family: 'Work Sans';
+        min-width: 25rem;
+
+        &::placeholder{
+            color: $color-white;
+        }
+    }
+}
+
+.blog{
+    &-section{
+        background: $color-white;
+        position: relative;
+
+        .container-home{
+            background: $color-white;
+            padding: 6rem;
+        }
+    }
+
+    &-image{
+        position: absolute;
+        bottom: 0;
+        left: 0rem;
+        z-index: 0;
+        max-height: 40rem;
+        height: 40rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.contact{
+    &-section{
+        background: $color-grey-smoke;
+        position: relative;
+        overflow: hidden;
+
+        .container-home{
+            background: $color-grey-smoke;
+            padding: 6rem;
+        }
+    }
+
+    &-image{
+        position: absolute;
+        bottom: -10rem;
+        right: 0rem;
+        z-index: 0;
+        max-height: 30rem;
+        height: 30rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.footer{
+    background-color: $color-primary;
+    padding: 1rem;
+
+    p{
+        margin-right: 2rem;;
+    }
+}

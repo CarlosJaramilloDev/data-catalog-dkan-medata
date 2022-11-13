@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Work Sans";
+    font-weight: 400;
+    color: $color-tertiary;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.grid{
+    @include grid(3);
+    padding: 2rem 0;
+}
+
+.separator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+    margin: 1rem 0;
+    
+    &::after{
+        content: '';
+        height: 1px;
+        background: $color-grey-medium;
+        width: 60vw;
+    }
+    &--black{
+        &::before{
+            @include separator($color-black);
+            content: '';
+        }
+    }
+    &--grey{
+        &::before{
+            @include separator($color-grey-dark);
+            content: '';
+        }
+    }
+    &--blue{
+        &::before{
+            @include separator($color-tertiary);
+            content: '';
+        }
+    }
+}
