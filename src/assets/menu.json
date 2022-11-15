@@ -1,28 +1,23 @@
 {
   "main": [
     {
-      "label": "Home",
+      "label": "Inicio",
       "url": "/",
       "target": "_top"
     },
     {
-      "label": "Datasets",
+      "label": "Medellín en cifras",
       "url": "/search",
       "target": "_top"
     },
     {
-      "label": "Publishers",
-      "url": "/publishers",
+      "label": "Datos",
+      "url": "/search",
       "target": "_top"
     },
     {
-      "label": "About",
-      "url": "/about",
-      "target": "_top"
-    },
-    {
-      "label": "API",
-      "url": "/api",
+      "label": "Historias",
+      "url": "/historias",
       "target": "_top"
     }
   ],
