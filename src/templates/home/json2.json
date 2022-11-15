@@ -1,0 +1,22 @@
+[
+    {
+        "identifier": "35648bca-83ec-5580-a193-86d716e1e284",
+        "data": "Transportation"
+    },
+    {
+        "identifier": "bbe16aad-386b-55cc-9cfb-03414fd07c5a",
+        "data": "Public Safety"
+    },
+    {
+        "identifier": "ebea68c6-14b5-5a68-ac94-955e69666ad7",
+        "data": "Health Care"
+    },
+    {
+        "identifier": "b1f822b6-ae46-584d-9268-52ca95a3f8ec",
+        "data": "Finance and Budgeting"
+    },
+    {
+        "identifier": "3c23032d-47c6-58fc-be0a-ef3fbaa54865",
+        "data": "City Planning"
+    }
+]
