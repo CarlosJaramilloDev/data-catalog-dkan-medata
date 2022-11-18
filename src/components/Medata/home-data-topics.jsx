@@ -1,16 +1,6 @@
 import React from "react";
-import IconoGubernamental from "../../medatatheme/assets/icons/topics/icon-1.png"
-import IconoSocial from "../../medatatheme/assets/icons/topics/icon-2.png"
-import IconoSalud from "../../medatatheme/assets/icons/topics/icon-3.png"
-import IconoPoblacion from "../../medatatheme/assets/icons/topics/icon-4.png"
-import IconoInfraestructura from "../../medatatheme/assets/icons/topics/icon-5.png"
-import IconoHacienda from "../../medatatheme/assets/icons/topics/icon-6.png"
-import IconoEducacion from "../../medatatheme/assets/icons/topics/icon-7.png"
-import IconoMedioAmbiente from "../../medatatheme/assets/icons/topics/icon-8.png"
-import IconoMovilidad from "../../medatatheme/assets/icons/topics/icon-9.png"
-import IconoPlanDesarrollo from "../../medatatheme/assets/icons/topics/icon-10.png"
-import IconoOrdenamiento from "../../medatatheme/assets/icons/topics/icon-11.png"
-import IconoDesarrolloEconomico from "../../medatatheme/assets/icons/topics/icon-12.png"
+
+import HomeDataTopicDetail from "./home-data-topic-detail"
 
 const HomeDataTopics = ({
   title = 'Temáticas de datos',
@@ -19,15 +9,9 @@ const HomeDataTopics = ({
 }) => {
 
   const itemsShow = items.map((item, index) => {
+    console.log(item);
     return (
-      <div>
-        ID {item.id} 
-        TITLE{ item.title }
-        IMAGE { item.image }
-        REF { item.ref }
-        COLOR { item.color }
-        SIZE { item.size }
-      </div>
+      <HomeDataTopicDetail id={i} url={item.ref} title={item.title} />
     );
   })
   
