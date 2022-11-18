@@ -6,7 +6,8 @@ import Footer from "../Medata/footer";
 const Layout = ({
   children,
   title,
-  description
+  description,
+  headerClass = 'header'
 }) => {
   return (
     <div className="App">
@@ -18,8 +19,8 @@ const Layout = ({
           "lang": "es"
         }}
       />
-      <Header/>
-      <main class="main">
+      <Header headerClass={headerClass}/>
+      <main className={ (headerClass == 'header') ? 'main' : '' }>
         {children}
         <Footer/>
       </main>
