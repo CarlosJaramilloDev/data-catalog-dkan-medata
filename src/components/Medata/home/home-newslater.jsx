@@ -1,5 +1,5 @@
 import React from "react";
-import IconoNews from "../../medatatheme/assets/icons/newspaper.png"
+import IconoNews from "../../../medatatheme/assets/icons/newspaper.png"
 
 const HomeNewslater = () => {
   return (

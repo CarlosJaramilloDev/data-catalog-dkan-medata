@@ -2,11 +2,11 @@ import React from "react";
 import axios from 'axios';
 import Layout from '../../components/Layout';
 import ImagenFondo from '../../medatatheme/assets/images/item.png';
-import HomeCardsLinks from "../../components/Medata/home-cards-links";
-import HomeDataSets from "../../components/Medata/home-data-sets";
-import HomeDataTopics from "../../components/Medata/home-data-topics";
-import HomeNewslater from "../../components/Medata/home-newslater";
-import HomeReports from "../../components/Medata/home-reports";
+import HomeCardsLinks from "../../components/Medata/home/home-cards-links";
+import HomeDataSets from "../../components/Medata/home/home-data-sets";
+import HomeDataTopics from "../../components/Medata/home/home-data-topics";
+import HomeNewslater from "../../components/Medata/home/home-newslater";
+import HomeReports from "../../components/Medata/home/home-reports";
 
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);

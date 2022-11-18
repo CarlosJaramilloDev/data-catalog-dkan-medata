@@ -1,7 +1,7 @@
 import React from "react";
-import ImagenDatosAbiertos from '../../medatatheme/assets/images/main-1.png';
-import ImagenMedellinCifras from '../../medatatheme/assets/images/main-2.png';
-import ImagenHistoriasDatos from '../../medatatheme/assets/images/main-3.png';
+import ImagenDatosAbiertos from '../../../medatatheme/assets/images/main-1.png';
+import ImagenMedellinCifras from '../../../medatatheme/assets/images/main-2.png';
+import ImagenHistoriasDatos from '../../../medatatheme/assets/images/main-3.png';
 
 const HomeCardsLinks = () => {
   return (
