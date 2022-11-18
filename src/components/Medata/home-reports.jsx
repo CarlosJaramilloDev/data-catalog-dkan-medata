@@ -1,5 +1,7 @@
 import React from "react";
+import excerpts from 'excerpts';
 import HomeReportDetail from "./home-report-detail"
+
 
 const HomeReports = ({
   title = 'Informes publicados recientemente',
@@ -7,7 +9,7 @@ const HomeReports = ({
   items = []
 }) => {
   const itemsShow = items.map((item) => {
-    return (<HomeReportDetail id={item.identifier} title={item.title} url={`dataset/${item.identifier}`} />);
+    return (<HomeReportDetail id={item.identifier} title={item.title} text={excerpts(item.description, {words: 35})} url={`dataset/${item.identifier}`} />);
   });
 
   return (
