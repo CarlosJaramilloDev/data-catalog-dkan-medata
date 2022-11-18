@@ -20,13 +20,14 @@ const HomeDataTopics = ({
 
   const itemsShow = items.map((item, index) => {
     return (
-      <div>{item.id} 
-        { item.title }
-        { item.image }
-        { item.ref }
-        { item.color }
-        { item.size }
-        { item.id}</div>
+      <div>
+        ID {item.id} 
+        TITLE{ item.title }
+        IMAGE { item.image }
+        REF { item.ref }
+        COLOR { item.color }
+        SIZE { item.size }
+      </div>
     );
   })
   
