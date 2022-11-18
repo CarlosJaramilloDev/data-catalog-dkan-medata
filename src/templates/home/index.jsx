@@ -57,11 +57,12 @@ const Home = () => {
 
     React.useEffect(() => {
         setItems(themes.map(x => {
+            console.log('themes')
+            console.log(x)
             let item = {
                 identifier: x.identifier,
                 ref: `search?theme=${x.data}`,
                 title: x.data,
-                size: "100"
             };
             return item;
         }))

@@ -7,7 +7,6 @@ const HomeDataTopics = ({
   items = []
 }) => {
   const itemsShow = items.map((item) => {
-    console.log(item);
     return (
       <HomeDataTopicDetail id={item.identifier} url={`/${item.ref}`} title={item.title} />
     );
