@@ -2,7 +2,6 @@ import React from "react";
 import excerpts from 'excerpts';
 import HomeReportDetail from "./home-report-detail"
 
-
 const HomeReports = ({
   title = 'Informes publicados recientemente',
   text = 'Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir',
