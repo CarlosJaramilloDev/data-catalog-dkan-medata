@@ -97,31 +97,13 @@ const Home = () => {
             </section>
             <section class="blog-section">
                 <div class="container-home">
-                    <HomeReports />
+                    <HomeReports items={fDatasets}/>
                 </div>
                 <div class="blog-image">
                     <img src={ImagenFondo} />
                 </div>
             </section>
 
-            <div className="home-page">
-                <Hero title={copy.hero[0].title} intro={copy.hero[0].intro} gradient={'rgb(22, 46, 81), rgb(9, 120, 188)'} />
-                <div className="container">
-                    <IconList
-                        items={items}
-                        component={IconListItem}
-                        paneTitle="Dataset Topics y Temas"
-                        className="opendata-icon-list"
-                    />
-                </div>
-                <Blocks
-                    items={copy.stats}
-                    component={StatBlock}
-                    containerClass=""
-                    blockClass="StatBlock"
-                />
-                <FeaturedDatasets datasets={fDatasets} />
-            </div>
         </Layout>
     );
 }

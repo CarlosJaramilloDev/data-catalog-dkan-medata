@@ -3,15 +3,23 @@ import ImagenBlog1 from '../../medatatheme/assets/images/blog-1.png';
 import ImagenBlog2 from '../../medatatheme/assets/images/blog-2.png';
 import ImagenBlog3 from '../../medatatheme/assets/images/blog-3.png';
 
-const HomeReports = () => {
+const HomeReports = ({
+  title = 'Informes publicados recientemente',
+  text = 'Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir',
+  items = []
+}) => {
+
+  items.map((item, index) => {
+    console.log(item);
+  })
   return (
     <div>
       <p class="title title--blue">
-        Informes publicados recientemente
+        {title}
       </p>
       <hr class="separator separator--blue" />
       <p class="text">
-        Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir
+        {text}
       </p>
       <div class="grid">
         <div class="card">
