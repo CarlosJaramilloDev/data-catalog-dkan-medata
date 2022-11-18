@@ -1,5 +1,4 @@
 import React from "react";
-
 import HomeDataTopicDetail from "./home-data-topic-detail"
 
 const HomeDataTopics = ({
@@ -7,13 +6,12 @@ const HomeDataTopics = ({
   text = 'Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir.',
   items = []
 }) => {
-
-  const itemsShow = items.map((item, index) => {
+  const itemsShow = items.map((item) => {
     console.log(item);
     return (
-      <HomeDataTopicDetail id={index} url={item.ref} title={item.title} />
+      <HomeDataTopicDetail id={item.identifier} url={`/${item.ref}`} title={item.title} />
     );
-  })
+  });
   
   return (
     <div class="data-group">

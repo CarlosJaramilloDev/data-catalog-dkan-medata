@@ -103,7 +103,6 @@ const Home = () => {
                     <img src={ImagenFondo} />
                 </div>
             </section>
-
         </Layout>
     );
 }

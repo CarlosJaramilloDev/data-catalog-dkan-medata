@@ -32,7 +32,7 @@ const HomeDataTopicDetail = ({
 
   return (
       <div class="category-info" key={id}>
-        <a href={`/${url}`}>
+        <a href={url}>
           <img src={icon} alt={title} />
           <p class="text">{title}</p>
         </a>
