@@ -39,6 +39,10 @@
 }
 
 .title{
+    &--primary{
+        @include title($color-primary)
+    }
+    
     &--grey{
         @include title($color-grey-dark)
     }
@@ -50,6 +54,13 @@
     &--blue{
         @include title($color-tertiary) 
     }
+}
+
+
+.subtitle{
+    font-family: 'Montserrat Regular';
+    font-size: 1.4rem;
+    color: $color-primary;
 }
 
 .text{

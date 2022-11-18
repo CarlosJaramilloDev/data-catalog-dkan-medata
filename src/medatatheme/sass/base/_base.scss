@@ -21,6 +21,10 @@ body{
 .grid{
     @include grid(3);
     padding: 2rem 0;
+
+    @media (max-width: 768px) {
+        @include grid(1);
+    }
 }
 
 .separator{
@@ -54,5 +58,16 @@ body{
             @include separator($color-tertiary);
             content: '';
         }
+    }
+}
+
+.container-float{
+    padding: 3rem 0;
+    width: 80vw;
+    display: block;
+    margin: auto;
+
+    @media (max-width: 768px) {
+        width: 90vw;
     }
 }

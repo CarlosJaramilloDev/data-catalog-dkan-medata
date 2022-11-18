@@ -1,0 +1,35 @@
+.breadcrumb{
+    width: 100vw;
+    padding: 1rem;
+    background: $color-white;
+    box-shadow: 0px 5px 15px #00000010;
+    &-list{
+        width: 80vw;
+        margin: auto;
+        list-style: none;
+        display: flex;
+    }
+    &-item{
+        &::after{
+            content: '/';
+            font-size: 1.4rem;
+            color: $color-black;
+            margin: 0 1rem;
+        }
+    }
+    &-item:last-child{
+        .breadcrumb-link{
+            font-family: 'Montserrat Bold';
+            color: $color-black;
+        }
+        &::after{
+            content: '';
+        }
+    }
+    &-link{
+        font-family: 'Montserrat Regular';
+        font-size: 1.4rem;
+        color: $color-secondary;
+        text-decoration: none;
+    }
+}

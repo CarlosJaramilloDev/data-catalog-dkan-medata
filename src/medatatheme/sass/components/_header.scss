@@ -1,9 +1,15 @@
 .header{
-    background-image: url('../../assets/images/header.png'), linear-gradient($color-grey-smoke, $color-grey-dark);
+    background-image: url('../../assets/images/header.png'), linear-gradient($color-black, $color-grey-smoke);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     min-height: 30rem;
+    overflow-x: hidden;
     
+    &--small{
+        height: auto;
+        min-height: auto;
+    }
+
     &-text{
         font-family: 'Montserrat Regular';
         font-size: 1.8rem;
@@ -161,6 +167,9 @@
         border: none;
         box-shadow: 0 0 5px 5px rgba($color-grey-dark, .2);
         min-width: 50vw;
+        @media (max-width: 768px) {
+            min-width: 75vw;
+        }
     }
     &-button{
         background: $color-primary;

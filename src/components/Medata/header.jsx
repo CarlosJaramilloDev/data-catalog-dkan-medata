@@ -1,11 +1,7 @@
 import React from "react";
-import Helmet from "react-helmet";
-import { Link } from "@reach/router";
-import { NavBar, Footer } from "@civicactions/data-catalog-components";
-import config from "../../assets/config.json";
-import logoMedata from "../../medatatheme/assets/images/logo.png";
-import logoAlcaldia from "../../medatatheme/assets/images/logo-alcaldia.png";
-import iconoSearch from "../../medatatheme/assets/icons/search.png";
+import LogoMedata from "../../medatatheme/assets/images/logo.png";
+import LogoAlcaldia from "../../medatatheme/assets/images/logo-alcaldia.png";
+import IconoSearch from "../../medatatheme/assets/icons/search.png";
 import Menu from "./menu"
 
 const Header = () => {
@@ -13,7 +9,7 @@ const Header = () => {
     <header class="header" id="header">
       <nav class="navbar container-home">
         <a href="/" class="logo">
-          <img src={logoMedata} alt="Logo MeData" />
+          <img src={LogoMedata} alt="Logo MeData" />
         </a>
         <div class="burger" id="burger">
           <span class="burger-line"></span>
@@ -23,10 +19,10 @@ const Header = () => {
         <div class="menu" id="menu">
          <Menu />
           <a href="/search" class="brand">
-            <img class="search" src={iconoSearch} alt="Search" />
+            <img class="search" src={IconoSearch} alt="Search" />
           </a>
           <a href="https://www.medellin.gov.co/" class="brand">
-            <img src={logoAlcaldia} alt="Logo alcaldía de Medellín" />
+            <img src={LogoAlcaldia} alt="Logo alcaldía de Medellín" />
           </a>
         </div>
       </nav>

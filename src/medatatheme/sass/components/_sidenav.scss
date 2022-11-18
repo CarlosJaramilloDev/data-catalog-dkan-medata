@@ -1,0 +1,61 @@
+.sidenav{
+    background-color: $color-grey-light;
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    min-height: 100vw;
+    padding: 2rem;
+
+    p{
+        text-align: right;
+        font-family: 'Montserrat Regular';
+        font-size: 2rem;
+        color: $color-tertiary;
+
+        i{
+            margin-right: 1rem;
+        }
+    }
+
+    &-list{
+        margin-top: 4rem;
+        list-style: none;
+
+        &-dropdown{
+            list-style: none;
+            margin-left: 1rem;
+        }
+    }
+
+    &-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        font-family: 'Montserrat Regular';
+        font-size: 1.3rem;
+        padding: 1rem;
+        a{
+            text-decoration: none;
+            color: $color-grey-medium;
+        }
+        &-dropdown{
+            padding: 0;
+            border-bottom: .5px solid $color-grey-light;
+            .title{
+                text-decoration: none;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding: 1rem;
+                &::after{
+                    content: '>';
+                    color: $color-secondary;
+                }
+                .active{
+                    font-family: 'Montserrat SemiBold';
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}

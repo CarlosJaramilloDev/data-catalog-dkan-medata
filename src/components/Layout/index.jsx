@@ -1,10 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link } from '@reach/router';
-import { Footer } from "@civicactions/data-catalog-components";
 import Header from "../Medata/header";
-import config from "../../assets/config.json";
-import links from "../../assets/menu.json";
+import Footer from "../Medata/footer";
 
 const Layout = ({
   children,
@@ -24,8 +21,9 @@ const Layout = ({
       <Header/>
       <main class="main">
         {children}
+        <Footer/>
       </main>
-      <Footer links={links} customClasses={config.container} />
+      
     </div>
   );
 };

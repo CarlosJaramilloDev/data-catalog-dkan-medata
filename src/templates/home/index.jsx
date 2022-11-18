@@ -48,12 +48,15 @@ const Home = () => {
 
     React.useEffect(() => {
         async function getDatasets() {
-            // const { data } = await axios.get(`http://ec2-52-15-227-65.us-east-2.compute.amazonaws.com/api/1/metastore/schemas/dataset/items?show-reference-ids`)
-            // const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
+            const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
+            //setDatasets(data);
+
             setDatasets(ListDatasets);
         }
         async function getThemes() {
-            //const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/theme/items`)
+            const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/theme/items`)
+            //setThemes(data);
+
             setThemes(ListThemes);
         }
         if (datasets === null) {
