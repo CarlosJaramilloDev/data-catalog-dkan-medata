@@ -32,15 +32,15 @@ const Home = () => {
     React.useEffect(() => {
         async function getDatasets() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
-            //setDatasets(data);
+            setDatasets(data);
 
-            setDatasets(ListDatasets);
+            //setDatasets(ListDatasets);
         }
         async function getThemes() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/theme/items`)
-            //setThemes(data);
+            setThemes(data);
 
-            setThemes(ListThemes);
+            //setThemes(ListThemes);
         }
         if (datasets === null) {
             getDatasets()
