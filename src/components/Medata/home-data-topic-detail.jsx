@@ -31,10 +31,10 @@ const HomeDataTopicDetail = ({
   }
 
   return (
-      <div class="category-info" key={id}>
+      <div className="category-info" key={id}>
         <a href={url}>
           <img src={icon} alt={title} />
-          <p class="text">{title}</p>
+          <p className="text">{title}</p>
         </a>
       </div>
   );

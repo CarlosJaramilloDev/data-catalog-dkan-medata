@@ -13,14 +13,14 @@ const HomeReports = ({
 
   return (
     <div>
-      <p class="title title--blue">
+      <p className="title title--blue">
         {title}
       </p>
-      <hr class="separator separator--blue" />
-      <p class="text">
+      <hr className="separator separator--blue" />
+      <p className="text">
         {text}
       </p>
-      <div class="grid">
+      <div className="grid">
         {itemsShow}
       </div>
     </div>

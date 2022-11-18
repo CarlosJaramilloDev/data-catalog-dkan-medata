@@ -11,22 +11,22 @@ const HomeReportDetail = ({
 }) => {
 
   return (
-    <div class="card" key={id}>
-      <div class="card-header">
+    <div className="card" key={id}>
+      <div className="card-header">
         <img src={ImagenBlog1} alt={title} />
       </div>
-      <div class="card-body">
-        <div class="margin-bottom">
-          <p class="title title--black">
+      <div className="card-body">
+        <div className="margin-bottom">
+          <p className="title title--black">
             {title}
           </p>
         </div>
-        <div class="margin-bottom">
-          <p class="text">
+        <div className="margin-bottom">
+          <p className="text">
             {text}
           </p>
         </div>
-        <a class="button button-primary" href={url}>
+        <a className="button button-primary" href={url}>
           Accede a la info
         </a>
       </div>

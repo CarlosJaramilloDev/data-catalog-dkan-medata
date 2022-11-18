@@ -6,48 +6,48 @@ import IconoNumeroVisitas from '../../medatatheme/assets/icons/group-data/icon-4
 
 const HomeDataSets = () => {
   return (
-    <div class="data-group">
-      <p class="title title--black">
+    <div className="data-group">
+      <p className="title title--black">
         Información sobre conjunto de datos
       </p>
-      <hr class="separator separator--black" />
-      <p class="text">
+      <hr className="separator separator--black" />
+      <p className="text">
         Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir
       </p>
-      <div class="grid">
-        <div class="data-info">
+      <div className="grid">
+        <div className="data-info">
           <img src={IconoNumeroDatos} alt="" />
-          <p class="data-info-number">
+          <p className="data-info-number">
             235
           </p>
-          <p class="text">
+          <p className="text">
             Número de conjuntos de datos
           </p>
         </div>
-        <div class="data-info">
+        <div className="data-info">
           <img src={IconoDependenciaDatos} alt="" />
-          <p class="data-info-number">
+          <p className="data-info-number">
             25
           </p>
-          <p class="text">
+          <p className="text">
             Dependencias con datos publicados
           </p>
         </div>
-        <div class="data-info">
+        <div className="data-info">
           <img src={IconoNumeroTableros} alt="" />
-          <p class="data-info-number">
+          <p className="data-info-number">
             53
           </p>
-          <p class="text">
+          <p className="text">
             Número de tableros de análisis
           </p>
         </div>
-        <div class="data-info">
+        <div className="data-info">
           <img src={IconoNumeroVisitas} alt="" />
-          <p class="data-info-number">
+          <p className="data-info-number">
             162.67
           </p>
-          <p class="text">
+          <p className="text">
             Número de visitas a la fecha
           </p>
         </div>

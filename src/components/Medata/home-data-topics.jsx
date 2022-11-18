@@ -13,13 +13,13 @@ const HomeDataTopics = ({
   });
   
   return (
-    <div class="data-group">
-      <p class="title title--grey">{title}</p>
-      <hr class="separator separator--grey" />
-      <p class="text">
+    <div className="data-group">
+      <p className="title title--grey">{title}</p>
+      <hr className="separator separator--grey" />
+      <p className="text">
       {text}
       </p>
-      <div class="grid">
+      <div className="grid">
        {itemsShow}
       </div>
     </div>

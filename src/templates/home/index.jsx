@@ -1,26 +1,12 @@
 import React from "react";
 import axios from 'axios';
-import {
-    Blocks,
-    Hero,
-    IconList,
-    IconListItem,
-    StatBlock
-} from "@civicactions/data-catalog-components";
 import Layout from '../../components/Layout';
 import ImagenFondo from '../../medatatheme/assets/images/item.png';
-import FeaturedDatasets from '../../components/FeaturedDatasets';
 import HomeCardsLinks from "../../components/Medata/home-cards-links";
 import HomeDataSets from "../../components/Medata/home-data-sets";
 import HomeDataTopics from "../../components/Medata/home-data-topics";
 import HomeNewslater from "../../components/Medata/home-newslater";
 import HomeReports from "../../components/Medata/home-reports";
-
-
-import ListDatasets from './json1.json'
-import ListThemes from './json2.json'
-
-import copy from "../../assets/copy.json";
 
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);
@@ -70,9 +56,9 @@ const Home = () => {
 
     return (
         <Layout title="Inicio">
-            <section class="data-section">
-                <div class="container-home">
-                    <p class="text text-center">
+            <section className="data-section">
+                <div className="container-home">
+                    <p className="text text-center">
                         <b>Encuentre los datos abiertos generados y publicados por las diferentes dependencias de la Alcaldía de
                             Medellín,</b>
                         <br />
@@ -82,25 +68,25 @@ const Home = () => {
                     <HomeCardsLinks />
                     <HomeDataSets />
                 </div>
-                <div class="items-image">
+                <div className="items-image">
                     <img src={ImagenFondo} />
                 </div>
             </section>
-            <section class="category-section">
-                <div class="container-home">
+            <section className="category-section">
+                <div className="container-home">
                     <HomeDataTopics items={items}/>
                 </div>
             </section>
-            <section class="newsletter-section">
-                <div class="container-home">
+            <section className="newsletter-section">
+                <div className="container-home">
                     <HomeNewslater />
                 </div>
             </section>
-            <section class="blog-section">
-                <div class="container-home">
+            <section className="blog-section">
+                <div className="container-home">
                     <HomeReports items={fDatasets}/>
                 </div>
-                <div class="blog-image">
+                <div className="blog-image">
                     <img src={ImagenFondo} />
                 </div>
             </section>

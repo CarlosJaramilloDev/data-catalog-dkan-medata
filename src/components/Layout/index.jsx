@@ -20,7 +20,7 @@ const Layout = ({
         }}
       />
       <Header headerClass={headerClass}/>
-      <main className={ (headerClass == 'header') ? 'main' : '' }>
+      <main className={ (headerClass === 'header') ? 'main' : '' }>
         {children}
         <Footer/>
       </main>
