@@ -66,9 +66,10 @@ var SearchContent = function SearchContent() {
     facetLimit: 100,
     facetDelimiter: ", ",
     facetSeparator: " & "
-  }), loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("ol", null, items.map(function (item) {
-    return /*#__PURE__*/_react["default"].createElement("li", {
-      key: item.identifier
+  }), loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
+    return /*#__PURE__*/_react["default"].createElement("div", {
+      key: item.identifier,
+      className: 'results-card'
     }, /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       item: item
     }));

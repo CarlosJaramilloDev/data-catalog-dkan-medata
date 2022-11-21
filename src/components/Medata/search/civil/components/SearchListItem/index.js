@@ -96,9 +96,11 @@ var SearchListItem = function SearchListItem(_ref) {
 
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: className
-  }, /*#__PURE__*/_react["default"].createElement("h2", null, /*#__PURE__*/_react["default"].createElement(_router.Link, {
+  }, /*#__PURE__*/_react["default"].createElement("div", { className: 'results-card-header'}, /*#__PURE__*/_react["default"].createElement('p', {
+    className: 'title title--primary'
+  }, /*#__PURE__*/_react["default"].createElement(_router.Link, {
     to: ref
-  }, title)), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
+  }, title))), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-publisher"
   }, publishers(publisher)), theme && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-theme"
