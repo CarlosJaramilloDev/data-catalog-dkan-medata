@@ -104,7 +104,7 @@ var SearchListItem = function SearchListItem(_ref) {
     to: ref
   },  /*#__PURE__*/_react["default"].createElement('i', {
     className: 'fa-solid fa-eye'
-  }, title)))), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
+  }), title))), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-publisher"
   }, publishers(publisher)), theme && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-theme"
