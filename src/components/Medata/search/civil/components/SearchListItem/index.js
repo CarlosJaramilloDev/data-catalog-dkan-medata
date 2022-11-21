@@ -98,9 +98,13 @@ var SearchListItem = function SearchListItem(_ref) {
     className: className
   }, /*#__PURE__*/_react["default"].createElement("div", { className: 'results-card-header'}, /*#__PURE__*/_react["default"].createElement('p', {
     className: 'title title--primary'
+  }, title),  /*#__PURE__*/_react["default"].createElement('p', {
+    className: 'title text-primary'
   }, /*#__PURE__*/_react["default"].createElement(_router.Link, {
     to: ref
-  }, title))), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
+  },  /*#__PURE__*/_react["default"].createElement('i', {
+    className: 'fa-solid fa-eye'
+  }, title)))), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-publisher"
   }, publishers(publisher)), theme && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-theme"
@@ -127,7 +131,7 @@ var getUniqueFormats = function getUniqueFormats(formats) {
 
 exports.getUniqueFormats = getUniqueFormats;
 SearchListItem.defaultProps = {
-  className: 'dc-search-list-item'
+  className: 'results-card'
 };
 SearchListItem.propTypes = {
   className: _propTypes["default"].string,
