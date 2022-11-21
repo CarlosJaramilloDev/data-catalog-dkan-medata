@@ -67,12 +67,10 @@ var SearchContent = function SearchContent() {
     facetDelimiter: ", ",
     facetSeparator: " & "
   }), loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
-    return /*#__PURE__*/_react["default"].createElement("div", {
+    return  /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       key: item.identifier,
-      className: 'results-card'
-    }, /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       item: item
-    }));
+    });
   })), /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-pagination-container"
   }, /*#__PURE__*/_react["default"].createElement(_SearchPaginationResults["default"], {
