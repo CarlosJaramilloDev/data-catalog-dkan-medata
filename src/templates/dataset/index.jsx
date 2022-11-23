@@ -116,7 +116,7 @@ const Dataset = ({id, location}) => {
   }
 
   return (
-    <Layout title={`Dataset - ${item.title}`}>
+    <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
       <div className={`dc-dataset-page ${config.container}`}>
        
             <div className="row">
