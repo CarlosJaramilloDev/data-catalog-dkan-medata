@@ -122,8 +122,7 @@ var SearchListItem = function SearchListItem(_ref) {
     className: "results-info"
   },  /*#__PURE__*/_react["default"].createElement('p', null, "4 Nov/ 2022"),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, /*#__PURE__*/_react["default"].createElement("i", {
     className: "fa-solid fa-file-csv"
-  })),
-  
+  }))),
   theme && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-theme"
   }, themes(theme))), format && /*#__PURE__*/_react["default"].createElement("div", {
