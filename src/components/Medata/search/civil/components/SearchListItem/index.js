@@ -120,7 +120,9 @@ var SearchListItem = function SearchListItem(_ref) {
   },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),  /*#__PURE__*/_react["default"].createElement('p', null, "Vistas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Descargas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
   /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-info"
-  },  /*#__PURE__*/_react["default"].createElement('p', null, "4 Nov/ 2022"),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, '<i class="fa-solid fa-file-csv"></i>')),
+  },  /*#__PURE__*/_react["default"].createElement('p', null, "4 Nov/ 2022"),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, /*#__PURE__*/_react["default"].createElement("i", {
+    className: "fa-solid fa-file-csv"
+  })),
   
   theme && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-theme"
