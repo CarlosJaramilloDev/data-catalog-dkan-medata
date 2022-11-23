@@ -27,6 +27,8 @@ var _lodash = require("lodash");
 
 /* eslint-disable */
 var SearchListItem = function SearchListItem(_ref) {
+  console.log(`Ref: ${_ref}`);
+  console.log(`Item: ${_ref.item}`);
   var className = _ref.className,
       item = _ref.item;
   var ref = item.ref,
