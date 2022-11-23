@@ -104,20 +104,27 @@ var SearchListItem = function SearchListItem(_ref) {
     to: ref
   },  /*#__PURE__*/_react["default"].createElement('i', {
     className: 'fa-solid fa-eye'
-  }), 'Ver Informe'))), 
+  }), ' Ver Informe'))), 
    /*#__PURE__*/_react["default"].createElement('div', {
     className: 'results-card-body'
-  }, publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
-    className: "dc-item-publisher"
-  }, publishers(publisher)), theme && /*#__PURE__*/_react["default"].createElement("div", {
-    className: "dc-item-theme"
-  }, themes(theme)), description && /*#__PURE__*/_react["default"].createElement("div", {
-    className: "dc-item-description"
+  }, description && /*#__PURE__*/_react["default"].createElement("p", {
+    className: "text text--black margin-bottom"
   }, /*#__PURE__*/_react["default"].createElement(_Text["default"], null, (0, _excerpts["default"])(description, {
     words: 35
-  })))), format && /*#__PURE__*/_react["default"].createElement("div", {
+  }))), /*#__PURE__*/_react["default"].createElement("div", {
+    className: "results-data"
+  }, /*#__PURE__*/_react["default"].createElement("div", {
+    className: "results-headings"
+  },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),  /*#__PURE__*/_react["default"].createElement('p', null, "Vistas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Descargas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
+  /*#__PURE__*/_react["default"].createElement("div", {
+    className: "results-info"
+  },  /*#__PURE__*/_react["default"].createElement('p', null, "4 Nov/ 2022"),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, '<i class="fa-solid fa-file-csv"></i>')),
+  
+  theme && /*#__PURE__*/_react["default"].createElement("div", {
+    className: "dc-item-theme"
+  }, themes(theme))), format && /*#__PURE__*/_react["default"].createElement("div", {
     className: "format-types"
-  }, formats(format)));
+  }, formats(format))));
 };
 
 var getUniqueFormats = function getUniqueFormats(formats) {
