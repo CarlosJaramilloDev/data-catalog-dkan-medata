@@ -99,12 +99,15 @@ var SearchListItem = function SearchListItem(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", { className: 'results-card-header'}, /*#__PURE__*/_react["default"].createElement('p', {
     className: 'title title--primary'
   }, title),  /*#__PURE__*/_react["default"].createElement('p', {
-    className: 'title text-primary'
+    className: 'text text-primary'
   }, /*#__PURE__*/_react["default"].createElement(_router.Link, {
     to: ref
   },  /*#__PURE__*/_react["default"].createElement('i', {
     className: 'fa-solid fa-eye'
-  }), 'Ver Informe'))), publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
+  }), 'Ver Informe'))), 
+   /*#__PURE__*/_react["default"].createElement('div', {
+    className: 'results-card-body'
+  }, publisher !== 'undefined' && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-publisher"
   }, publishers(publisher)), theme && /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-item-theme"
@@ -112,7 +115,7 @@ var SearchListItem = function SearchListItem(_ref) {
     className: "dc-item-description"
   }, /*#__PURE__*/_react["default"].createElement(_Text["default"], null, (0, _excerpts["default"])(description, {
     words: 35
-  }))), format && /*#__PURE__*/_react["default"].createElement("div", {
+  })))), format && /*#__PURE__*/_react["default"].createElement("div", {
     className: "format-types"
   }, formats(format)));
 };
