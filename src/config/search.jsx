@@ -2,7 +2,7 @@ import React from 'react';
 
 export const defaultFacets = {
   "theme": {
-    "label": "Topics",
+    "label": "Temas",
     "field": "theme.0.title",
     "showAll": false,
     "limit": 10,
@@ -12,7 +12,7 @@ export const defaultFacets = {
     },
   },
   "keyword": {
-    "label": "Tags",
+    "label": "Etiquetas",
     "field": "keyword.*.title",
     "showAll": false,
     "limit": 10,
@@ -22,7 +22,7 @@ export const defaultFacets = {
     },
   },
   "publisher__name": {
-    "label": "Publishers",
+    "label": "Autores",
     "field": "publisher__name",
     "showAll": false,
     "limit": 10,
@@ -65,11 +65,11 @@ export const sortOptions = [
   {
     field: 'modified',
     order: 'desc',
-    label: 'Date'
+    label: 'Fecha'
   },
   {
     field: 'title',
     order: 'asc',
-    label: 'Alphabetical'
+    label: 'Alfabéticamente'
   }
 ];
