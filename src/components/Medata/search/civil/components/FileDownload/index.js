@@ -22,12 +22,14 @@ var FileDownload = function FileDownload(_ref) {
       description = _ref.description;
   var label = title || format;
 
+  const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
+
   var item = /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-resource"
   }, /*#__PURE__*/_react["default"].createElement(_FormatIcon["default"], {
     format: format
   }), /*#__PURE__*/_react["default"].createElement("a", {
-    href: downloadURL,
+    href: finalUrl,
     title: label
   }, label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
     value: description,

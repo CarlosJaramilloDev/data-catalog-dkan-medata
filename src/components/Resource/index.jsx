@@ -2,9 +2,10 @@ import React from "react";
 import {
   Resource,
   DataTable,
-  FileDownload,
   DataTableHeader
 } from "@civicactions/data-catalog-components";
+
+import FileDownload from "../Medata/search/civil/components/FileDownload";
 
 const ResourceTemplate = ({ resource }) => {
   const type = resource.hasOwnProperty('data') && resource.data.hasOwnProperty('mediaType') ? resource.data.mediaType.split("/") : '';
