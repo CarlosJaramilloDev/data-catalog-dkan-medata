@@ -45,7 +45,7 @@ function ShowMoreContainer(_ref) {
 
       toggleShowMore(!showMore);
     }
-  }, btnOpenText || 'Show less');
+  }, btnOpenText || 'Mostrar menos');
 
   var totalItems = items.length;
   var visibleItems = items.filter(function (item, index) {
@@ -55,7 +55,7 @@ function ShowMoreContainer(_ref) {
 
     return item;
   });
-  var btnText = btnClosedText || "Show ".concat(totalItems - visibleItems.length, " more");
+  var btnText = btnClosedText || "Mostrar ".concat(totalItems - visibleItems.length, " mas");
 
   if (!showMore) {
     showMoreButton = /*#__PURE__*/_react["default"].createElement("button", {
