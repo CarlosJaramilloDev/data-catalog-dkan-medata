@@ -22,7 +22,8 @@ var FileDownload = function FileDownload(_ref) {
       description = _ref.description;
   var label = title || format;
 
-  const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
+  //const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
+  const finalUrl = downloadURL;
 
   var item = /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-resource"
