@@ -1,7 +1,6 @@
 import React from "react";
 import LogoMedata from "../../medatatheme/assets/images/logo.png";
-import LogoAlcaldia from "../../medatatheme/assets/images/logo-alcaldia.png";
-import IconoSearch from "../../medatatheme/assets/icons/search.png";
+import LogoAlcaldiaVertical from "../../medatatheme/assets/images/logo-alcaldia-vertical.png";
 import Menu from "./menu"
 
 const Header = ({
@@ -11,7 +10,7 @@ const Header = ({
 
   React.useState(() => {
     if (headerClass === 'header') {
-      setHeaderComplement (
+      setHeaderComplement(
         <div>
           <p className="header-text text-center">
             Consulta y accede a más de <b> 532 conjunto de datos en línea </b>
@@ -34,25 +33,26 @@ const Header = ({
   return (
     <header className={headerClass} id="header">
       <nav className="navbar container-home">
-        <a href="/" className="logo">
-          <img src={LogoMedata} alt="Logo MeData" />
-        </a>
-        <div className="burger" id="burger">
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
+        <div class="logos">
+          <a href="https://www.medellin.gov.co/" class="brand">
+            <img src={LogoAlcaldiaVertical} alt="Logo alcaldía de Medellín" />
+          </a>
+          <a href="/" class="logo">
+            <img src={LogoMedata} alt="Logo MeData" />
+          </a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle"></label>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
         </div>
         <div className="menu" id="menu">
           <Menu />
-          <a href="/search" className="brand">
-            <img className="search" src={IconoSearch} alt="Search" />
-          </a>
-          <a href="https://www.medellin.gov.co/" className="brand">
-            <img src={LogoAlcaldia} alt="Logo alcaldía de Medellín" />
-          </a>
         </div>
       </nav>
-      { headerComplement }
+      {headerComplement}
     </header>
   );
 };
