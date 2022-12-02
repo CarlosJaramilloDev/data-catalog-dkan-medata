@@ -8,10 +8,16 @@
         margin: auto;
         list-style: none;
         display: flex;
+        overflow-y: auto;
+
+        @media (max-width: 992px){    
+            width: 90vw;
+        }
     }
     &-item{
+        display: flex;
         &::after{
-            content: '/';
+            content: '>';
             font-size: 1.4rem;
             color: $color-black;
             margin: 0 1rem;
@@ -29,7 +35,7 @@
     &-link{
         font-family: 'Montserrat Regular';
         font-size: 1.4rem;
-        color: $color-secondary;
+        color: $color-blue;
         text-decoration: none;
     }
 }

@@ -1,7 +1,13 @@
 .movility {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: minmax(400px,400px) 1fr;
     grid-gap: 1rem;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
     &-content{
         padding: 3rem;

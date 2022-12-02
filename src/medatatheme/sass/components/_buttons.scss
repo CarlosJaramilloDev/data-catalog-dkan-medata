@@ -3,12 +3,12 @@
         @include button($color-primary, $color-white);
 
         &:hover{
-            @include button($color-white, $color-primary);
+            @include button($color-white, $color-secondary);
         }
     }
 
     &-secondary{
-        @include button($color-secondary, transparent);
+        @include button($color-white, $color-primary);
 
         &:hover{
             @include button($color-white, $color-secondary);

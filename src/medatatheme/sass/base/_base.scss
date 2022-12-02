@@ -59,6 +59,12 @@ body{
             content: '';
         }
     }
+    &--purple{
+        &::before{
+            @include separator($color-purple);
+            content: '';
+        }
+    }
 }
 
 .container-float{

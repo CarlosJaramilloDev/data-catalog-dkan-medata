@@ -35,3 +35,9 @@
     grid-template-columns: repeat($cols, 1fr);
     grid-gap: 1rem;
 }
+
+@mixin grid-auto($cols){
+    display: grid;
+    grid-template-columns: repeat($cols, auto);
+    grid-gap: 1rem;
+}

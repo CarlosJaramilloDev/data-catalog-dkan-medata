@@ -54,6 +54,10 @@
     &--blue{
         @include title($color-tertiary) 
     }
+
+    &--purple{
+        @include title($color-purple) 
+    }
 }
 
 
@@ -61,6 +65,10 @@
     font-family: 'Montserrat Regular';
     font-size: 1.4rem;
     color: $color-primary;
+
+    &--black{
+        color: $color-black;
+    }
 }
 
 .text{
