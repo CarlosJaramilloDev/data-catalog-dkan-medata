@@ -7,14 +7,21 @@ const HomeNewslater = () => {
       <div className="d-flex align-items-center">
         <img className="d-ib" src={IconoNews} alt="newspaper" />
         <div className="d-ib">
-          <p className="newsletter-title">Suscríbete a nuestros boletines</p>
-          <p className="newsletter-subtitle">Al dar click en Suscribirme acepta los <a> términos y condiciones</a></p>
+          <p class="newsletter-title">
+            Para estar más cerca...
+            <br />
+            <b>Suscríbete </b> a nuestros canales
+          </p>
         </div>
       </div>
       <div className="input-wrapper">
-        <input className="newsletter-input" type="text" placeholder="Ingresa tu correo electrónico…" />
-        <button className="button button-secondary">
-          Suscribirme
+        <div>
+          <input class="newsletter-input" type="text" placeholder="Ingresa tu correo electrónico…" />
+            <p class="newsletter-subtitle">Al dar click en Suscribirme acepta los <a> términos y
+              condiciones</a></p>
+        </div>
+        <button class="button button-secondary">
+          SUSCRÍBETE AL BOLETIN
         </button>
       </div>
     </div>
