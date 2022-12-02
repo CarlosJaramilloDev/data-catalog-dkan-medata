@@ -61,7 +61,7 @@ const Header = () => {
           <div
             class="contact-containers contact-social-container d-flex justify-content-center align-items-center">
             <a href="/" class="logo">
-              <img src={LogoMedata} alt="Logo MeData">
+              <img src={LogoMedata} alt="Logo MeData" />
             </a>
             <p class="text text-white text-center">
               MEData es la estrategia de datos de la ciudad de Medellín, que busca la apropiación,
