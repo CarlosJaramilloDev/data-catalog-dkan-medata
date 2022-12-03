@@ -55,8 +55,9 @@ var SearchListItem = function SearchListItem(_ref) {
         var backup = type ? type : 'data';
         var format = dist.format ? dist.format : backup;
         return /*#__PURE__*/_react["default"].createElement("i",{
-          className: "fa-solid fa-file-"+format
-        }, counted[format], "x ", format);
+          className: "fa-solid fa-file-"+format,
+          key: identifier + counted[format] + format
+        }, "x ", counted[format]);
       });
     }
 

@@ -1,6 +1,6 @@
 "use strict";
 
-import IconoGubernamental from "../../../../../../medatatheme/assets/icons/topics/icon-1.png"
+/* import IconoGubernamental from "../../../../../../medatatheme/assets/icons/topics/icon-1.png"
 import IconoSocial from "../../../../../../medatatheme/assets/icons/topics/icon-2.png"
 import IconoSalud from "../../../../../../medatatheme/assets/icons/topics/icon-3.png"
 import IconoPoblacion from "../../../../../../medatatheme/assets/icons/topics/icon-4.png"
@@ -11,7 +11,20 @@ import IconoMedioAmbiente from "../../../../../../medatatheme/assets/icons/topic
 import IconoMovilidad from "../../../../../../medatatheme/assets/icons/topics/icon-9.png"
 import IconoPlanDesarrollo from "../../../../../../medatatheme/assets/icons/topics/icon-10.png"
 import IconoOrdenamiento from "../../../../../../medatatheme/assets/icons/topics/icon-11.png"
-import IconoDesarrolloEconomico from "../../../../../../medatatheme/assets/icons/topics/icon-12.png"
+import IconoDesarrolloEconomico from "../../../../../../medatatheme/assets/icons/topics/icon-12.png" */
+
+var IconoGubernamental = require("../../../../../../medatatheme/assets/icons/topics/icon-1.png");
+var IconoSocial = require("../../../../../../medatatheme/assets/icons/topics/icon-2.png");
+var IconoSalud = require("../../../../../../medatatheme/assets/icons/topics/icon-3.png");
+var IconoPoblacion = require("../../../../../../medatatheme/assets/icons/topics/icon-4.png");
+var IconoInfraestructura = require("../../../../../../medatatheme/assets/icons/topics/icon-5.png");
+var IconoHacienda = require("../../../../../../medatatheme/assets/icons/topics/icon-6.png");
+var IconoEducacion = require("../../../../../../medatatheme/assets/icons/topics/icon-7.png");
+var IconoMedioAmbiente = require("../../../../../../medatatheme/assets/icons/topics/icon-8.png");
+var IconoMovilidad = require("../../../../../../medatatheme/assets/icons/topics/icon-9.png");
+var IconoPlanDesarrollo = require("../../../../../../medatatheme/assets/icons/topics/icon-10.png");
+var IconoOrdenamiento = require("../../../../../../medatatheme/assets/icons/topics/icon-11.png");
+var IconoDesarrolloEconomico = require("../../../../../../medatatheme/assets/icons/topics/icon-12.png");
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
