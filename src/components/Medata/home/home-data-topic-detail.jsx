@@ -19,11 +19,44 @@ const HomeDataTopicDetail = ({
 }) => {
   let icon;
   switch (title) {
-    case "Transportation":
+    case "Social":
+      icon = IconoSocial;
+      break;
+    case "Población":
+      icon = IconoPoblacion;
+      break;
+    case "Plan de Desarrollo":
+      icon = IconoPlanDesarrollo;
+      break;
+    case "Movilidad":
+      icon = IconoMovilidad;
+      break;
+    case "Infraestructura y Catastro":
+      icon = IconoInfraestructura;
+      break;
+    case "Educación, Cultura y Recreación":
+      icon = IconoEducacion;
+      break;
+    case "Hacienda, Presupuesto y Contratación":
+      icon = IconoHacienda;
+      break;
+    case "Desarrollo Económico":
+      icon = IconoDesarrolloEconomico;
+      break;
+    case "Salud":
+      icon = IconoSalud;
+      break;
+    case "Gubernamental":
       icon = IconoGubernamental;
       break;
-    case "Public Safety":
-      icon = IconoSocial;
+    case "Ordenamiento Territorial":
+      icon = IconoOrdenamiento;
+      break;
+    case "Medio Ambiente":
+      icon = IconoMedioAmbiente;
+      break;
+    case "Vivienda, Ciudad y Territorio":
+      icon = IconoOrdenamiento;
       break;
     default:
       icon = IconoDesarrolloEconomico;
