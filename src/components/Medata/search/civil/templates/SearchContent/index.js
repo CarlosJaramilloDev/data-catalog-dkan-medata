@@ -75,12 +75,12 @@ var SearchContent = function SearchContent(_ref) {
       console.log('e', e);
       console.log('e.target', e.target);
       console.log('e.target.value', e.target.value);
-      console.log('e.target.order', e.target.order);
+      console.log('e.target.order', e.target.getAttribute("order"));
       dispatch({
         type: 'UPDATE_SORT',
         data: {
           sort: e.target.value,
-          'sort-order': e.target.order
+          'sort-order': e.target.getAttribute("order")
         }
       });
     }
