@@ -57,7 +57,7 @@ var SearchListItem = function SearchListItem(_ref) {
         return /*#__PURE__*/_react["default"].createElement("i",{
           className: "fa-solid fa-file-"+format,
           key: identifier + counted[format] + format
-        }, "x ", counted[format]);
+        });
       });
     }
 
@@ -123,8 +123,7 @@ var SearchListItem = function SearchListItem(_ref) {
     className: 'results-card-footer'
   },/*#__PURE__*/_react["default"].createElement('div', {
     className: 'result-tag'
-  }, /*#__PURE__*/_react["default"].createElement('p', null, "Categorias / Etiquetas: "), 
-  theme && themes(theme))));
+  }, /*#__PURE__*/_react["default"].createElement('p', null, "Categorias / Etiquetas: ", theme && themes(theme)))));
 };
 
 var getUniqueFormats = function getUniqueFormats(formats) {
