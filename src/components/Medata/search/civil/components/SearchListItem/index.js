@@ -27,8 +27,8 @@ var _lodash = require("lodash");
 
 /* eslint-disable */
 var SearchListItem = function SearchListItem(_ref) {
-  console.log(`Ref: ${JSON.stringify(_ref)}`);
-  console.log(`Item: ${JSON.stringify(_ref.item)}`);
+/*   console.log(`Ref: ${JSON.stringify(_ref)}`);
+  console.log(`Item: ${JSON.stringify(_ref.item)}`); */
   var className = _ref.className,
       item = _ref.item;
   var ref = item.ref,

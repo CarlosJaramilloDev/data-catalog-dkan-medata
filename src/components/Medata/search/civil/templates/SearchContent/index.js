@@ -11,8 +11,6 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _reactstrap = require("reactstrap");
-
 var _reactJsPagination = _interopRequireDefault(require("react-js-pagination"));
 
 var _SearchListItem = _interopRequireDefault(require("../../components/SearchListItem"));
@@ -74,7 +72,10 @@ var SearchContent = function SearchContent(_ref) {
     id: "dc-search-list-sort", */
     className: 'results-select',
     onChange: function onChange(e) {
-      console.log('e', e.target);
+      console.log('e', e);
+      console.log('e.target', e.target);
+      console.log('e.target.value', e.target.value);
+      console.log('e.target.order', e.target.order);
       dispatch({
         type: 'UPDATE_SORT',
         data: {
