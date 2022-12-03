@@ -37,7 +37,8 @@ var SearchListItem = function SearchListItem(_ref) {
       publisher = item.publisher,
       format = item.format,
       theme = item.theme,
-      identifier = item.identifier;
+      identifier = item.identifier,
+      modified = item.modified;
 
   function formats(distribution) {
     if (!distribution) {
@@ -96,11 +97,14 @@ var SearchListItem = function SearchListItem(_ref) {
     }
   }
 
+  console.log()
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: className
   }, /*#__PURE__*/_react["default"].createElement("div", { className: 'results-card-header'}, /*#__PURE__*/_react["default"].createElement('p', {
     className: 'title title--primary'
-  }, title),  /*#__PURE__*/_react["default"].createElement('p', {
+  }, /*#__PURE__*/_react["default"].createElement(_router.Link, {
+    to: ref
+  },title)),  /*#__PURE__*/_react["default"].createElement('p', {
     className: 'text text-primary'
   }, /*#__PURE__*/_react["default"].createElement(_router.Link, {
     to: ref
@@ -120,7 +124,7 @@ var SearchListItem = function SearchListItem(_ref) {
   },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),  /*#__PURE__*/_react["default"].createElement('p', null, "Vistas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Descargas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
   /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-info"
-  },  /*#__PURE__*/_react["default"].createElement('p', null, "4 Nov/ 2022"),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, /*#__PURE__*/_react["default"].createElement("i", {
+  },  /*#__PURE__*/_react["default"].createElement('p', null, modified),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, /*#__PURE__*/_react["default"].createElement("i", {
     className: "fa-solid fa-file-csv"
   }))),
   theme && /*#__PURE__*/_react["default"].createElement("div", {
