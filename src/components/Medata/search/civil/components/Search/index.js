@@ -71,7 +71,7 @@ var Search = function Search(_ref) {
     actions['page-size'] = 'UPDATE_PAGE_SIZE';
     actions.page = 'UPDATE_CURRENT_PAGE';
     actions.fulltext = 'UPDATE_FULLTEXT';
-    actions.sort = 'UPDATE_SORT_ONLY';
+    actions.sort = 'UPDATE_SORT';
     actions['sort-order'] = 'UPDATE_SORT_ORDER';
     var urlOptions = Object.keys(actions);
     urlOptions.forEach(function (param) {
