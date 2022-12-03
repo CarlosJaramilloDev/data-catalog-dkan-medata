@@ -50,7 +50,7 @@ var SearchListItem = function SearchListItem(_ref) {
       var counted = (0, _lodash.countBy)(distribution, function (d) {
         return d.format;
       });
-      return distributionWithUniqueFormats.map(function (dist) {
+      return distributionWithUniqueFormats.map(function (dist, idx) {
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
         var format = dist.format ? dist.format : backup;
@@ -67,8 +67,8 @@ var SearchListItem = function SearchListItem(_ref) {
 
         return /*#__PURE__*/_react["default"].createElement("i",{
           className: "fa-solid fa-file-"+finishIcon,
-          key: identifier + counted[format] + format
-        }) + ' | ';
+          key: idx
+        }),  /*#__PURE__*/_react["default"].createElement('span', null, ' | ');
       });
     }
 
@@ -86,7 +86,7 @@ var SearchListItem = function SearchListItem(_ref) {
           title: topic,
           height: 15,
           width: 15
-        }) + ' ' + topic + ' | ';
+        }),  /*#__PURE__*/_react["default"].createElement('span', null, ' ' + topic + ' | ');
       });
     }
   }
