@@ -144,10 +144,6 @@ SearchContent.defaultProps = {
     order: 'desc',
     label: 'Mas recientes'
   }, {
-    field: 'modified',
-    order: 'asc',
-    label: 'Menos recientes'
-  }, {
     field: 'title',
     order: 'asc',
     label: 'Alfabéticamente'
