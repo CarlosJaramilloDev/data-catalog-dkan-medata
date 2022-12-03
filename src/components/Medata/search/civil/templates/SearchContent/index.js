@@ -77,11 +77,12 @@ var SearchContent = function SearchContent(_ref) {
       console.log('e.target.value', e.target.value);
       console.log('e.target.slected', e.target[e.target.selectedIndex]);
       console.log('e.target.order', e.target[e.target.selectedIndex].order);
+      console.log('e.target.order.final', e.target[e.target.selectedIndex].getAttribute("order"));
       dispatch({
         type: 'UPDATE_SORT',
         data: {
           sort: e.target.value,
-          'sort-order': e.target[e.target.selectedIndex].text
+          'sort-order': e.target[e.target.selectedIndex].getAttribute("order")
         }
       });
     }
