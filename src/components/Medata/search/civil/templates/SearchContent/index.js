@@ -74,6 +74,7 @@ var SearchContent = function SearchContent(_ref) {
     id: "dc-search-list-sort", */
     className: 'results-select',
     onChange: function onChange(e) {
+      console.log('e', e.target);
       dispatch({
         type: 'UPDATE_SORT',
         data: {
