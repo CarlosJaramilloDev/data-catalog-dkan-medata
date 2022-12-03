@@ -75,12 +75,13 @@ var SearchContent = function SearchContent(_ref) {
       console.log('e', e);
       console.log('e.target', e.target);
       console.log('e.target.value', e.target.value);
-      console.log('e.target.order', e.target.getAttribute("order"));
+      console.log('e.target.slected', e.target[e.target.selectedIndex]);
+      console.log('e.target.order', e.target[e.target.selectedIndex].text);
       dispatch({
         type: 'UPDATE_SORT',
         data: {
           sort: e.target.value,
-          'sort-order': e.target.getAttribute("order")
+          'sort-order': e.target[e.target.selectedIndex].text
         }
       });
     }
