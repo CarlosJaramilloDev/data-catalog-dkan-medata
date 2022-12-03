@@ -45,9 +45,7 @@ var SearchContent = function SearchContent() {
   var facetTypes = Object.keys(defaultFacets);
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-results-list movility-content"
-  }, /*#__PURE__*/_react["default"].createElement("p", {
-    className: "paragraph paragraph--black margin-bottom-sm"
-  }), items && /*#__PURE__*/_react["default"].createElement(_SearchInput["default"], {
+  }, items && /*#__PURE__*/_react["default"].createElement(_SearchInput["default"], {
     placeholder: "¿Qué deseas buscar? Ej: Parque automotor",
     showSubmit: false,
     srOnly: true,
@@ -59,7 +57,10 @@ var SearchContent = function SearchContent() {
       });
     },
     resetContent: "Limpiar contenido"
-  }), /*#__PURE__*/_react["default"].createElement(_SearchResultsMessage["default"], {
+  }),  /*#__PURE__*/_react["default"].createElement("p", {
+    className: "paragraph paragraph--black margin-bottom-sm"
+  }, 'Búsqueda, exploración y descarga de los conjuntos de datos de la Alcaldía de Medellín'),
+  /*#__PURE__*/_react["default"].createElement(_SearchResultsMessage["default"], {
     searchTerm: fulltext,
     total: parseInt(totalItems, 10),
     selectedFacets: selectedFacets,
@@ -67,7 +68,8 @@ var SearchContent = function SearchContent() {
     defaultFacets: defaultFacets,
     facetLimit: 100,
     facetDelimiter: ", ",
-    facetSeparator: " & "
+    facetSeparator: " & ",
+    className: 'results'
   }), loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
     return  /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       key: item.identifier,

@@ -39,7 +39,7 @@ const SearchTemplate = ({ path }) => {
           location={location}
           normalize={normalizeItems}
         >
-          <div className="container movility">
+          <div className="movility">
             <SearchSidebar />
             <SearchContent />
           </div>

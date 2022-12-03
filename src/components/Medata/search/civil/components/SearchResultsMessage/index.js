@@ -71,7 +71,7 @@ SearchResultsMessage.defaultProps = {
   showQuery: true,
   showFacets: true,
   facetLimit: 3,
-  className: 'dc-search-results-message',
+  className: 'dc-search-results-message results',
   facetTitleClass: 'dc-search-results-facet-title',
   facetListClass: 'dc-search-results-facet-list',
   searchQueryClass: 'dc-search-results-query',

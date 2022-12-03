@@ -33,12 +33,12 @@ var SearchResultsMessage2 = function SearchResultsMessage2(_ref) {
   var facetsInfo = getFacetsInfo(facets, facetTitleClass, facetListClass, facetDelimiter, facetTypeDelimiter, facetLimit);
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: className
-  }, /*#__PURE__*/_react["default"].createElement("p", null, totalInfo, searchInfo, facetsInfo));
+  }, /*#__PURE__*/_react["default"].createElement("p", {className: 'subtitle'}, totalInfo));
 
   function getTotalInfo(total) {
     var text = [];
     text.push(total.toLocaleString('es'));
-    text.push(total !== 1 ? 'datasets' : 'dataset');
+    text.push(total !== 1 ? 'resultados' : 'resultado');
     text.push(total !== 1 ? 'encontrados' : 'encontrado');
     return text.join(" ");
   }
@@ -116,7 +116,7 @@ function getFacetsText(facets, facetType, facetDelimiter, facetLimit) {
 }
 
 SearchResultsMessage2.defaultProps = {
-  className: 'dc-search-results-message',
+  className: 'results',
   facetTitleClass: 'dc-search-results-facet-title',
   facetListClass: 'dc-search-results-facet-list',
   searchQueryClass: 'dc-search-results-query',
