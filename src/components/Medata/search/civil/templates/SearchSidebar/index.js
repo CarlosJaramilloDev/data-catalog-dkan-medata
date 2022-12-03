@@ -73,7 +73,7 @@ SearchSidebar.defaultProps = {
   sortOptions: [{
     field: 'modified',
     order: 'desc',
-    label: 'Fecha'
+    label: 'Últimos publicados'
   }, {
     field: 'title',
     order: 'asc',

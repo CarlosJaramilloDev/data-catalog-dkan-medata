@@ -60,17 +60,10 @@ var SearchContent = function SearchContent() {
   }),  /*#__PURE__*/_react["default"].createElement("p", {
     className: "paragraph paragraph--black margin-bottom-sm"
   }, 'Búsqueda, exploración y descarga de los conjuntos de datos de la Alcaldía de Medellín'),
-  /*#__PURE__*/_react["default"].createElement(_SearchResultsMessage["default"], {
-    searchTerm: fulltext,
-    total: parseInt(totalItems, 10),
-    selectedFacets: selectedFacets,
-    facetTypes: facetTypes,
-    defaultFacets: defaultFacets,
-    facetLimit: 100,
-    facetDelimiter: ", ",
-    facetSeparator: " & ",
+  /*#__PURE__*/_react["default"].createElement("div", {
     className: 'results'
-  }), loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
+  }, /*#__PURE__*/_react["default"].createElement("p", {className: 'subtitle'}, getTotalInfo(totalItems)))
+  , loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
     return  /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       key: item.identifier,
       item: item
@@ -106,6 +99,13 @@ var SearchContent = function SearchContent() {
       });
     }
   })));
+  function getTotalInfo(total) {
+    var text = [];
+    text.push(total.toLocaleString('es'));
+    text.push(total !== 1 ? 'resultados' : 'resultado');
+    text.push(total !== 1 ? 'encontrados' : 'encontrado');
+    return text.join(" ");
+  }
 };
 
 var _default = SearchContent;
