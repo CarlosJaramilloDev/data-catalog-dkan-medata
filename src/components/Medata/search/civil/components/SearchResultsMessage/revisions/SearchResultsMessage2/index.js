@@ -61,7 +61,7 @@ var SearchResultsMessage2 = function SearchResultsMessage2(_ref) {
     var facetTypes = getFacetTypes(facets);
     var facetsText = [];
     var counter = 0;
-    facetsText.push(' in ');
+    facetsText.push(' en ');
     facetTypes.forEach(function (facetType) {
       // Add '&' between facet types.
       if (counter > 0) {
