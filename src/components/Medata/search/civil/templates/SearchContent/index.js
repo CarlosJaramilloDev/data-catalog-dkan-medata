@@ -11,9 +11,9 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _reactJsPagination = _interopRequireDefault(require("react-js-pagination"));
+var _reactstrap = require("reactstrap");
 
-var _SearchResultsMessage = _interopRequireDefault(require("../../components/SearchResultsMessage"));
+var _reactJsPagination = _interopRequireDefault(require("react-js-pagination"));
 
 var _SearchListItem = _interopRequireDefault(require("../../components/SearchListItem"));
 
@@ -27,11 +27,14 @@ var _search_defaults = require("../../services/search/search_defaults");
 
 var _reactContentLoader = require("react-content-loader");
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-var SearchContent = function SearchContent() {
+var SearchContent = function SearchContent(_ref) {
+  var sortOptions = _ref.sortOptions;
   var _useContext = (0, _react.useContext)(_search_defaults.SearchDispatch),
       searchState = _useContext.searchState,
       dispatch = _useContext.dispatch,
@@ -62,7 +65,30 @@ var SearchContent = function SearchContent() {
   }, 'Búsqueda, exploración y descarga de los conjuntos de datos de la Alcaldía de Medellín'),
   /*#__PURE__*/_react["default"].createElement("div", {
     className: 'results'
-  }, /*#__PURE__*/_react["default"].createElement("p", {className: 'subtitle'}, getTotalInfo(totalItems)))
+  }, /*#__PURE__*/_react["default"].createElement("p", {className: 'subtitle'}, getTotalInfo(totalItems)),
+   /*#__PURE__*/_react["default"].createElement("div", {
+    className: "dc-search-sidebar-options"
+  }, /*#__PURE__*/_react["default"].createElement(_reactstrap.Label, {
+    "for": "dc-search-list-sort",
+    className: 'h5'
+  }, "Ordenar por:"), /*#__PURE__*/_react["default"].createElement(_reactstrap.Input, {
+    type: "select",
+    name: "dc-search-list-sort",
+    id: "dc-search-list-sort",
+    onChange: function onChange(e) {
+      dispatch({
+        type: 'UPDATE_SORT',
+        data: {
+          sort: e.target.value
+        }
+      });
+    }
+  }, sortOptions.map(function (sortOpt) {
+    return /*#__PURE__*/_react["default"].createElement("option", {
+      key: sortOpt.field,
+      value: sortOpt.field
+    }, sortOpt.label);
+  }))))
   , loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
     return  /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       key: item.identifier,
@@ -106,6 +132,21 @@ var SearchContent = function SearchContent() {
     text.push(total !== 1 ? 'encontrados' : 'encontrado');
     return text.join(" ");
   }
+};
+
+SearchContent.defaultProps = {
+  sortOptions: [{
+    field: 'modified',
+    order: 'desc',
+    label: 'Últimos publicados'
+  }, {
+    field: 'title',
+    order: 'asc',
+    label: 'Alfabéticamente'
+  }]
+};
+SearchContent.propTypes = {
+  sortOptions: _propTypes["default"].arrayOf(_propTypes["default"].object)
 };
 
 var _default = SearchContent;
