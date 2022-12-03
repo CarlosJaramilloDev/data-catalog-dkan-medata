@@ -66,7 +66,7 @@ var SearchListItem = function SearchListItem(_ref) {
         }
 
         return  /*#__PURE__*/_react["default"].createElement("i", {
-          className: "fa-solid fa-file-"+finishIcon,
+          className: "mr-2 fa-solid fa-file-"+finishIcon,
           key: idx
         });
       });
@@ -86,7 +86,7 @@ var SearchListItem = function SearchListItem(_ref) {
           title: topic,
           height: 15,
           width: 15
-        }), /*#__PURE__*/_react["default"].createElement('span', null, ' ' + topic + ' | '))
+        }))
       });
     }
   }

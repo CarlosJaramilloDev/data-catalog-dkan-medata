@@ -26,8 +26,9 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function TopicIcon(_ref) {
   var title = _ref.title,
-    size = _ref.size,
-    fill = _ref.fill;
+    height = _ref.height,
+    width = _ref.width;
+
   var icon = null;
 
   switch (title) {
@@ -78,20 +79,18 @@ function TopicIcon(_ref) {
   return /*#__PURE__*/ _react["default"].createElement("img", {
     src: icon,
     alt: title,
-    width: size,
-    height: size,
+    width: width,
+    height: height,
   });
 }
 
 TopicIcon.defaultProps = {
   title: "Tema por defecto...",
   size: 24,
-  fill: "",
 };
 TopicIcon.propTypes = {
   title: _propTypes["default"].string,
   size: _propTypes["default"].number,
-  fill: _propTypes["default"].string,
 };
 var _default = TopicIcon;
 exports["default"] = _default;
