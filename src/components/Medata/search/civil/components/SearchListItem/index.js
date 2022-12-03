@@ -54,11 +54,8 @@ var SearchListItem = function SearchListItem(_ref) {
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
         var format = dist.format ? dist.format : backup;
-        return /*#__PURE__*/_react["default"].createElement("div", {
-          title: "format: ".concat(dist.format),
-          key: "dist-id-".concat(identifier, "-").concat(Math.random() * 10),
-          className: "label",
-          "data-format": format
+        return /*#__PURE__*/_react["default"].createElement("i",{
+          className: "fa-solid fa-file-"+format
         }, counted[format], "x ", format);
       });
     }
@@ -73,14 +70,11 @@ var SearchListItem = function SearchListItem(_ref) {
       return null;
     } else {
       return theme.map(function (topic, idx) {
-        return /*#__PURE__*/_react["default"].createElement("div", {
-          className: "dc-topic-wrapper",
-          key: idx
-        }, /*#__PURE__*/_react["default"].createElement(_TopicIcon["default"], {
+        return  /*#__PURE__*/_react["default"].createElement(_TopicIcon["default"], {
           title: topic,
           height: 16,
           width: 16
-        }), topic);
+        });
       });
     }
   }
@@ -97,7 +91,6 @@ var SearchListItem = function SearchListItem(_ref) {
     }
   }
 
-  console.log()
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: className
   }, /*#__PURE__*/_react["default"].createElement("div", { className: 'results-card-header'}, /*#__PURE__*/_react["default"].createElement('p', {
@@ -124,14 +117,13 @@ var SearchListItem = function SearchListItem(_ref) {
   },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),  /*#__PURE__*/_react["default"].createElement('p', null, "Vistas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Descargas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
   /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-info"
-  },  /*#__PURE__*/_react["default"].createElement('p', null, modified),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, /*#__PURE__*/_react["default"].createElement("i", {
-    className: "fa-solid fa-file-csv"
-  }))),
-  theme && /*#__PURE__*/_react["default"].createElement("div", {
-    className: "dc-item-theme"
-  }, themes(theme))), format && /*#__PURE__*/_react["default"].createElement("div", {
-    className: "format-types"
-  }, formats(format))));
+  },  /*#__PURE__*/_react["default"].createElement('p', null, modified),  /*#__PURE__*/_react["default"].createElement('p', null, "2000"),  /*#__PURE__*/_react["default"].createElement('p', null, "822"),  /*#__PURE__*/_react["default"].createElement('p', null, format && formats(format))))),
+  /*#__PURE__*/_react["default"].createElement('div', {
+    className: 'results-card-footer'
+  },/*#__PURE__*/_react["default"].createElement('div', {
+    className: 'result-tag'
+  }, /*#__PURE__*/_react["default"].createElement('p', null, "Categorias / Etiquetas: "), 
+  theme && themes(theme))));
 };
 
 var getUniqueFormats = function getUniqueFormats(formats) {
