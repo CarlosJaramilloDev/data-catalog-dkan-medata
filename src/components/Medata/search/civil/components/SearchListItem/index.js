@@ -65,10 +65,10 @@ var SearchListItem = function SearchListItem(_ref) {
             break;
         }
 
-        return  /*#__PURE__*/_react["default"].createElement('span', null, /*#__PURE__*/_react["default"].createElement("i", {
+        return  /*#__PURE__*/_react["default"].createElement("i", {
           className: "fa-solid fa-file-"+finishIcon,
           key: idx
-        }), ' | ');
+        });
       });
     }
 
@@ -82,11 +82,11 @@ var SearchListItem = function SearchListItem(_ref) {
       return null;
     } else {
       return theme.map(function (topic, idx) {
-        return  /*#__PURE__*/_react["default"].createElement(_TopicIcon["default"], {
+        return  /*#__PURE__*/_react["default"].createElement('span', { className: 'mr-2'},  /*#__PURE__*/_react["default"].createElement(_TopicIcon["default"], {
           title: topic,
           height: 15,
           width: 15
-        }),  /*#__PURE__*/_react["default"].createElement('span', null, ' ' + topic + ' | ');
+        }), /*#__PURE__*/_react["default"].createElement('span', null, ' ' + topic + ' | '))
       });
     }
   }
