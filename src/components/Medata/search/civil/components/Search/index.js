@@ -183,7 +183,7 @@ var Search = function Search(_ref) {
       var currentUrl = "".concat(loc.pathname).concat(loc.search);
 
       if (window !== undefined && searchUrl !== currentUrl) {
-        window.history.pushState({}, 'Search', "".concat(searchUrl));
+        window.history.pushState({}, 'Buscar', "".concat(searchUrl));
       }
     }
   }, [searchState.items, searchState.facetsResults]);

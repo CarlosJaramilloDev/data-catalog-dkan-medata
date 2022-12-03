@@ -45,7 +45,9 @@ var SearchContent = function SearchContent() {
   var facetTypes = Object.keys(defaultFacets);
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-results-list movility-content"
-  }, items && /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_SearchInput["default"], {
+  }, /*#__PURE__*/_react["default"].createElement("p", {
+    className: "paragraph paragraph--black margin-bottom-sm"
+  }), items && /*#__PURE__*/_react["default"].createElement(_SearchInput["default"], {
     placeholder: "¿Qué deseas buscar? Ej: Parque automotor",
     showSubmit: false,
     srOnly: true,
@@ -101,7 +103,7 @@ var SearchContent = function SearchContent() {
         }
       });
     }
-  }))));
+  })));
 };
 
 var _default = SearchContent;
