@@ -77,14 +77,16 @@ var SearchContent = function SearchContent(_ref) {
       dispatch({
         type: 'UPDATE_SORT',
         data: {
-          sort: e.target.value
+          sort: e.target.value,
+          'sort-order': e.target.order
         }
       });
     }
   }, sortOptions.map(function (sortOpt) {
     return /*#__PURE__*/_react["default"].createElement("option", {
       key: sortOpt.field,
-      value: sortOpt.field
+      value: sortOpt.field,
+      order: sortOpt.order
     }, sortOpt.label);
   }))))
   , loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
@@ -140,7 +142,7 @@ SearchContent.defaultProps = {
   }, {
     field: 'modified',
     order: 'asc',
-    label: 'Menos publicados'
+    label: 'Menos recientes'
   }, {
     field: 'title',
     order: 'asc',
