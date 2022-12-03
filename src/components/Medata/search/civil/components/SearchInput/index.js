@@ -105,7 +105,7 @@ SearchInput.defaultProps = {
   placeholder: 'Search the Data',
   labelContent: 'Search',
   value: '',
-  bsSize: 'lg',
+  bsSize: 'md',
   labelClassName: '',
   srOnly: true,
   className: '',
