@@ -65,10 +65,10 @@ var SearchListItem = function SearchListItem(_ref) {
             break;
         }
 
-        return /*#__PURE__*/_react["default"].createElement("i",{
+        return  /*#__PURE__*/_react["default"].createElement('span', null, /*#__PURE__*/_react["default"].createElement("i", {
           className: "fa-solid fa-file-"+finishIcon,
           key: idx
-        }),  /*#__PURE__*/_react["default"].createElement('span', null, ' | ');
+        }), ' | ');
       });
     }
 
