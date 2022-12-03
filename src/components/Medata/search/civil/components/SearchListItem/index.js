@@ -54,10 +54,21 @@ var SearchListItem = function SearchListItem(_ref) {
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
         var format = dist.format ? dist.format : backup;
+        var finishIcon = 'o';
+        switch (format) {
+          case 'pdf':
+          case 'csv':
+            finishIcon = format
+            break;
+          case 'zip':
+            finishIcon = 'archive'
+            break;
+        }
+
         return /*#__PURE__*/_react["default"].createElement("i",{
           className: "fa-solid fa-file-"+format,
           key: identifier + counted[format] + format
-        });
+        }, ' | ');
       });
     }
 
@@ -73,9 +84,9 @@ var SearchListItem = function SearchListItem(_ref) {
       return theme.map(function (topic, idx) {
         return  /*#__PURE__*/_react["default"].createElement(_TopicIcon["default"], {
           title: topic,
-          height: 16,
-          width: 16
-        });
+          height: 15,
+          width: 15
+        }, topic + ' | ');
       });
     }
   }
