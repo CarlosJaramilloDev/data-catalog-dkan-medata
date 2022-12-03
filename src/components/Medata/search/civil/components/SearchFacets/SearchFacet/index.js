@@ -120,7 +120,8 @@ var SearchFacet = function SearchFacet(_ref) {
       value: itemName,
       onChange: onChangeFunction
     }), /*#__PURE__*/_react["default"].createElement(_reactstrap.Label, {
-      htmlFor: key
+      htmlFor: key,
+      className: 'text'
     }, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
       icon: ['fas', checked ? 'check-square' : 'square'],
       size: "1x",

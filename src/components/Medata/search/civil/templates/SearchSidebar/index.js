@@ -40,7 +40,8 @@ var SearchSidebar = function SearchSidebar(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-search-sidebar-options"
   }, /*#__PURE__*/_react["default"].createElement(_reactstrap.Label, {
-    "for": "dc-search-list-sort"
+    "for": "dc-search-list-sort",
+    className: 'h4'
   }, "Ordenar por:"), /*#__PURE__*/_react["default"].createElement(_reactstrap.Input, {
     type: "select",
     name: "dc-search-list-sort",

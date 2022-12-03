@@ -53,7 +53,7 @@ var DataTablePageSizer = function DataTablePageSizer(_ref) {
 };
 
 DataTablePageSizer.defaultProps = {
-  label: 'Rows per page',
+  label: 'Registros por página',
   className: 'dc-page-size-options',
   initSize: 20,
   options: [{

@@ -36,12 +36,12 @@ function ToggleBlock(_ref) {
       show = _useState2[0],
       toggleShow = _useState2[1];
 
-  var toggleBlockHeading = /*#__PURE__*/_react["default"].createElement("h2", {
+  var toggleBlockHeading = /*#__PURE__*/_react["default"].createElement("h4", {
     className: headingClasses
   }, title);
 
   if (allowToggle) {
-    toggleBlockHeading = /*#__PURE__*/_react["default"].createElement("h2", {
+    toggleBlockHeading = /*#__PURE__*/_react["default"].createElement("h4", {
       className: headingClasses
     }, /*#__PURE__*/_react["default"].createElement("button", {
       type: "button",
