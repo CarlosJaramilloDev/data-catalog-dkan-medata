@@ -68,10 +68,10 @@ var SearchContent = function SearchContent(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("p", {className: 'subtitle'}, getTotalInfo(totalItems)),
    /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-order"
-  }, /*#__PURE__*/_react["default"].createElement('span', null, "Ordenar por:"), /*#__PURE__*/_react["default"].createElement(_reactstrap.Input, {
-    type: "select",
+  }, /*#__PURE__*/_react["default"].createElement('span', null, "Ordenar por:"), /*#__PURE__*/_react["default"].createElement('select', {
+/*     type: "select",
     name: "dc-search-list-sort",
-    id: "dc-search-list-sort",
+    id: "dc-search-list-sort", */
     className: 'results-select',
     onChange: function onChange(e) {
       dispatch({
