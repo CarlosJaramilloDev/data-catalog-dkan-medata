@@ -58,6 +58,7 @@ var SearchListItem = function SearchListItem(_ref) {
             finishIcon = format
             break;
           case 'zip':
+          case 'data':
             finishIcon = 'archive'
             break;
         }

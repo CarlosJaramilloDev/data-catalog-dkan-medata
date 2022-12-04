@@ -59,12 +59,14 @@ const Dataset = ({ id, location }) => {
   }
 
   function formats(distribution) {
+    console.log('dist', distribution);
     if (!distribution) {
       return null;
     }
 
     if (Array.isArray(distribution)) {
       var distributionWithUniqueFormats = getUniqueFormats(Object.entries(distribution));
+      console.log('unic dist', distributionWithUniqueFormats);
       return distributionWithUniqueFormats.map(function (dist, idx) {
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
@@ -76,6 +78,7 @@ const Dataset = ({ id, location }) => {
             finishIcon = format
             break;
           case 'zip':
+          case 'data':
             finishIcon = 'archive'
             break;
         }
