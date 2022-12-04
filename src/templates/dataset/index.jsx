@@ -54,8 +54,7 @@ const Dataset = ({ id, location }) => {
       return null;
     } else {
       return theme.map(topic => {
-        return (
-          <TopicIcon title={topic.data} height={16} width={16} key={topic.identifier}/>)
+        return <span className="mr-2"><TopicIcon title={topic.data} height={16} width={16} key={topic.identifier}/></span>
       });
     }
   }
@@ -161,7 +160,7 @@ const Dataset = ({ id, location }) => {
                 <span>Formato:</span> <i class="fa-solid fa-file-csv"></i>
               </li>
               <li class="data-technical-info-item">
-                <span>Categoria/Etiquetas:</span> {theme.length > 0 && <div className="dc-item-theme">{themes(theme)}</div>}
+                <span>Categoria/Etiquetas:</span> {theme.length > 0 && {themes(theme)}}
               </li>
             </ul>
           </div>
