@@ -26,6 +26,7 @@ const Dataset = ({id, location}) => {
     }
     async function getItem() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items/${id}?show-reference-ids`);
+      console.log(data)
       setItem(data);
     }
     if (!state || !state.dataset) {
