@@ -47,9 +47,6 @@ var SearchListItem = function SearchListItem(_ref) {
 
     if ((0, _typeof2["default"])(distribution) === 'object' || Array.isArray(distribution)) {
       var distributionWithUniqueFormats = getUniqueFormats(Object.entries(distribution));
-      var counted = (0, _lodash.countBy)(distribution, function (d) {
-        return d.format;
-      });
       return distributionWithUniqueFormats.map(function (dist, idx) {
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
@@ -144,7 +141,6 @@ var getUniqueFormats = function getUniqueFormats(formats) {
       unique.push(b[1].format);
       a.push(b[1]);
     }
-
     return a;
   }, []);
 };

@@ -33,8 +33,7 @@ const Dataset = ({ id, location }) => {
     }
   }, [id, state]);
 
-  const orgName =
-    "publisher" in item && item.publisher ? item.publisher.data.name : "";
+  const orgName = "publisher" in item && item.publisher ? item.publisher.data.name : "";
   const orgDetails = orgs.filter(org => orgName === org.name);
   const orgImage = orgDetails.length > 0 && orgDetails[0].imageUrl ? orgDetails[0].imageUrl : null;
   const orgDesc = orgDetails.length > 0 && orgDetails[0].description ? orgDetails[0].description : "";
@@ -58,6 +57,45 @@ const Dataset = ({ id, location }) => {
       });
     }
   }
+
+  function formats(distribution) {
+    if (!distribution) {
+      return null;
+    }
+
+    if (Array.isArray(distribution)) {
+      var distributionWithUniqueFormats = getUniqueFormats(Object.entries(distribution));
+      return distributionWithUniqueFormats.map(function (dist, idx) {
+        var type = dist.mediaType ? dist.mediaType.split('/') : '';
+        var backup = type ? type : 'data';
+        var format = dist.format ? dist.format : backup;
+        var finishIcon = 'o';
+        switch (format) {
+          case 'pdf':
+          case 'csv':
+            finishIcon = format
+            break;
+          case 'zip':
+            finishIcon = 'archive'
+            break;
+        }
+        return <i className={`mr-2 fa-solid fa-file-${finishIcon}`} key={idx} />;
+      });
+    }
+
+    return null;
+  }
+
+  var getUniqueFormats = function getUniqueFormats(formats) {
+    var unique = [];
+    return formats.reduce(function (a, b) {
+      if (unique.indexOf(b[1].format) === -1) {
+        unique.push(b[1].format);
+        a.push(b[1]);
+      }
+      return a;
+    }, []);
+  };
 
   // // Process content for 'Columns in this Dataset' table.
   // // const labelsT2 = {};
@@ -145,10 +183,10 @@ const Dataset = ({ id, location }) => {
           <div class="data-container">
             <ul class="data-technical-info-list">
               <li class="data-technical-info-item">
-                <span>Fuente:</span> Hadoop Integration
+                <span>Fuente:</span> {orgName}
               </li>
               <li class="data-technical-info-item">
-                <span>Última modificación:</span> 4 Nov/2022
+                <span>Última modificación:</span> {item.modified || ''}
               </li>
               <li class="data-technical-info-item">
                 <span>Vistas:</span> 2.000
@@ -157,7 +195,7 @@ const Dataset = ({ id, location }) => {
                 <span>Descargas:</span> 822
               </li>
               <li class="data-technical-info-item">
-                <span>Formato:</span> <i class="fa-solid fa-file-csv"></i>
+                <span>Formato(s):</span> {formats(item.distribution)}
               </li>
               <li class="data-technical-info-item">
                 <span>Categoria/Etiquetas:</span> {theme.length > 0 && themes(theme)}
