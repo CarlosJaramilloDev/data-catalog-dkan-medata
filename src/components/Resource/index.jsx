@@ -1,7 +1,7 @@
 import React from "react";
 
 import FileDownload from "../Medata/search/civil/components/FileDownload";
-import Resource from "../Medata/search/civil/components/FileDownload";
+import Resource from "../Medata/search/civil/components/Resource";
 import DataTable from "../Medata/search/civil/templates/DataTable";
 import DataTableHeader from "../Medata/search/civil/templates/DataTableHeader";
 
