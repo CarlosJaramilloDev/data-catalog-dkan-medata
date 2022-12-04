@@ -68,6 +68,7 @@ const Dataset = ({ id, location }) => {
       var distributionWithUniqueFormats = getUniqueFormats(Object.entries(distribution));
       console.log('unic dist', distributionWithUniqueFormats);
       return distributionWithUniqueFormats.map(function (dist, idx) {
+        dist = dist.data;
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
         var format = dist.format ? dist.format : backup;
