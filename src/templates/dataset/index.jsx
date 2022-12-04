@@ -136,14 +136,14 @@ const Dataset = ({ id, location }) => {
 
       <section class="header-section data">
         <div class="data-container">
-          <p class="title title--black">{item.title}</p>
+          <p class="title title--black mb-0">{item.title}</p>
           <p class="paragraph paragraph--black margin-bottom-sm">
             <Text value={item.description} />
           </p>
         </div>
       </section>
 
-      {/* <section class="data-technical-section">
+      <section class="data-technical-section">
         <div class="data-technical-info">
           <div class="data-container">
             <ul class="data-technical-info-list">
@@ -168,6 +168,7 @@ const Dataset = ({ id, location }) => {
             </ul>
           </div>
         </div>
+      {/*
         <div class="data-sheet data-container">
           <div class="data-card">
             <div class="data-card-header">
@@ -230,8 +231,8 @@ const Dataset = ({ id, location }) => {
                 )}
             </div>
           </div>
-        </div>
-      </section> */}
+        </div>*/}
+      </section> 
 
 
 
