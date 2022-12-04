@@ -22,10 +22,7 @@ const SearchTemplate = ({ path }) => {
             <a className="breadcrumb-link" href="/">Medata</a>
           </li>
           <li className="breadcrumb-item">
-            <a className="breadcrumb-link" href="/">Datos Abiertos</a>
-          </li>
-          <li className="breadcrumb-item">
-            <a className="breadcrumb-link" href="/">Búsqueda</a>
+            <a className="breadcrumb-link" href="/search">Búsqueda</a>
           </li>
         </ol>
       </nav>

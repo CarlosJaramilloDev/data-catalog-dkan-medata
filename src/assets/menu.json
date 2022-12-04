@@ -1,11 +1,6 @@
 {
   "main": [
     {
-      "label": "Inicio",
-      "url": "/",
-      "target": "_top"
-    },
-    {
       "label": "Medellín en cifras",
       "url": "/search",
       "target": "_top"
