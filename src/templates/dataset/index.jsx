@@ -11,7 +11,6 @@ import Organization from "../../components/Medata/search/civil/components/Organi
 import Table from "../../components/Medata/search/civil/components/Table";
 import Tags from "../../components/Medata/search/civil/components/Tags";
 import TopicIcon from "../../components/Medata/search/civil/templates/TopicIcon";
-import TopicWrapper from "../../components/Medata/search/civil/components/TopicWrapper";
 
 import orgs from "../../assets/publishers.json";
 
@@ -55,13 +54,8 @@ const Dataset = ({ id, location }) => {
       return null;
     } else {
       return theme.map(topic => {
-        console.log(topic);
-
-        return  /*#__PURE__*/React["default"].createElement('span', { className: 'mr-2'},  /*#__PURE__*/React["default"].createElement(TopicIcon["default"], {
-          title: topic,
-          height: 15,
-          width: 15
-        }))
+        return (
+          <TopicIcon title={topic.data} height={16} width={16} key={topic.identifier}/>)
       });
     }
   }
