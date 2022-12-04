@@ -57,7 +57,7 @@ const Dataset = ({ id, location }) => {
       return theme.map(topic => {
         console.log(topic);
 
-        return  /*#__PURE__*/React["default"].createElement('span', { className: 'mr-2'},  /*#__PURE__*/_react["default"].createElement(TopicIcon["default"], {
+        return  /*#__PURE__*/React["default"].createElement('span', { className: 'mr-2'},  /*#__PURE__*/React["default"].createElement(TopicIcon["default"], {
           title: topic,
           height: 15,
           width: 15
