@@ -160,7 +160,7 @@ const Dataset = ({ id, location }) => {
                 <span>Formato:</span> <i class="fa-solid fa-file-csv"></i>
               </li>
               <li class="data-technical-info-item">
-                <span>Categoria/Etiquetas:</span> {theme.length > 0 && {themes(theme)}}
+                <span>Categoria/Etiquetas:</span> {theme.length > 0 && themes(theme)}
               </li>
             </ul>
           </div>
