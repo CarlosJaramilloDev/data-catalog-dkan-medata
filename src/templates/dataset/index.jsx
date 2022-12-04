@@ -198,12 +198,12 @@ const Dataset = ({ id, location }) => {
                   </tr>
                 </tbody>
               </table>
-
+{/* 
               <Table
                 configuration={labelsT3}
                 data={valuesT3}
                 tableclass="metadata"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ const Dataset = ({ id, location }) => {
 
 
 
-      <div className={` ${config.container}`}>
+      <div className={config.container}>
         <div className="row">
           <div className="col-md-3 col-sm-12">
             {renderOrg}
