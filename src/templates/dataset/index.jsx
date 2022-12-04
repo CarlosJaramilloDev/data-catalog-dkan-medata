@@ -198,12 +198,12 @@ const Dataset = ({ id, location }) => {
                   </tr>
                 </tbody>
               </table>
-{/* 
+
               <Table
                 configuration={labelsT3}
                 data={valuesT3}
                 tableclass="metadata"
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -218,16 +218,15 @@ const Dataset = ({ id, location }) => {
               {Object.keys(item).length
                 ? (
                   <div>
-                    <Text value={item.description} />
                     {(hasWindow && item.distribution) &&
                       item.distribution.map(dist => {
                         return <ResourceTemplate key={dist.identifier} resource={dist} identifier={dist.identifier} />;
                       })}
-                    <Tags tags={tag} path="/search?keyword=" label="Tags" />
                   </div>
-                ) : (<div className="row">
-                  <Spinner color="primary" />
-                </div>
+                ) : (
+                  <div className="row">
+                    <Spinner color="primary" />
+                  </div>
                 )}
             </div>
           </div>
