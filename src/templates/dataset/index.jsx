@@ -134,7 +134,7 @@ const Dataset = ({ id, location }) => {
         </ol>
       </nav>
 
-      {/* <section class="header-section data">
+      <section class="header-section data">
         <div class="data-container">
           <p class="title title--black">{item.title}</p>
           <p class="paragraph paragraph--black margin-bottom-sm">
@@ -143,7 +143,7 @@ const Dataset = ({ id, location }) => {
         </div>
       </section>
 
-      <section class="data-technical-section">
+      {/* <section class="data-technical-section">
         <div class="data-technical-info">
           <div class="data-container">
             <ul class="data-technical-info-list">
