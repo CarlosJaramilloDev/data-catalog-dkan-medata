@@ -5,7 +5,6 @@ import Search from "../../components/Medata/search/civil/components/Search";
 import SearchSidebar from "../../components/Medata/search/civil/templates/SearchSidebar";
 import SearchContent from "../../components/Medata/search/civil/templates/SearchContent";
 import Layout from "../../components/Layout";
-import config from "../../assets/config";
 
 const SearchTemplate = ({ path }) => {
   const location = useLocation();
