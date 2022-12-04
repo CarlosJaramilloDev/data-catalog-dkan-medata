@@ -1,5 +1,5 @@
 import React from "react";
-import { Announcement } from "@civicactions/data-catalog-components";
+import Announcement from "../../components/Medata/search/civil/templates/Announcement";
 import Layout from '../../components/Layout';
 import config from "../../assets/config";
 

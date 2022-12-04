@@ -1,7 +1,7 @@
 import React from 'react';
 import config from "../../assets/config";
 import Layout from "../../components/Layout";
-import { ApiDocs } from "@civicactions/data-catalog-components";
+import ApiDocs from "../../components/Medata/search/civil/components/ApiDocs";
 
 const ApiDocsFull = ({ path }) => (
   <Layout title="API Documentation">

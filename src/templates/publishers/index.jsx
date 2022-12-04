@@ -1,5 +1,4 @@
 import React from 'react';
-//import { PublisherList } from "@civicactions/data-catalog-components";
 import PublisherList  from "../../components/Medata/search/civil/components/PublisherList";
 import config from "../../assets/config";
 import Layout from '../../components/Layout';

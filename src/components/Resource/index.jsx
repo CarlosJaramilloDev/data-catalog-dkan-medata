@@ -1,11 +1,9 @@
 import React from "react";
-import {
-  Resource,
-  DataTable,
-  DataTableHeader
-} from "@civicactions/data-catalog-components";
 
 import FileDownload from "../Medata/search/civil/components/FileDownload";
+import Resource from "../Medata/search/civil/components/FileDownload";
+import DataTable from "../Medata/search/civil/templates/DataTable";
+import DataTableHeader from "../Medata/search/civil/templates/DataTableHeader";
 
 const ResourceTemplate = ({ resource }) => {
   const type = resource.hasOwnProperty('data') && resource.data.hasOwnProperty('mediaType') ? resource.data.mediaType.split("/") : '';

@@ -5,14 +5,14 @@ import Layout from '../../components/Layout';
 import config from "../../assets/config";
 import ResourceTemplate from "../../components/Resource";
 import { Spinner } from 'reactstrap';
-import {
-  Text,
-  Organization,
-  Table,
-  Tags,
-  TopicIcon,
-  TopicWrapper
-} from "@civicactions/data-catalog-components";
+
+import Text from "../../components/Medata/search/civil/components/Text";
+import Organization from "../../components/Medata/search/civil/components/Organization";
+import Table from "../../components/Medata/search/civil/components/Table";
+import Tags from "../../components/Medata/search/civil/components/Tags";
+import TopicIcon from "../../components/Medata/search/civil/templates/TopicIcon";
+import TopicWrapper from "../../components/Medata/search/civil/components/TopicWrapper";
+
 import orgs from "../../assets/publishers";
 
 const Dataset = ({id, location}) => {

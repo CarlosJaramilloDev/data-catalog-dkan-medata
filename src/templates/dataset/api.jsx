@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "@reach/router";
 import Loader from "react-loader-advanced";
 import LoadingSpin from "react-loading-spin";
-import {
-  ApiDocs,
-  Organization
-} from "@civicactions/data-catalog-components";
+import ApiDocs from "../../components/Medata/search/civil/components/ApiDocs";
+import Organization from "../../components/Medata/search/civil/components/Organization";
 import config from "../../assets/config";
 import orgs from "../../assets/publishers";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
