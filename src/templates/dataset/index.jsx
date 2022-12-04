@@ -13,7 +13,7 @@ import Tags from "../../components/Medata/search/civil/components/Tags";
 import TopicIcon from "../../components/Medata/search/civil/templates/TopicIcon";
 import TopicWrapper from "../../components/Medata/search/civil/components/TopicWrapper";
 
-import orgs from "../../assets/publishers";
+import orgs from "../../assets/publishers.json";
 
 const Dataset = ({ id, location }) => {
   const { state } = location;
@@ -26,7 +26,7 @@ const Dataset = ({ id, location }) => {
     }
     async function getItem() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items/${id}?show-reference-ids`);
-      console.log(data)
+      console.log(data);
       setItem(data);
     }
     if (!state || !state.dataset) {
