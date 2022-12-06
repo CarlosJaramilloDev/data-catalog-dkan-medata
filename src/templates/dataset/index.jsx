@@ -53,7 +53,7 @@ const Dataset = ({ id, location }) => {
       return null;
     } else {
       return theme.map(topic => {
-        return <span className="mr-2"><TopicIcon title={topic.data} height={16} width={16} key={topic.identifier}/></span>
+        return <span className="mr-2"><TopicIcon title={topic.data} height={16} width={16} key={topic.identifier} /></span>
       });
     }
   }
@@ -90,7 +90,7 @@ const Dataset = ({ id, location }) => {
     return null;
   }
 
-  var getUniqueFormats = function getUniqueFormats(formats) {
+  function getUniqueFormats(formats) {
     var unique = [];
     return formats.reduce(function (a, b) {
       if (unique.indexOf(b[1].format) === -1) {
@@ -207,7 +207,7 @@ const Dataset = ({ id, location }) => {
             </ul>
           </div>
         </div>
-      {/*
+        {/*
         <div class="data-sheet data-container">
           <div class="data-card">
             <div class="data-card-header">
@@ -271,7 +271,7 @@ const Dataset = ({ id, location }) => {
             </div>
           </div>
         </div>*/}
-      </section> 
+      </section>
 
 
 
