@@ -208,7 +208,7 @@ const Dataset = ({ id, location }) => {
             </ul>
           </div>
         </div>
-        {/*
+
         <div class="data-sheet data-container">
           <div class="data-card">
             <div class="data-card-header">
@@ -248,6 +248,7 @@ const Dataset = ({ id, location }) => {
             </div>
           </div>
         </div>
+        {/*
         <div class="data-view">
           <div class="data-card">
             <div class="data-card-header">
