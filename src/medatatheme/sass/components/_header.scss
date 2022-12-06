@@ -67,9 +67,11 @@
     &-link {
         color: white;
         font-family: "Montserrat Regular";
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         text-decoration: none;
         transition: all 0.1s;
+        font-size: 1.5rem;
+        font-weight: bolder;
 
         &::after {
             content: "";

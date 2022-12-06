@@ -7,6 +7,7 @@ import HomeDataSets from "../../components/Medata/home/home-data-sets";
 import HomeDataTopics from "../../components/Medata/home/home-data-topics";
 import HomeNewslater from "../../components/Medata/home/home-newslater";
 import HomeReports from "../../components/Medata/home/home-reports";
+import HomeSocialMedia from "../../components/Medata/home/home-social-media";
 
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);
@@ -80,6 +81,11 @@ const Home = () => {
             <section className="newsletter-section">
                 <div className="container-home">
                     <HomeNewslater />
+                </div>
+            </section>
+            <section className="social-section">
+                <div className="container-home">
+                    <HomeSocialMedia />
                 </div>
             </section>
             <section className="blog-section">
