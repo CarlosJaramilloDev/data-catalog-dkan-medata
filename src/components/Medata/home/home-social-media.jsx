@@ -11,31 +11,31 @@ const HomeSocialMedia = () => {
     <div class="social-container">
       <div class="social-item">
         <img src={IconFacebook} alt="Facebook" />
-        <a href="#">
+        <a href="/">
           {">"} Seguir ahora
         </a>
       </div>
       <div class="social-item">
         <img src={IconTwitter} alt="Twitter" />
-        <a href="#">
+        <a href="/">
           {">"} Seguir ahora
         </a>
       </div>
       <div class="social-item">
         <img src={IconInstagram} alt="Instagram" />
-        <a href="#">
+        <a href="/">
           {">"} Seguir ahora
         </a>
       </div>
       <div class="social-item">
         <img src={IconVimeo} alt="Vimeo" />
-        <a href="#">
+        <a href="/">
           {">"} Seguir ahora
         </a>
       </div>
       <div class="social-item">
         <img src={IconYoutube} alt="Youtube" />
-        <a href="#">
+        <a href="/">
           {">"} Seguir ahora
         </a>
       </div>

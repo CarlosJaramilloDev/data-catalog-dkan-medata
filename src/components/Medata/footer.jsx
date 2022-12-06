@@ -15,15 +15,15 @@ const Header = () => {
               <ul class="contact-list">
                 <li class="contact-item">
                   <span class="contact-decorator"></span>
-                  <a href="#" class="contact-link">Portal Alcaldia de Medellín</a>
+                  <a href="/" class="contact-link">Portal Alcaldia de Medellín</a>
                 </li>
                 <li class="contact-item">
                   <span class="contact-decorator"></span>
-                  <a href="#" class="contact-link">Página Corporación Ruta N</a>
+                  <a href="/" class="contact-link">Página Corporación Ruta N</a>
                 </li>
                 <li class="contact-item">
                   <span class="contact-decorator"></span>
-                  <a href="#" class="contact-link">Portal Datos Abiertos Colombia</a>
+                  <a href="/" class="contact-link">Portal Datos Abiertos Colombia</a>
                 </li>
               </ul>
           </div>
@@ -35,26 +35,26 @@ const Header = () => {
                   <span class="contact-icon">
                     <i class="fa-solid fa-location-dot"></i>
                   </span>
-                  <a href="#" class="contact-link">Calle 44 N 52 – 165 Centro Administrativo la Alpujarra
+                  <a href="/" class="contact-link">Calle 44 N 52 – 165 Centro Administrativo la Alpujarra
                     – Medellín, Colombia.</a>
                 </li>
                 <li class="contact-item">
                   <span class="contact-icon">
                     <i class="fa-solid fa-envelope"></i>
                   </span>
-                  <a href="#" class="contact-link">medata@medellin.gov.co</a>
+                  <a href="/" class="contact-link">medata@medellin.gov.co</a>
                 </li>
                 <li class="contact-item">
                   <span class="contact-icon">
                     <i class="fa-solid fa-phone"></i>
                   </span>
-                  <a href="#" class="contact-link">Línea única de atención ciudadana: (574) 44 44 144</a>
+                  <a href="/" class="contact-link">Línea única de atención ciudadana: (574) 44 44 144</a>
                 </li>
                 <li class="contact-item">
                   <span class="contact-icon">
                     <i class="fa-solid fa-headset"></i>
                   </span>
-                  <a href="#" class="contact-link">Línea gratuita nacional: 01 8000 411 144</a>
+                  <a href="/" class="contact-link">Línea gratuita nacional: 01 8000 411 144</a>
                 </li>
               </ul>
           </div>
@@ -72,8 +72,8 @@ const Header = () => {
         </div>
         <div class="contact-privacity d-flex align-items-center justify-content-center">
           <p class="text text-white">Copyright © Medata 2022 ® todos los derechos reservados</p>
-          <p class="text text-secondary"><a href="#">Condiciones de Uso</a></p>
-          <p class="text text-secondary"><a href="#">Políticas de Privacidad</a></p>
+          <p class="text text-secondary"><a href="/">Condiciones de Uso</a></p>
+          <p class="text text-secondary"><a href="/">Políticas de Privacidad</a></p>
         </div>
       </div>
       <div class="footer">
@@ -82,10 +82,10 @@ const Header = () => {
             <img src={LogoAlcaldia} alt="Logo alcaldía de Medellín" />
           </a>
           <div class="footer-logos">
-            <a href="#" class="footer-brand">
+            <a href="/" class="footer-brand">
               <img src={LogoCo} alt="Logo Co" />
             </a>
-            <a href="#" class="footer-brand">
+            <a href="/" class="footer-brand">
               <img src={LogoGov} alt="Logo gobernación" />
             </a>
           </div>

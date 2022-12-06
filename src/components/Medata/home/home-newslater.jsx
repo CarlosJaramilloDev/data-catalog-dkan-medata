@@ -17,7 +17,7 @@ const HomeNewslater = () => {
       <div className="input-wrapper">
         <div>
           <input class="newsletter-input" type="text" placeholder="Ingresa tu correo electrónico…" />
-            <p class="newsletter-subtitle">Al dar click en Suscribirme acepta los <a> términos y
+            <p class="newsletter-subtitle">Al dar click en Suscribirme acepta los <a href="/"> términos y
               condiciones</a></p>
         </div>
         <button class="button button-secondary">

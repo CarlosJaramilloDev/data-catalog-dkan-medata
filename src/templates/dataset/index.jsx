@@ -72,7 +72,7 @@ const Dataset = ({ id, location }) => {
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
         var backup = type ? type : 'data';
         var format = dist.format ? dist.format : backup;
-        var finishIcon = 'o';
+        var finishIcon = '';
         switch (format) {
           case 'pdf':
           case 'csv':
@@ -80,6 +80,7 @@ const Dataset = ({ id, location }) => {
             break;
           case 'zip':
           case 'data':
+          default:
             finishIcon = 'archive'
             break;
         }
@@ -168,7 +169,7 @@ const Dataset = ({ id, location }) => {
             <a class="breadcrumb-link" href="/">Medata</a>
           </li>
           <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="">{item.title}</a>
+            <a class="breadcrumb-link" href="/">{item.title}</a>
           </li>
         </ol>
       </nav>

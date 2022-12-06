@@ -70,7 +70,7 @@ const Home = () => {
                     <HomeDataSets />
                 </div>
                 <div className="items-image">
-                    <img src={ImagenFondo} />
+                    <img src={ImagenFondo} alt="Imagen complementaria lateral"/>
                 </div>
             </section>
             <section className="category-section">
@@ -93,7 +93,7 @@ const Home = () => {
                     <HomeReports items={fDatasets}/>
                 </div>
                 <div className="blog-image">
-                    <img src={ImagenFondo} />
+                    <img src={ImagenFondo} alt="Imagen complementaria lateral" />
                 </div>
             </section>
         </Layout>
