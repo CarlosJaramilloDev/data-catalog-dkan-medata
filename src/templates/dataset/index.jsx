@@ -194,10 +194,10 @@ const Dataset = ({ id, location }) => {
                 <span>Última modificación:</span> {item.modified || ''}
               </li>
               <li class="data-technical-info-item">
-                <span>Vistas:</span> 2.000
+                <span>Vistas:</span> 
               </li>
               <li class="data-technical-info-item">
-                <span>Descargas:</span> 822
+                <span>Descargas:</span> 
               </li>
               <li class="data-technical-info-item">
                 <span>Formato(s):</span> {formats(item.distribution)}
@@ -229,26 +229,20 @@ const Dataset = ({ id, location }) => {
                   <th>Cobertura temporal</th>
                 </tr>
                   <tr>
-                    <td>Movilidad</td>
+                    <td></td>
                     <td>{("modified" in item && item.modified) ? item.modified : ''}</td>
                     <td>{("issued" in item && item.issued) ? item.issued : ''}</td>
-                    <td>Mensual</td>
+                    <td></td>
                     <td>{("identifier" in item && item.identifier) ? item.identifier : ''}</td>
-                    <td>http://www.mintic.gov.co</td>
-                    <td>De Lunes, Enero 1, 2018 - 00:00 hasta Viernes, Julio 31, 2020 - 00:00</td>
+                    <td>{("conformsTo" in item && item.conformsTo) ? item.conformsTo : ''}</td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>
-
-              {/* <Table
-                configuration={labelsT3}
-                data={valuesT3}
-                tableclass="metadata"
-              /> */}
             </div>
           </div>
         </div>
-        {/*
+        
         <div class="data-view">
           <div class="data-card">
             <div class="data-card-header">
@@ -272,7 +266,7 @@ const Dataset = ({ id, location }) => {
                 )}
             </div>
           </div>
-        </div>*/}
+        </div>
       </section>
 
 
