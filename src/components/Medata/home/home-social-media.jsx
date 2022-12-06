@@ -1,7 +1,7 @@
 import React from "react";
 import IconFacebook from '../../../medatatheme/assets/icons/social-network/twitter.png';
 import IconTwitter from '../../../medatatheme/assets/icons/social-network/twitter.png';
-import IconInstagram from '../../../medatatheme/assets/icons/social-network/instagram.png';
+import IconInstagram from '../../../medatatheme/assets/icons/social-network/insta.png';
 import IconVimeo from '../../../medatatheme/assets/icons/social-network/vimeo.png';
 import IconYoutube from '../../../medatatheme/assets/icons/social-network/youtube.png';
 

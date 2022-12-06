@@ -1,7 +1,5 @@
 import React from "react";
 import ImagenBlog1 from '../../../medatatheme/assets/images/blog-1.png';
-import ImagenBlog2 from '../../../medatatheme/assets/images/blog-2.png';
-import ImagenBlog3 from '../../../medatatheme/assets/images/blog-3.png';
 
 const HomeReportDetail = ({
   id,
