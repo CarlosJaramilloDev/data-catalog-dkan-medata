@@ -25,7 +25,7 @@ const Dataset = ({ id, location }) => {
     }
     async function getItem() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items/${id}?show-reference-ids`);
-      console.log(data);
+      console.log("ITEM", data);
       setItem(data);
     }
     if (!state || !state.dataset) {
@@ -230,21 +230,21 @@ const Dataset = ({ id, location }) => {
                 </tr>
                   <tr>
                     <td>Movilidad</td>
-                    <td>Oct. 12 / 2022</td>
-                    <td>Nov. 12 / 2022</td>
+                    <td>{("modified" in item && item.modified) ? item.modified : ''}</td>
+                    <td>{("issued" in item && item.issued) ? item.issued : ''}</td>
                     <td>Mensual</td>
-                    <td>Comparendos</td>
+                    <td>{("identifier" in item && item.identifier) ? item.identifier : ''}</td>
                     <td>http://www.mintic.gov.co</td>
                     <td>De Lunes, Enero 1, 2018 - 00:00 hasta Viernes, Julio 31, 2020 - 00:00</td>
                   </tr>
                 </tbody>
               </table>
 
-              <Table
+              {/* <Table
                 configuration={labelsT3}
                 data={valuesT3}
                 tableclass="metadata"
-              />
+              /> */}
             </div>
           </div>
         </div>
