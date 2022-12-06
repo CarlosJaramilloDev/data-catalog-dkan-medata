@@ -40,7 +40,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function TopicIcon(_ref) {
   var title = _ref.title,
     height = _ref.height,
-    width = _ref.width;
+    width = _ref.width,
     color = _ref.color;
 
   var icon = null;
