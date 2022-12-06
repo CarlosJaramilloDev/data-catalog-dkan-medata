@@ -30,6 +30,16 @@ export const defaultFacets = {
       "active": false,
       "icon": <span></span>
     },
+  },
+   "type": {
+    "label": "Tipo",
+    "field": "@type",
+    "showAll": false,
+    "limit": 10,
+    "reset": {
+      "active": false,
+      "icon": <span></span>
+    },
   }
 }
 
