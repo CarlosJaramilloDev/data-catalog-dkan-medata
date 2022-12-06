@@ -70,9 +70,10 @@ var Search = function Search(_ref) {
     var actions = {};
     actions['page-size'] = 'UPDATE_PAGE_SIZE';
     actions.page = 'UPDATE_CURRENT_PAGE';
-    actions.fulltext = 'UPDATE_FULLTEXT';
+    //actions.fulltext = 'UPDATE_FULLTEXT';
     actions.sort = 'UPDATE_SORT';
     actions['sort-order'] = 'UPDATE_SORT_ORDER';
+    actions['type'] = 'UPDATE_FULLTEXT';
     var urlOptions = Object.keys(actions);
     urlOptions.forEach(function (param) {
       if (params[param]) {
