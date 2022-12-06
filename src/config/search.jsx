@@ -33,14 +33,24 @@ export const defaultFacets = {
   },
    "type": {
     "label": "Tipo",
-    "field": "@type",
+    "field": "type",
     "showAll": false,
     "limit": 10,
     "reset": {
       "active": false,
       "icon": <span></span>
     },
-  }
+  },
+  "modified": {
+   "label": "Fecha modificación",
+   "field": "modified",
+   "showAll": false,
+   "limit": 10,
+   "reset": {
+     "active": false,
+     "icon": <span></span>
+   },
+ }
 }
 
 export function normalizeItems(resultItems) {
