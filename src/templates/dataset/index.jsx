@@ -112,7 +112,7 @@ const Dataset = ({ id, location }) => {
   // // });
 
   // // Process content for 'Additional Information' table.
-  /* const labelsT3 = {};
+  const labelsT3 = {};
   const valuesT3 = {};
 
   if (orgName && orgName.length > 0) {
@@ -154,7 +154,7 @@ const Dataset = ({ id, location }) => {
   if ("landingPage" in item && item.landingPage) {
     labelsT3.homepage = { label: "URL de inicio" };
     valuesT3.homepage = `<a href="${item.landingPage}">${item.landingPage}</a>`;
-  } */
+  }
 
   return (
     <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
@@ -217,7 +217,7 @@ const Dataset = ({ id, location }) => {
               </p>
               <i id="icon-card" class="fa-solid fa-chevron-up"></i>
             </div>
-            <div id="card-body" class="data-card-body" style="display: block;">
+            <div id="card-body" class="data-card-body" style={{display: 'block'}}>
               <table class="data-table">
                 <tbody><tr>
                   <th>Dependencias</th>
@@ -307,12 +307,11 @@ const Dataset = ({ id, location }) => {
                       return <ResourceTemplate key={dist.identifier} resource={dist} identifier={dist.identifier} />;
                     })}
                   <Tags tags={tag} path="/search?keyword=" label="Tags" />
-                  {/* <Table
+                  <Table
                     configuration={labelsT3}
                     data={valuesT3}
                     tableclass="metadata"
-                  /> */}
-                  </div>
+                  /></div>
               ) : (<div className="row">
                 <Spinner color="primary" />
               </div>
