@@ -307,11 +307,12 @@ const Dataset = ({ id, location }) => {
                       return <ResourceTemplate key={dist.identifier} resource={dist} identifier={dist.identifier} />;
                     })}
                   <Tags tags={tag} path="/search?keyword=" label="Tags" />
-                  <Table
+                  {/* <Table
                     configuration={labelsT3}
                     data={valuesT3}
                     tableclass="metadata"
-                  /></div>
+                  /> */}
+                  </div>
               ) : (<div className="row">
                 <Spinner color="primary" />
               </div>
