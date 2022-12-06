@@ -112,7 +112,7 @@ const Dataset = ({ id, location }) => {
   // // });
 
   // // Process content for 'Additional Information' table.
-  const labelsT3 = {};
+  /* const labelsT3 = {};
   const valuesT3 = {};
 
   if (orgName && orgName.length > 0) {
@@ -154,7 +154,7 @@ const Dataset = ({ id, location }) => {
   if ("landingPage" in item && item.landingPage) {
     labelsT3.homepage = { label: "URL de inicio" };
     valuesT3.homepage = `<a href="${item.landingPage}">${item.landingPage}</a>`;
-  }
+  } */
 
   return (
     <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
