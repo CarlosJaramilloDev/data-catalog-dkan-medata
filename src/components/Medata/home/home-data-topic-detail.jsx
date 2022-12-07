@@ -12,6 +12,8 @@ import IconoPlanDesarrollo from "../../../medatatheme/assets/icons/topics/icon-1
 import IconoOrdenamiento from "../../../medatatheme/assets/icons/topics/icon-11.png"
 import IconoDesarrolloEconomico from "../../../medatatheme/assets/icons/topics/icon-12.png"
 
+import IconoSocialSvg from "../../../medatatheme/assets/icons/topics/svg/icon-1.svg"
+
 const HomeDataTopicDetail = ({
   id,
   title,
@@ -20,7 +22,8 @@ const HomeDataTopicDetail = ({
   let icon;
   switch (title) {
     case "Social":
-      icon = IconoSocial;
+      //icon = IconoSocial;
+      icon = IconoSocialSvg;
       break;
     case "Población":
       icon = IconoPoblacion;
