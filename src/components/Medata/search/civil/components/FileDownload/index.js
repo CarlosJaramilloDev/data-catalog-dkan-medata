@@ -31,7 +31,8 @@ var FileDownload = function FileDownload(_ref) {
     format: format
   }), /*#__PURE__*/_react["default"].createElement("a", {
     href: finalUrl,
-    title: label
+    title: label,
+    className: 'h5'
   }, label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
     value: description,
     wrapper: {
