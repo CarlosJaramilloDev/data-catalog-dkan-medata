@@ -25,8 +25,8 @@ const ResourceTemplate = ({ resource }) => {
             showDBColumnNames={true}
           >
             <FileDownload
-              title={resource.data.title}
-              label={`${resource.data.downloadURL} (Clic para descargar)`}
+              title={`${resource.data.title} (Clic para descargar)`}
+              label={resource.data.downloadURL}
               format={format}
               downloadURL={downloadURL ? downloadURL : accessURL}
             />
@@ -37,8 +37,8 @@ const ResourceTemplate = ({ resource }) => {
         )
         : (
           <FileDownload
-            title={resource.data.title}
-            label={`${resource.data.downloadURL} (Clic para descargar)`}
+          title={`${resource.data.title} (Clic para descargar)`}
+            label={resource.data.downloadURL}
             format={format}
             downloadURL={resource.data.downloadURL}
           />
