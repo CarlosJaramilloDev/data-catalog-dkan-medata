@@ -21,7 +21,7 @@ const HomeCardsLinks = () => {
             </p>
           </div>
           <a className="button button-primary" href="/search">
-            Accede a la info
+            CONOCE MÁS
           </a>
         </div>
       </div>
@@ -40,7 +40,7 @@ const HomeCardsLinks = () => {
             </p>
           </div>
           <a className="button button-primary" href="/search">
-            Accede a la info
+          CONOCE MÁS
           </a>
         </div>
       </div>
@@ -59,7 +59,7 @@ const HomeCardsLinks = () => {
             </p>
           </div>
           <a className="button button-primary" href="/search">
-            Accede a la info
+          CONOCE MÁS
           </a>
         </div>
       </div>
