@@ -34,13 +34,13 @@ var DataTablePageResults = function DataTablePageResults(_ref) {
 
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: className
-  }, /*#__PURE__*/_react["default"].createElement("p", null, viewing && 'Viewing ', /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/_react["default"].createElement("p", null, viewing && 'Mostrando ', /*#__PURE__*/_react["default"].createElement("span", {
     className: "low-result"
   }, currentLowestResult), ' ', "-", ' ', /*#__PURE__*/_react["default"].createElement("span", {
     className: "high-result"
-  }, currentHighestResult), ' ', "of", ' ', /*#__PURE__*/_react["default"].createElement("span", {
+  }, currentHighestResult), ' ', "de", ' ', /*#__PURE__*/_react["default"].createElement("span", {
     className: "total"
-  }, displayTotal), ' ', "rows"));
+  }, displayTotal), ' ', "registro(s)"));
 };
 
 DataTablePageResults.defaultProps = {

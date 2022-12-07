@@ -38,7 +38,7 @@ function Organization(props) {
       organizationEndpoint = props.organizationEndpoint;
 
   var image = /*#__PURE__*/_react["default"].createElement("img", {
-    alt: name || 'Organization Image',
+    alt: name || 'Imagen de la organización',
     src: imageUrl
   });
 
@@ -92,7 +92,7 @@ function Organization(props) {
   }, /*#__PURE__*/_react["default"].createElement(_router.Link, {
     to: link,
     className: "dc-org-image",
-    alt: "Organization Logo"
+    alt: "Logo de la organización"
   }, image, /*#__PURE__*/_react["default"].createElement("h3", {
     className: "dc-org-name"
   }, name)), description && /*#__PURE__*/_react["default"].createElement("div", {

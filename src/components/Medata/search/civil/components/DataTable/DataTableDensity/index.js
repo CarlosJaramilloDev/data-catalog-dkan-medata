@@ -78,7 +78,7 @@ DataTableDensity.defaultProps = {
   }],
   className: 'data-table-density',
   screenReaderClass: 'sr-only sr-only-focusable',
-  title: 'Display Density'
+  title: 'Densidad de los campos'
 };
 DataTableDensity.propTypes = {
   active: _propTypes["default"].string,

@@ -80,9 +80,9 @@ var ManageColumns = function ManageColumns(_ref) {
     }
   }, [cards]);
   return /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_Modal["default"], {
-    title: "Manage Columns",
+    title: "Administrar columnas",
     nodeId: "___gatsby",
-    openText: "Manage Columns"
+    openText: "Administrar columnas"
   }, /*#__PURE__*/_react["default"].createElement(_reactDnd.DndProvider, {
     backend: _reactDndHtml5Backend["default"]
   }, reactTable.allColumns && reactTable.allColumns.map(function (column, i) {
