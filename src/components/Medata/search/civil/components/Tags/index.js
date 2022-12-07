@@ -15,7 +15,7 @@ var Tags = function Tags(_ref) {
   var tags = _ref.tags,
       label = _ref.label,
       path = _ref.path;
-  var heading = label ? /*#__PURE__*/_react["default"].createElement("h3", null, label) : '';
+  var heading = label ? /*#__PURE__*/_react["default"].createElement("h4", null, label) : '';
   var tagsList = tags.map(function (tag) {
     var ref = "".concat(path).concat(encodeURIComponent(tag.data));
     return /*#__PURE__*/_react["default"].createElement("div", {
