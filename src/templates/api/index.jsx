@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import ApiDocs from "../../components/Medata/search/civil/components/ApiDocs";
 
 const ApiDocsFull = ({ path }) => (
-  <Layout title="API Documentation">
+  <Layout title="Documentacion generl del API" headerClass='header header--small'>
   <div className={`dc-page ${config.container}`}>
     <div className="page-content">
       {typeof window !== `undefined` && (

@@ -127,10 +127,10 @@ const Dataset = ({ id, location }) => {
                 <span>Última modificación:</span> {item.modified || ''}
               </li>
               <li class="data-technical-info-item">
-                <span>Vistas:</span> 
+                <span>Vistas:</span>
               </li>
               <li class="data-technical-info-item">
-                <span>Descargas:</span> 
+                <span>Descargas:</span>
               </li>
               <li class="data-technical-info-item">
                 <span>Formato(s):</span> {formats(item.distribution)}
@@ -150,7 +150,7 @@ const Dataset = ({ id, location }) => {
               </p>
               <i id="icon-card" class="fa-solid fa-chevron-up"></i>
             </div>
-            <div id="card-body" class="data-card-body" style={{display: 'block'}}>
+            <div id="card-body" class="data-card-body" style={{ display: 'block' }}>
               <table class="data-table">
                 <tbody><tr>
                   <th>Dependencias</th>
@@ -175,7 +175,7 @@ const Dataset = ({ id, location }) => {
             </div>
           </div>
         </div>
-        
+
         <div class="data-view">
           <div class="data-card">
             <div class="data-card-header">
@@ -184,13 +184,6 @@ const Dataset = ({ id, location }) => {
               </p>
             </div>
             <div class="data-card-body">
-              <p>The information on this page is also available via the{" "}
-              <Link
-                to={`/dataset/${item.identifier}/api`}
-                state={{ dataset: { ...item } }}
-              >
-                API
-              </Link></p>
               {Object.keys(item).length
                 ? (
                   <div>
@@ -198,16 +191,24 @@ const Dataset = ({ id, location }) => {
                       item.distribution.map(dist => {
                         return <ResourceTemplate key={dist.identifier} resource={dist} identifier={dist.identifier} />;
                       })}
-                      <Tags tags={tag} path="/search?keyword=" label="Tags" />
+                    <Tags tags={tag} path="/search?keyword=" label="Tags" />
+                    <hr />
+                    <p>La información de esta página tambien estña disponible via {" "}
+                      <Link
+                        to={`/dataset/${item.identifier}/api`}
+                        state={{ dataset: { ...item } }}
+                      >
+                        API
+                      </Link></p>
                   </div>
 
-                  
+
                 ) : (
                   <div className="row">
                     <Spinner color="primary" />
                   </div>
                 )}
-                
+
             </div>
           </div>
         </div>

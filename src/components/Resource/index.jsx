@@ -26,10 +26,11 @@ const ResourceTemplate = ({ resource }) => {
           >
             <FileDownload
               title={resource.data.title}
-              label={resource.data.downloadURL}
+              label={`${resource.data.downloadURL} (Clic para descargar)`}
               format={format}
               downloadURL={downloadURL ? downloadURL : accessURL}
             />
+            <hr />
             <DataTableHeader />
             <DataTable />
           </Resource>
@@ -37,7 +38,7 @@ const ResourceTemplate = ({ resource }) => {
         : (
           <FileDownload
             title={resource.data.title}
-            label={resource.data.downloadURL}
+            label={`${resource.data.downloadURL} (Clic para descargar)`}
             format={format}
             downloadURL={resource.data.downloadURL}
           />
