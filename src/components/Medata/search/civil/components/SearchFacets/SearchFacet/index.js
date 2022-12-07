@@ -62,7 +62,9 @@ var SearchFacet = function SearchFacet(_ref) {
     myLabel = label;
   }
 
-  var choices = facets.map(function (item) {
+  var choices = facets.filter(function (facet) {
+    return facet.total > 0;
+  }).map(function (item) {
     var itemName = item.name;
     var itemTotal = item.total;
     var key = ""
