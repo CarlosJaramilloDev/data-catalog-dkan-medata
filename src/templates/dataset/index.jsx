@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { Link } from '@reach/router';
 import Layout from '../../components/Layout';
-import config from "../../assets/config";
 import ResourceTemplate from "../../components/Resource";
 import { Spinner } from 'reactstrap';
 
 import Text from "../../components/Medata/search/civil/components/Text";
-import Organization from "../../components/Medata/search/civil/components/Organization";
-import Table from "../../components/Medata/search/civil/components/Table";
 import Tags from "../../components/Medata/search/civil/components/Tags";
 import TopicIcon from "../../components/Medata/search/civil/templates/TopicIcon";
+
+import "../../medatatheme/js/dataset.js";
 
 const Dataset = ({ id, location }) => {
   const { state } = location;
@@ -201,8 +200,6 @@ const Dataset = ({ id, location }) => {
                         API
                       </Link></p>
                   </div>
-
-
                 ) : (
                   <div className="row">
                     <Spinner color="primary" />
