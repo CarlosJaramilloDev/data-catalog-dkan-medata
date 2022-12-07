@@ -193,7 +193,7 @@ const Dataset = ({ id, location }) => {
                       })}
                     <Tags tags={tag} path="/search?keyword=" label="Etiquetas" />
                     <hr />
-                    <p>La información de esta página tambien estña disponible via {" "}
+                    <p>La información de esta página también está disponible vía {" "}
                       <Link
                         to={`/dataset/${item.identifier}/api`}
                         state={{ dataset: { ...item } }}
