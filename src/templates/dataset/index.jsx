@@ -9,8 +9,6 @@ import Text from "../../components/Medata/search/civil/components/Text";
 import Tags from "../../components/Medata/search/civil/components/Tags";
 import TopicIcon from "../../components/Medata/search/civil/templates/TopicIcon";
 
-import "../../medatatheme/js/dataset.js";
-
 const Dataset = ({ id, location }) => {
   const { state } = location;
   const [item, setItem] = useState(state && state.dataset ? state.dataset : {})
