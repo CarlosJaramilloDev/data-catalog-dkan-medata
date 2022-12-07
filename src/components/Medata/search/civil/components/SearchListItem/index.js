@@ -23,8 +23,6 @@ var _Text = _interopRequireDefault(require("../Text"));
 
 var _router = require("@reach/router");
 
-var _lodash = require("lodash");
-
 /* eslint-disable */
 var SearchListItem = function SearchListItem(_ref) {
 /*   console.log(`Ref: ${JSON.stringify(_ref)}`);
@@ -34,10 +32,8 @@ var SearchListItem = function SearchListItem(_ref) {
   var ref = item.ref,
       title = item.title,
       description = item.description,
-      publisher = item.publisher,
       format = item.format,
       theme = item.theme,
-      identifier = item.identifier,
       modified = item.modified;
 
   function formats(distribution) {
@@ -132,7 +128,7 @@ var SearchListItem = function SearchListItem(_ref) {
     className: 'results-card-footer'
   },/*#__PURE__*/_react["default"].createElement('div', {
     className: 'result-tag'
-  }, /*#__PURE__*/_react["default"].createElement('p', null, "Categorias / Etiquetas:  ", theme && themes(theme)))));
+  }, /*#__PURE__*/_react["default"].createElement('p', { className: 'text text--black'}, "Categorias / Etiquetas:  ", theme && themes(theme)))));
 };
 
 var getUniqueFormats = function getUniqueFormats(formats) {
