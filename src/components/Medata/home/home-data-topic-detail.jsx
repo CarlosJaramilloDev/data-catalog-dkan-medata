@@ -69,6 +69,7 @@ const HomeDataTopicDetail = ({
   return (
       <div className="category-info" key={id}>
         <a href={url}>
+          <object type="image/svg+xml" data={icon} class="icontemp">{title}</object>
           {/* <img src={icon} alt={title} /> */}
           {icon}
           <p className="text">{title}</p>
