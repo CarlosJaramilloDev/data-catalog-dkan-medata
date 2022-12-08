@@ -124,7 +124,7 @@ var SearchListItem = function SearchListItem(_ref) {
   },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),  /*#__PURE__*/_react["default"].createElement('p', null, "Vistas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Descargas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
   /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-info"
-  },  /*#__PURE__*/_react["default"].createElement('p', null, modified),  /*#__PURE__*/_react["default"].createElement('p', null, ""),  /*#__PURE__*/_react["default"].createElement('p', null, ""),  /*#__PURE__*/_react["default"].createElement('p', null, format && formats(format))))),
+  },  /*#__PURE__*/_react["default"].createElement('p', null, modified),  /*#__PURE__*/_react["default"].createElement('p', null, "0"),  /*#__PURE__*/_react["default"].createElement('p', null, "0"),  /*#__PURE__*/_react["default"].createElement('p', null, format && formats(format))))),
   /*#__PURE__*/_react["default"].createElement('div', {
     className: 'results-card-footer'
   },/*#__PURE__*/_react["default"].createElement('div', {
