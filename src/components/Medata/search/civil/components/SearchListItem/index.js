@@ -28,7 +28,8 @@ var SearchListItem = function SearchListItem(_ref) {
 /*   console.log(`Ref: ${JSON.stringify(_ref)}`);
   console.log(`Item: ${JSON.stringify(_ref.item)}`); */
   var className = _ref.className,
-      item = _ref.item;
+      item = _ref.item,
+      color = _ref.color;
   var ref = item.ref,
       title = item.title,
       description = item.description,
@@ -79,7 +80,8 @@ var SearchListItem = function SearchListItem(_ref) {
         return  /*#__PURE__*/_react["default"].createElement('span', { className: 'mr-2'},  /*#__PURE__*/_react["default"].createElement(_TopicIcon["default"], {
           title: topic,
           height: 15,
-          width: 15
+          width: 15,
+          color: color
         }))
       });
     }

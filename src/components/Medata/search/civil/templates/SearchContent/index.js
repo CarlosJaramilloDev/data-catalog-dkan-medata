@@ -33,6 +33,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 var SearchContent = function SearchContent(_ref) {
   var sortOptions = _ref.sortOptions;
+  var color = _ref.color || 'black';
   var _useContext = (0, _react.useContext)(_search_defaults.SearchDispatch),
       searchState = _useContext.searchState,
       dispatch = _useContext.dispatch,
@@ -90,7 +91,8 @@ var SearchContent = function SearchContent(_ref) {
   , loading ? /*#__PURE__*/_react["default"].createElement("div", null, /*#__PURE__*/_react["default"].createElement(_reactContentLoader.List, null)) : /*#__PURE__*/_react["default"].createElement("div", { className: 'results-list'}, items.map(function (item) {
     return  /*#__PURE__*/_react["default"].createElement(_SearchListItem["default"], {
       key: item.identifier,
-      item: item
+      item: item,
+      color: color
     });
   })), /*#__PURE__*/_react["default"].createElement("div", {
     className: "dc-pagination-container"
