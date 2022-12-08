@@ -54,7 +54,7 @@ const Header = () => {
                   <span class="contact-icon">
                     <i class="fa-solid fa-headset"></i>
                   </span>
-                  <a href="tel:01 8000 411 144" class="contact-link">Línea gratuita nacional: 01 8000 411 144</a>
+                  <a href="tel:018000411144" class="contact-link">Línea gratuita nacional: 01 8000 411 144</a>
                 </li>
               </ul>
           </div>
