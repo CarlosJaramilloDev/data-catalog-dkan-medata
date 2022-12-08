@@ -5,57 +5,62 @@ const HomeDataTopicDetail = ({
   title,
   url
 }) => {
-  let icon;
+  let iconClass;
   switch (title) {
     case "Social":
-      //icon = IconoSocial;
-      icon = 'social';
+      iconClass = 'social';
       break;
     case "Población":
-      icon = 'poblacion';
+      iconClass = 'poblacion';
       break;
     case "Plan de Desarrollo":
-      icon = 'plan-desarrollo';
+      iconClass = 'desarrollo';
       break;
-    /* case "Movilidad":
-      icon = IconoMovilidad;
+    case "Movilidad":
+      iconClass = 'movilidad';
       break;
     case "Infraestructura y Catastro":
-      icon = IconoInfraestructura;
+      iconClass = 'infraestructura';
       break;
     case "Educación, Cultura y Recreación":
-      icon = IconoEducacion;
+      iconClass = 'educacion';
       break;
     case "Hacienda, Presupuesto y Contratación":
-      icon = IconoHacienda;
+      iconClass = 'hacienda';
       break;
     case "Desarrollo Económico":
-      icon = IconoDesarrolloEconomico;
+      iconClass = 'economia';
       break;
     case "Salud":
-      icon = IconoSalud;
+      iconClass = 'salud';
       break;
     case "Gubernamental":
-      icon = IconoGubernamental;
+      iconClass = 'gubernamental';
       break;
     case "Ordenamiento Territorial":
-      icon = IconoOrdenamiento;
+      iconClass = 'ordenamiento';
       break;
     case "Medio Ambiente":
-      icon = IconoMedioAmbiente;
+      iconClass = 'ambiente';
       break;
-    case "Vivienda, Ciudad y Territorio":
-      icon = IconoOrdenamiento;
-      break; */
+    case "Cultura":
+      iconClass = 'cultura';
+      break;
+    case "Territorios":
+      iconClass = 'territorios';
+      break;
+    case "Vivienda":
+      iconClass = 'vivienda';
+      break;
     default:
-      icon = 'social';
+      iconClass = 'social';
       break;
   }
 
   return (
       <div className="category-info" key={id}>
         <a href={url}>
-          <i className={icon}></i>
+          <i className={`category-icon icon-${iconClass}`}></i>
           <p className="text">{title}</p>
         </a>
       </div>
