@@ -33,7 +33,6 @@ const Dataset = ({ id, location }) => {
   const theme = "theme" in item ? item.theme : [];
 
   function getPeriodicity(code) {
-    console.log('code', code);
     if (!code) {
       return null;
     } else {
@@ -63,8 +62,8 @@ const Dataset = ({ id, location }) => {
         case "R/P6M":
           periodicityName = "Semestral";
           break;
-        case "Bienal":
-          periodicityName = "R/P2Y";
+        case "R/P2Y":
+          periodicityName = "Bienal";
           break;
         case "R/P3Y":
           periodicityName = "Trienal";
@@ -100,7 +99,7 @@ const Dataset = ({ id, location }) => {
           periodicityName = "irregular";
           break;
         default:
-          periodicityName = "";
+          periodicityName = "-";
           break;
       }
 
