@@ -36,92 +36,74 @@ const Dataset = ({ id, location }) => {
     if (!code) {
       return null;
     } else {
+      let periodicityName = '';
       switch (code) {
-
         case "R/P4Y":
-          return "Cuatrienal";
+          periodicityName = "Cuatrienal";
           break;
-
         case "R/P10Y":
-          return "Decenal";
+          periodicityName = "Decenal";
           break;
-
         case "R/P1Y":
-          return "Anual";
+          periodicityName = "Anual";
           break;
-
         case "R/P2M":
-          return "Bimestral";
+          periodicityName = "Bimestral";
           break;
-
         case "R/P3.5D":
-          return "Bisemanal";
+          periodicityName = "Bisemanal";
           break;
-
         case "R/P1D":
-          return "Diario";
+          periodicityName = "Diario";
           break;
-
         case "R/P2W":
-          return "Quincenal";
+          periodicityName = "Quincenal";
           break;
-
         case "R/P6M":
-          return "Semestral";
+          periodicityName = "Semestral";
           break;
-
         case "Bienal":
-          return "R/P2Y";
+          periodicityName = "R/P2Y";
           break;
-
         case "R/P3Y":
-          return "Trienal";
+          periodicityName = "Trienal";
           break;
-
         case "R/P0.33W":
-          return "Tres veces por semana";
+          periodicityName = "Tres veces por semana";
           break;
-
         case "R/P0.33M":
-          return "Tres veces al mes";
+          periodicityName = "Tres veces al mes";
           break;
-
         case "R/PT1S":
-          return "Actualizado continuamente";
+          periodicityName = "Actualizado continuamente";
           break;
-
         case "R/P1M":
-          return "Mensual";
+          periodicityName = "Mensual";
           break;
-
         case "R/P3M":
-          return "Trimestral";
+          periodicityName = "Trimestral";
           break;
-
         case "R/P0.5M":
-          return "Quincenal";
+          periodicityName = "Quincenal";
           break;
-
         case "R/P4M":
-          return "Tres veces al año";
+          periodicityName = "Tres veces al año";
           break;
-
         case "R/P1W":
-          return "Semanal";
+          periodicityName = "Semanal";
           break;
-
         case "R/PT1H":
-          return "Cada hora";
+          periodicityName = "Cada hora";
           break;
-
         case "irregular":
-          return "irregular";
+          periodicityName = "irregular";
           break;
-
         default:
-          return "";
+          periodicityName = "";
           break;
       }
+
+      return periodicityName;
     }
   }
 
