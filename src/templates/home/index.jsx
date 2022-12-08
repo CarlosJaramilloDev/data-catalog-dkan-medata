@@ -12,6 +12,7 @@ import HomeSocialMedia from "../../components/Medata/home/home-social-media";
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);
     const [themes, setThemes] = React.useState([]);
+    const [publishers, setPublishers] = React.useState([]);
     const [items, setItems] = React.useState([]);
     const [fDatasets, setFDatasets] = React.useState([])
 
@@ -20,18 +21,19 @@ const Home = () => {
         async function getDatasets() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
             setDatasets(data);
-
-            //setDatasets(ListDatasets);
         }
         async function getThemes() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/theme/items`)
             setThemes(data);
-
-            //setThemes(ListThemes);
+        }
+        async function getPublishers() {
+            const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/publisher/items`)
+            setPublishers(data);
         }
         if (datasets === null) {
             getDatasets()
             getThemes();
+            getPublishers();
         }
         if (datasets) {
             const orderedDatasets = datasets.sort(function (a, b) {
@@ -44,8 +46,6 @@ const Home = () => {
 
     React.useEffect(() => {
         setItems(themes.map(x => {
-            console.log('themes')
-            console.log(x)
             let item = {
                 identifier: x.identifier,
                 ref: `search?theme=${x.data}`,
@@ -67,7 +67,7 @@ const Home = () => {
                         ciudadanos.
                     </p>
                     <HomeCardsLinks />
-                    <HomeDataSets />
+                    <HomeDataSets dataLength={items.length} publishersLength={publishers.length}/>
                 </div>
                 <div className="items-image">
                     <img src={ImagenFondo} alt="Imagen complementaria lateral"/>

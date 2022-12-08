@@ -4,7 +4,10 @@ import IconoDependenciaDatos from '../../../medatatheme/assets/icons/group-data/
 import IconoNumeroTableros from '../../../medatatheme/assets/icons/group-data/icon-3.png';
 import IconoNumeroVisitas from '../../../medatatheme/assets/icons/group-data/icon-4.png';
 
-const HomeDataSets = () => {
+const HomeDataSets = ({
+  dataLength,
+  publishersLength
+}) => {
   return (
     <div className="data-group">
       <p className="title title--black">
@@ -18,7 +21,7 @@ const HomeDataSets = () => {
         <div className="data-info">
           <img src={IconoNumeroDatos} alt="" />
           <p className="data-info-number">
-            235
+            {dataLength}
           </p>
           <p className="text">
             Número de conjuntos de datos
@@ -27,7 +30,7 @@ const HomeDataSets = () => {
         <div className="data-info">
           <img src={IconoDependenciaDatos} alt="" />
           <p className="data-info-number">
-            25
+            {publishersLength}
           </p>
           <p className="text">
             Dependencias con datos publicados
@@ -45,7 +48,7 @@ const HomeDataSets = () => {
         <div className="data-info">
           <img src={IconoNumeroVisitas} alt="" />
           <p className="data-info-number">
-            162.67
+            162.670
           </p>
           <p className="text">
             Número de visitas a la fecha
