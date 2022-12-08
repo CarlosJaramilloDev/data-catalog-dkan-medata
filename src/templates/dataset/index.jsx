@@ -32,6 +32,99 @@ const Dataset = ({ id, location }) => {
   const tag = "keyword" in item ? item.keyword : [];
   const theme = "theme" in item ? item.theme : [];
 
+  function getPeriodicity(code) {
+    if (!code) {
+      return null;
+    } else {
+      switch (code) {
+
+        case "R/P4Y":
+          return "Cuatrienal";
+          break;
+
+        case "R/P10Y":
+          return "Decenal";
+          break;
+
+        case "R/P1Y":
+          return "Anual";
+          break;
+
+        case "R/P2M":
+          return "Bimestral";
+          break;
+
+        case "R/P3.5D":
+          return "Bisemanal";
+          break;
+
+        case "R/P1D":
+          return "Diario";
+          break;
+
+        case "R/P2W":
+          return "Quincenal";
+          break;
+
+        case "R/P6M":
+          return "Semestral";
+          break;
+
+        case "Bienal":
+          return "R/P2Y";
+          break;
+
+        case "R/P3Y":
+          return "Trienal";
+          break;
+
+        case "R/P0.33W":
+          return "Tres veces por semana";
+          break;
+
+        case "R/P0.33M":
+          return "Tres veces al mes";
+          break;
+
+        case "R/PT1S":
+          return "Actualizado continuamente";
+          break;
+
+        case "R/P1M":
+          return "Mensual";
+          break;
+
+        case "R/P3M":
+          return "Trimestral";
+          break;
+
+        case "R/P0.5M":
+          return "Quincenal";
+          break;
+
+        case "R/P4M":
+          return "Tres veces al año";
+          break;
+
+        case "R/P1W":
+          return "Semanal";
+          break;
+
+        case "R/PT1H":
+          return "Cada hora";
+          break;
+
+        case "irregular":
+          return "irregular";
+          break;
+
+        default:
+          return "";
+          break;
+      }
+    }
+  }
+
   function themes(theme) {
     if (!theme) {
       return null;
@@ -162,7 +255,7 @@ const Dataset = ({ id, location }) => {
                     <td>{orgName}</td>
                     <td>{("modified" in item && item.modified) ? item.modified : ''}</td>
                     <td>{("issued" in item && item.issued) ? item.issued : ''}</td>
-                    <td>{("accrualPeriodicity" in item && item.accrualPeriodicity) ? item.accrualPeriodicity : ''}}</td>
+                    <td>{("accrualPeriodicity" in item && item.accrualPeriodicity) ? getPeriodicity(item.accrualPeriodicity) : ''}</td>
                     <td>{("identifier" in item && item.identifier) ? item.identifier : ''}</td>
                     <td>{("conformsTo" in item && item.conformsTo) ? item.conformsTo : ''}</td>
                     <td>{("temporal" in item && item.temporal) ? item.temporal : ''}</td>
