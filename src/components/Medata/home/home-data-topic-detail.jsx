@@ -58,12 +58,10 @@ const HomeDataTopicDetail = ({
   }
 
   return (
-      <div className="category-info" key={id}>
-        <a href={url}>
-          <i className={`category-icon icon-${iconClass}`}></i>
-          <p className="text">{title}</p>
-        </a>
-      </div>
+    <a href={url} className="category-info" key={id}>
+      <i className={`category-icon icon-${iconClass}`}></i>
+      <p className="text">{title}</p>
+    </a>
   );
 };
 
