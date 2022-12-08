@@ -11,6 +11,7 @@ import HomeSocialMedia from "../../components/Medata/home/home-social-media";
 
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);
+    const [datasetsL, setDatasetsL] = React.useState(1);
     const [themes, setThemes] = React.useState([]);
     const [publishers, setPublishers] = React.useState([]);
     const [items, setItems] = React.useState([]);
@@ -21,6 +22,7 @@ const Home = () => {
         async function getDatasets() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
             setDatasets(data);
+            setDatasetsL(data.length);
         }
         async function getThemes() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/theme/items`)
@@ -67,7 +69,7 @@ const Home = () => {
                         ciudadanos.
                     </p>
                     <HomeCardsLinks />
-                    <HomeDataSets dataLength={datasets.length} publishersLength={publishers.length}/>
+                    <HomeDataSets dataLength={datasetsL} publishersLength={publishers.length}/>
                 </div>
                 <div className="items-image">
                     <img src={ImagenFondo} alt="Imagen complementaria lateral"/>
