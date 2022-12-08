@@ -33,6 +33,7 @@ const Dataset = ({ id, location }) => {
   const theme = "theme" in item ? item.theme : [];
 
   function getPeriodicity(code) {
+    console.log('code', code);
     if (!code) {
       return null;
     } else {
