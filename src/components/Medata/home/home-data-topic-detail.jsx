@@ -53,7 +53,7 @@ const HomeDataTopicDetail = ({
       iconClass = 'vivienda';
       break;
     default:
-      iconClass = 'social';
+      iconClass = 'desarrollo';
       break;
   }
 

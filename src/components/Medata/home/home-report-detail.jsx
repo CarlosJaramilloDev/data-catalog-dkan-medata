@@ -10,9 +10,9 @@ const HomeReportDetail = ({
 
   return (
     <div className="card" key={id}>
-      <div className="card-header">
+      {/* <div className="card-header">
         <img src={ImagenBlog1} alt={title} />
-      </div>
+      </div> */}
       <div className="card-body">
         <div className="margin-bottom">
           <p className="title title--black">
@@ -25,7 +25,7 @@ const HomeReportDetail = ({
           </p>
         </div>
         <a className="button button-primary" href={url}>
-          Accede a la info
+           CONOCE MÁS
         </a>
       </div>
     </div>
