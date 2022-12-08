@@ -67,7 +67,7 @@ const Home = () => {
                         ciudadanos.
                     </p>
                     <HomeCardsLinks />
-                    <HomeDataSets dataLength={items.length} publishersLength={publishers.length}/>
+                    <HomeDataSets dataLength={datasets.length} publishersLength={publishers.length}/>
                 </div>
                 <div className="items-image">
                     <img src={ImagenFondo} alt="Imagen complementaria lateral"/>
