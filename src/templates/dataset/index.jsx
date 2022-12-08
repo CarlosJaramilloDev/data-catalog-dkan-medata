@@ -235,12 +235,12 @@ const Dataset = ({ id, location }) => {
                 </tr>
                   <tr>
                     <td>{orgName}</td>
-                    <td>{("modified" in item && item.modified) ? item.modified : ''}</td>
-                    <td>{("issued" in item && item.issued) ? item.issued : ''}</td>
-                    <td>{("accrualPeriodicity" in item && item.accrualPeriodicity) ? getPeriodicity(item.accrualPeriodicity) : ''}</td>
-                    <td>{("identifier" in item && item.identifier) ? item.identifier : ''}</td>
-                    <td>{("conformsTo" in item && item.conformsTo) ? item.conformsTo : ''}</td>
-                    <td>{("temporal" in item && item.temporal) ? item.temporal : ''}</td>
+                    <td>{("modified" in item && item.modified) ? item.modified : '-'}</td>
+                    <td>{("issued" in item && item.issued) ? item.issued : '-'}</td>
+                    <td>{("accrualPeriodicity" in item && item.accrualPeriodicity) ? getPeriodicity(item.accrualPeriodicity) : '-'}</td>
+                    <td>{("identifier" in item && item.identifier) ? item.identifier : '-'}</td>
+                    <td>{("conformsTo" in item && item.conformsTo) ? item.conformsTo : '-'}</td>
+                    <td>{("temporal" in item && item.temporal) ? item.temporal : '-'}</td>
                   </tr>
                 </tbody>
               </table>
