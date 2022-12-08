@@ -158,7 +158,7 @@ var DataTable = function DataTable() {
     className: "-center"
   }, /*#__PURE__*/_react["default"].createElement("span", {
     className: "-pageInfo"
-  }, "Page", ' ', /*#__PURE__*/_react["default"].createElement("strong", null, pageIndex + 1, ' ', "of", ' ', pageOptions.length))), /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Página", ' ', /*#__PURE__*/_react["default"].createElement("strong", null, pageIndex + 1, ' ', "de", ' ', pageOptions.length))), /*#__PURE__*/_react["default"].createElement("div", {
     className: "-next"
   }, /*#__PURE__*/_react["default"].createElement("button", {
     type: "button",
