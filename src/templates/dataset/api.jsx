@@ -3,7 +3,6 @@ import { Link } from "@reach/router";
 import Loader from "react-loader-advanced";
 import LoadingSpin from "react-loading-spin";
 import ApiDocs from "../../components/Medata/search/civil/components/ApiDocs";
-import Organization from "../../components/Medata/search/civil/components/Organization";
 import config from "../../assets/config";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
@@ -25,8 +24,6 @@ const ApiDocsSpecific = ({ id, location }) => {
     }
   }, [id, state])
 
-
-    const orgName = "publisher" in item && item.publisher.data ? item.publisher.data.name : "";
   return (
     <Layout title="Documentacion del API para este Dataset" headerClass='header header--small'>
     <div className={`dc-dataset-page ${config.container}`}>
