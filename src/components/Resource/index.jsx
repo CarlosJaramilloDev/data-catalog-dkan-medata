@@ -40,6 +40,7 @@ const ResourceTemplate = ({ resource }) => {
         )
         break;
       case 'tablero':
+      case 'iframe':
         content = (
           <div
           >
