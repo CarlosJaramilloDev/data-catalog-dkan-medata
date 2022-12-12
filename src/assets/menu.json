@@ -2,12 +2,12 @@
   "main": [
     {
       "label": "Medellín en cifras",
-      "url": "/search",
+      "url": "/search/?publisher__name=State%20Economic%20Council",
       "target": "_top"
     },
     {
       "label": "Datos",
-      "url": "/search",
+      "url": "/search/?publisher__name=National%20Health%20Council",
       "target": "_top"
     },
     {

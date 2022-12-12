@@ -174,6 +174,9 @@ const Dataset = ({ id, location }) => {
             <a class="breadcrumb-link" href="/">Medata</a>
           </li>
           <li class="breadcrumb-item">
+            <a class="breadcrumb-link" href="/search">Búsqueda</a>
+          </li>
+          <li class="breadcrumb-item">
             <a class="breadcrumb-link" href="/">{item.title}</a>
           </li>
         </ol>

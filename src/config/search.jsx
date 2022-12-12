@@ -21,7 +21,7 @@ export const defaultFacets = {
       "icon": <span></span>
     },
   },
-  "publisher__name": {
+  /* "publisher__name": {
     "label": "Autores",
     "field": "publisher__name",
     "showAll": false,
@@ -30,7 +30,7 @@ export const defaultFacets = {
       "active": false,
       "icon": <span></span>
     },
-  }
+  } */
 }
 
 export function normalizeItems(resultItems) {
