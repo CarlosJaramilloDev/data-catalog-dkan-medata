@@ -5,7 +5,7 @@ const DatasetFrame = ({
 }) => {
   return (
     <div>
-      <iframe src={url} frameborder="0" style={{}}></iframe>
+      <iframe src={url} frameborder="0" style={{width: '100%', height: '100vh'}}></iframe>
     </div>
   );
 };
