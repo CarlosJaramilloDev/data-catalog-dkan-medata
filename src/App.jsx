@@ -6,6 +6,7 @@ import ApiDocsFull from './templates/api';
 import NotFound from './templates/not_found';
 import Dataset from './templates/dataset';
 import ApiDocsSpecific from './templates/dataset/api';
+import { Accessibility } from 'accessibility';
 import './theme/civicindex.css';
 import './theme/index.scss';
 // import './medatatheme/sass/main.scss';
@@ -17,6 +18,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, fas);
 
 function App() {
+  new Accessibility();
   return (
     <Router>
       <NotFound default />
