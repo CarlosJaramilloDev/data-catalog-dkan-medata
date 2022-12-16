@@ -35,7 +35,7 @@ const Header = () => {
                   <span class="contact-icon">
                     <i class="fa-solid fa-location-dot"></i>
                   </span>
-                  <a href="#" class="contact-link">Calle 44 N 52 – 165 Centro Administrativo la Alpujarra
+                  <a href="#!" class="contact-link">Calle 44 N 52 – 165 Centro Administrativo la Alpujarra
                     – Medellín, Colombia.</a>
                 </li>
                 <li class="contact-item">
