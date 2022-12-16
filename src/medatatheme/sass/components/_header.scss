@@ -125,7 +125,7 @@
         outline: none;
         opacity: 1;
         transform: rotate(0deg);
-        background-color: $color-white;
+        background-color: $color-primary;
         transition: 0.25s ease-in-out;
 
         &:nth-child(1) {
@@ -206,22 +206,29 @@
 #menu-toggle:checked {
     ~ .menu {
         display: flex;
-        width: 100vw;
+        width: 90vw;
         height: 100vh;
-        background-color: rgba($color-grey-dark, 0.95);
+        background-color: $color-blue-dark;
         position: fixed;
         top: 0;
-        left: 0; 
+        right: 0; 
         flex-direction: column;
         align-items: center;
         z-index: 999;
-        justify-content: center;
+        padding-top: 10rem;
 
         .menu-inner {
             color: $color-white;
+            width: 80%;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            right: 0;
+            position: absolute
+        }
+
+        .menu-item{
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid white;
         }
 
         .menu-link {
@@ -249,7 +256,7 @@
     }
 
     ~ .burger .burger-line {
-        background-color: $color-secondary;
+        background-color: $color-white;
         &:nth-child(1) {
             top: 0.5rem;
             transform: rotate(135deg);

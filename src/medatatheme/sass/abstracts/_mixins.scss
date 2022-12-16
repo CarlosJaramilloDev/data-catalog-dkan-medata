@@ -1,7 +1,7 @@
 @mixin button($color, $bg-color) {
     font-family: 'Work Sans';
     font-size: 1.2rem;
-    color: $color;
+    color: $color !important;
     border: 1px solid $color;
     border-radius: 5rem;
     padding: 1rem 2rem;
@@ -28,6 +28,7 @@
     font-family: 'Montserrat Bold';
     font-size: 1.8rem;
     color: $color;
+    text-decoration: none;
 }
 
 @mixin grid($cols){

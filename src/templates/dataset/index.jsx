@@ -184,16 +184,21 @@ const Dataset = ({ id, location }) => {
 
       <section class="header-section data">
         <div class="data-container">
-          <p class="title title--black mb-0">{item.title}</p>
-          <p class="paragraph paragraph--black margin-bottom-sm">
-            <Text value={item.description} />
-          </p>
+          <div>
+            <p class="title title--black">{item.title}</p>
+            <p class="paragraph paragraph--black margin-bottom-sm">
+              <Text value={item.description} />
+            </p>
+          </div>
+          <div class="button-close">
+            <button onclick="history.back()"> x </button>
+          </div>
         </div>
       </section>
 
       <section class="data-technical-section">
         <div class="data-technical-info">
-          <div class="data-container">
+          <div class="data-block">
             <ul class="data-technical-info-list">
               <li class="data-technical-info-item">
                 <span>Fuente:</span> {orgName}
@@ -217,7 +222,7 @@ const Dataset = ({ id, location }) => {
           </div>
         </div>
 
-        <div class="data-sheet data-container">
+        <div class="data-sheet data-block">
           <div class="data-card">
             <div class="data-card-header">
               <p class="subtitle subtitle--black">

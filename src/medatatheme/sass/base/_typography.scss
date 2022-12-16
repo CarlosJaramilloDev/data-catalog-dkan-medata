@@ -58,6 +58,10 @@
     &--purple{
         @include title($color-purple) 
     }
+
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 

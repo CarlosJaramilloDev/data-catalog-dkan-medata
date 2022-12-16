@@ -83,16 +83,81 @@
             @include grid(3);
         }
     }
+    .category-icon{
+        transition: all .2s;
+        min-height: 40px;
+        margin-bottom: 1rem;
+        width: 40px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .category-info {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 2rem;
         text-align: center;
+        padding: 1rem 0;
+        border-radius: 10px;
+        transition: all .2s;
+        justify-content: center;
+        cursor: pointer;
 
-        img {
-            max-height: 30px;
-            margin-bottom: 1rem;
+        &:hover{
+            background: $color-white;
+            color: $color-secondary;
+            box-shadow: 0 0 15px -2px rgba($color-grey-dark, .3);
+
+            .icon-gubernamental{
+                background-image: url("../../../assets/icons/topics/orange/icon-gubernamental.svg");
+            }
+            .icon-ambiente{
+                background-image: url("../../assets/icons/topics/orange/icon-ambiente.svg");
+            }
+            .icon-cultura{
+                background-image: url("../../assets/icons/topics/orange/icon-cultura.svg");
+            }
+            .icon-desarrollo{
+                background-image: url("../../assets/icons/topics/orange/icon-desarrollo.svg");
+            }
+            .icon-economia{
+                background-image: url("../../assets/icons/topics/orange/icon-economia.svg");
+            }
+            .icon-educacion{
+                background-image: url("../../assets/icons/topics/orange/icon-educacion.svg");
+            }
+            .icon-hacienda{
+                background-image: url("../../assets/icons/topics/orange/icon-hacienda.svg");
+            }
+            .icon-infraestructura{
+                background-image: url("../../assets/icons/topics/orange/icon-infraestructura.svg");
+            }
+            .icon-movilidad{
+                background-image: url("../../assets/icons/topics/orange/icon-movilidad.svg");
+            }
+            .icon-ordenamiento{
+                background-image: url("../../assets/icons/topics/orange/icon-ordenamiento.svg");
+            }
+            .icon-poblacion{
+                background-image: url("../../assets/icons/topics/orange/icon-poblacion.svg");
+            }
+            .icon-salud{
+                background-image: url("../../assets/icons/topics/orange/icon-salud.svg");
+            }
+            .icon-social{
+                background-image: url("../../assets/icons/topics/orange/icon-social.svg");
+            }
+            .icon-territorios{
+                background-image: url("../../assets/icons/topics/orange/icon-territorios.svg");
+            }
+            .icon-vivienda{
+                background-image: url("../../assets/icons/topics/orange/icon-vivienda.svg");
+            }
+
+            .text{
+                color: $color-secondary;
+            }
         }
     }
 }
@@ -150,6 +215,10 @@
         font-size: 1.2rem;
         font-family: "Work Sans";
         color: $color-white;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
 
         a {
             color: $color-secondary;
@@ -225,6 +294,7 @@
     }
 
     &-privacity {
+        text-align: center;
         @media (max-width: 768px) {
             flex-direction: column;
             text-align: center;
@@ -373,12 +443,19 @@
             padding: 6rem 6rem 0 6rem;
             @media (max-width: 768px) {
                 padding: 6rem 4rem 0 4rem;
+                text-align: center;
             }
         }
     }
 
     &-container {
         @include grid(5);
+
+        @media (max-width: 768px) {
+            @include grid(1);
+            overflow-x: scroll;
+        }
+        
     }
 
     &-item {
@@ -388,6 +465,10 @@
         img {
             max-width: 70%;
             margin-bottom: 1rem;
+            @media (max-width: 768px) {
+                display: block;
+                margin: auto;
+            }
         }
 
         a {
@@ -410,10 +491,113 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 768px) {
+            max-width: 90vw;
+            flex-direction: column;
+            justify-content: center;
+
+            .footer-logos{
+                display: flex;
+            }
+        }
     }
     &-brand {
         img {
             max-height: 40px;
+        }
+    }
+}
+
+.icon{
+    &-gubernamental{
+        background-image: url("../../assets/icons/topics/black/icon-gubernamental.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-gubernamental.svg");
+        }
+    }
+    &-ambiente{
+        background-image: url("../../assets/icons/topics/black/icon-ambiente.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-ambiente.svg");
+        }
+    }
+    &-cultura{
+        background-image: url("../../assets/icons/topics/black/icon-cultura.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-cultura.svg");
+        }
+    }
+    &-desarrollo{
+        background-image: url("../../assets/icons/topics/black/icon-desarrollo.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-desarrollo.svg");
+        }
+    }
+    &-economia{
+        background-image: url("../../assets/icons/topics/black/icon-economia.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-economia.svg");
+        }
+    }
+    &-educacion{
+        background-image: url("../../assets/icons/topics/black/icon-educacion.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-educacion.svg");
+        }
+    }
+    &-hacienda{
+        background-image: url("../../assets/icons/topics/black/icon-hacienda.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-hacienda.svg");
+        }
+    }
+    &-infraestructura{
+        background-image: url("../../assets/icons/topics/black/icon-infraestructura.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-infraestructura.svg");
+        }
+    }
+    &-movilidad{
+        background-image: url("../../assets/icons/topics/black/icon-movilidad.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-movilidad.svg");
+        }
+    }
+    &-ordenamiento{
+        background-image: url("../../assets/icons/topics/black/icon-ordenamiento.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-ordenamiento.svg");
+        }
+    }
+    &-poblacion{
+        background-image: url("../../assets/icons/topics/black/icon-poblacion.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-poblacion.svg");
+        }
+    }
+    &-salud{
+        background-image: url("../../assets/icons/topics/black/icon-salud.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-salud.svg");
+        }
+    }
+    &-social{
+        background-image: url("../../assets/icons/topics/black/icon-social.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-social.svg");
+        }
+    }
+    &-territorios{
+        background-image: url("../../assets/icons/topics/black/icon-territorios.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-territorios.svg");
+        }
+    }
+    &-vivienda{
+        background-image: url("../../assets/icons/topics/black/icon-vivienda.svg");
+        &:hover{
+            background-image: url("../../assets/icons/topics/orange/icon-vivienda.svg");
         }
     }
 }
