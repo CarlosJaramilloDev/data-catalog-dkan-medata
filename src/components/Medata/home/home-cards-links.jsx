@@ -39,7 +39,7 @@ const HomeCardsLinks = () => {
               ciudad
             </p>
           </div>
-          <a className="button button-primary" href="/search">
+          <a className="button button-primary" href="/search/?publisher__name=Medell%C3%8Dn%20en%20Cifras">
           CONOCE MÁS
           </a>
         </div>
@@ -58,7 +58,7 @@ const HomeCardsLinks = () => {
               Medellín
             </p>
           </div>
-          <a className="button button-primary" href="/search">
+          <a className="button button-primary" href="/historias">
           CONOCE MÁS
           </a>
         </div>
