@@ -191,7 +191,7 @@ const Dataset = ({ id, location }) => {
             </p>
           </div>
           <div class="button-close">
-            <button onclick="history.back()" style={{background: 'none', border: 'none'}}> x </button>
+            <button onClick={() => navigate(-1)} style={{background: 'none', border: 'none'}}> x </button>
           </div>
         </div>
       </section>
