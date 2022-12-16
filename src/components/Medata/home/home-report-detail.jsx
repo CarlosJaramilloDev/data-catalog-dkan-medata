@@ -1,5 +1,4 @@
 import React from "react";
-import ImagenBlog1 from '../../../medatatheme/assets/images/blog-1.png';
 
 const HomeReportDetail = ({
   id,
