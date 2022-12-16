@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import { Link } from '@reach/router';
+import { Link, useNavigate } from '@reach/router';
 import Layout from '../../components/Layout';
 import ResourceTemplate from "../../components/Resource";
 import { Spinner } from 'reactstrap';
@@ -160,6 +160,8 @@ const Dataset = ({ id, location }) => {
       return a;
     }, []);
   };
+
+  const navigate = useNavigate();
 
   return (
     <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
