@@ -30,7 +30,7 @@ function App() {
         decreaseTextSpacing: 'Reducir espaceado del texto',
         increaseLineHeight: 'Aumentar interlineado',
         decreaseLineHeight: 'Reducir interlineado',
-        invertColors: 'Invertir colores (Alto contaste)',
+        invertColors: 'Invertir colores (Alto contraste)',
         grayHues: 'Escala de grises',
         underlineLinks: 'Destacar hipervínculos',
         bigCursor: 'Cursor grande',
