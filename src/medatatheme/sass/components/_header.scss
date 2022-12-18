@@ -201,6 +201,7 @@
     position: absolute;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 
 //Menu
@@ -239,6 +240,7 @@
 
         .logos-mobile{
             display: block;
+            visibility: visible;
 
             .brand{
                 position: relative;
