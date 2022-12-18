@@ -49,6 +49,15 @@ const Header = ({
           <span class="burger-line"></span>
         </div>
         <div className="menu" id="menu">
+          <div class="logos-mobile">
+            <a href="https://www.medellin.gov.co/" class="brand">
+              <img src={LogoAlcaldiaVertical} alt="Logo alcaldía de Medellín" />
+            </a>
+            <a href="/" class="logo">
+              <img src={LogoMedata} alt="Logo MeData" />
+            </a>
+          </div>
+
           <Menu />
         </div>
       </nav>
