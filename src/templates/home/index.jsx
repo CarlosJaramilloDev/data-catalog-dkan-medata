@@ -35,7 +35,7 @@ const Home = () => {
         }
         async function getBoardsLength() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search?publisher__name=Medellín%20en%20cifras`)
-            console.logo(data)
+            console.log(data)
             //setBoardsLength(data);
         }
         if (datasets === null) {
