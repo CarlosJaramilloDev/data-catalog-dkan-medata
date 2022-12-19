@@ -7,7 +7,8 @@ const Layout = ({
   children,
   title,
   description,
-  headerClass = 'header'
+  headerClass = 'header',
+  dataLength
 }) => {
   return (
     <div className="App">
@@ -19,7 +20,7 @@ const Layout = ({
           "lang": "es"
         }}
       />
-      <Header headerClass={headerClass} dataLength={this.props.datasetsL}/>
+      <Header headerClass={headerClass} dataLength={dataLength}/>
       <main className={ (headerClass === 'header') ? 'main' : '' }>
         {children}
         <Footer/>

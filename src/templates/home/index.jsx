@@ -44,7 +44,7 @@ const Home = () => {
 
             setFDatasets(orderedDatasets.length > 3 ? orderedDatasets.slice(orderedDatasets.length - 3, orderedDatasets.length) : orderedDatasets);
         }
-    }, [datasets])
+    }, [datasets, datasetsL])
 
     React.useEffect(() => {
         setItems(themes.map(x => {
@@ -58,7 +58,7 @@ const Home = () => {
     }, [themes])
 
     return (
-        <Layout title="Inicio">
+        <Layout title="Inicio" dataLength={datasetsL}>
             <section className="data-section">
                 <div className="container-home">
                     <p className="text text-center">
