@@ -10,7 +10,7 @@ const Header = ({
   const [headerComplement, setHeaderComplement] = React.useState('');
   const [datasetsL, setDatasetsL] = React.useState(null);
 
-  React.useLayoutEffect(async () => {
+  React.useEffect(() => {
     async function getDatasets() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
       console.log(`data ${data.length}`);
@@ -18,7 +18,7 @@ const Header = ({
     }
 
     if (datasetsL === null) {
-      await getDatasets()
+      getDatasets()
     }
 
     if (headerClass === 'header') {
