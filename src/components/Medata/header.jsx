@@ -22,6 +22,7 @@ const Header = ({
     }
 
     if (headerClass === 'header') {
+      console.log(`datasetsL ${datasetsL}`);
       setHeaderComplement(
         <div>
           <p className="header-text text-center">
