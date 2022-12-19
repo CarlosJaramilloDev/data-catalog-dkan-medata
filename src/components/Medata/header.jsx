@@ -13,18 +13,19 @@ const Header = ({
   React.useState(() => {
     async function getDatasets() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
+      console.log(`data ${data}`);
       setDatasetsL(data.length);
     }
 
     if (datasetsL === null) {
       getDatasets()
-  }
+    }
 
     if (headerClass === 'header') {
       setHeaderComplement(
         <div>
           <p className="header-text text-center">
-            Consulta y accede a más de <b> {datasetsL} conjunto de datos en línea </b>
+            Consulta y accede a más de <b> {datasetsL} conjunto(s) de datos en línea </b>
           </p>
           <div className="search-wrapper">
             <form action="/search" method="get">
