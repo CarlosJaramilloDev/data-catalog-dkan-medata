@@ -34,8 +34,9 @@ const Home = () => {
             setPublishers(data);
         }
         async function getBoardsLength() {
-            const { total } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search?publisher__name=Medellín%20en%20cifras`)
-            setBoardsLength(total);
+            const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search?publisher__name=Medellín%20en%20cifras`)
+            console.logo(data)
+            //setBoardsLength(data);
         }
         if (datasets === null) {
             getDatasets()
@@ -50,7 +51,7 @@ const Home = () => {
 
             setFDatasets(orderedDatasets.length > 3 ? orderedDatasets.slice(orderedDatasets.length - 3, orderedDatasets.length) : orderedDatasets);
         }
-    }, [datasets, datasetsL])
+    }, [datasets])
 
     React.useEffect(() => {
         setItems(themes.map(x => {
