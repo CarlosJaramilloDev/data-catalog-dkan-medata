@@ -1,20 +1,26 @@
 import React from "react";
+import axios from 'axios';
 import LogoMedata from "../../medatatheme/assets/images/logo.png";
 import LogoAlcaldiaVertical from "../../medatatheme/assets/images/logo-alcaldia-vertical.png";
 import Menu from "./menu"
 
 const Header = ({
-  headerClass = 'header',
-  dataLength
+  headerClass = 'header'
 }) => {
   const [headerComplement, setHeaderComplement] = React.useState('');
+  const [datasetsL, setDatasetsL] = React.useState(0);
 
   React.useState(() => {
+    async function getDatasets() {
+      const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
+      setDatasetsL(data.length);
+    }
+
     if (headerClass === 'header') {
       setHeaderComplement(
         <div>
           <p className="header-text text-center">
-            Consulta y accede a más de <b> {dataLength} conjunto de datos en línea </b>
+            Consulta y accede a más de <b> {datasetsL} conjunto de datos en línea </b>
           </p>
           <div className="search-wrapper">
             <form action="/search" method="get">
