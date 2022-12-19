@@ -24,9 +24,9 @@ const Header = ({
     }
 
     if (headerClass === 'header') {
-      /* if (datasetsL === null) {
+      if (datasetsAtt === 0) {
         await getDatasets()
-      } */
+      }
       console.log(`datasetsL ${datasetsL}`);
       setHeaderComplement(
         <div>
