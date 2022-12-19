@@ -13,7 +13,6 @@ const Header = ({
   React.useEffect(() => {
     async function getDatasets() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
-      console.log(`data ${data.length}`);
       setDatasetsL(data.length);
     }
 
@@ -22,7 +21,6 @@ const Header = ({
     }
 
     if (headerClass === 'header') {
-      console.log(`datasetsL ${datasetsL}`);
       setHeaderComplement(
         <div>
           <p className="header-text text-center">
