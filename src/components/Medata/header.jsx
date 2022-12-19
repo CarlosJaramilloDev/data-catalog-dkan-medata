@@ -39,7 +39,7 @@ const Header = ({
           </div>
         </div>);
     }
-  }, [datasetsL]);
+  }, [datasetsL, headerClass]);
 
   return (
     <header className={headerClass} id="header">
