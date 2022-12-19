@@ -8,13 +8,17 @@ const Header = ({
   headerClass = 'header'
 }) => {
   const [headerComplement, setHeaderComplement] = React.useState('');
-  const [datasetsL, setDatasetsL] = React.useState(0);
+  const [datasetsL, setDatasetsL] = React.useState(null);
 
   React.useState(() => {
     async function getDatasets() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items?show-reference-ids`)
       setDatasetsL(data.length);
     }
+
+    if (datasetsL === null) {
+      getDatasets()
+  }
 
     if (headerClass === 'header') {
       setHeaderComplement(
