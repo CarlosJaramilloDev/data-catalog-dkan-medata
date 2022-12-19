@@ -24,7 +24,7 @@ const Header = ({
     }
 
     if (headerClass === 'header') {
-      if (datasetsAtt === 0) {
+      if (datasetsL === null) {
         await getDatasets()
       }
       console.log(`datasetsL ${datasetsL}`);
