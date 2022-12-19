@@ -8,7 +8,7 @@ const Header = ({
   headerClass = 'header'
 }) => {
   const [headerComplement, setHeaderComplement] = React.useState('');
-  const [datasetsL, setDatasetsL] = React.useState(null);
+  const [datasetsL, setDatasetsL] = React.useState(0);
 
   React.useState(async () => {
     async function getDatasets() {
@@ -22,6 +22,9 @@ const Header = ({
     }
 
     if (headerClass === 'header') {
+      /* if (datasetsL === null) {
+        await getDatasets()
+      } */
       console.log(`datasetsL ${datasetsL}`);
       setHeaderComplement(
         <div>
