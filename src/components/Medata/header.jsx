@@ -4,7 +4,8 @@ import LogoAlcaldiaVertical from "../../medatatheme/assets/images/logo-alcaldia-
 import Menu from "./menu"
 
 const Header = ({
-  headerClass = 'header'
+  headerClass = 'header',
+  dataLength
 }) => {
   const [headerComplement, setHeaderComplement] = React.useState('');
 
@@ -13,7 +14,7 @@ const Header = ({
       setHeaderComplement(
         <div>
           <p className="header-text text-center">
-            Consulta y accede a más de <b> 532 conjunto de datos en línea </b>
+            Consulta y accede a más de <b> {dataLength} conjunto de datos en línea </b>
           </p>
           <div className="search-wrapper">
             <form action="/search" method="get">

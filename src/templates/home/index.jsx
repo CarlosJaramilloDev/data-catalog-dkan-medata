@@ -58,7 +58,7 @@ const Home = () => {
     }, [themes])
 
     return (
-        <Layout title="Inicio">
+        <Layout title="Inicio" dataLength={datasetsL}>
             <section className="data-section">
                 <div className="container-home">
                     <p className="text text-center">
