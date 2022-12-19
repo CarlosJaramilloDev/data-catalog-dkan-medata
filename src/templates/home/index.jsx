@@ -11,12 +11,12 @@ import HomeSocialMedia from "../../components/Medata/home/home-social-media";
 
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);
-    const [datasetsL, setDatasetsL] = React.useState(null);
+    const [datasetsL, setDatasetsL] = React.useState(0);
     const [themes, setThemes] = React.useState([]);
-    const [publishers, setPublishers] = React.useState([]);
+    const [publishersL, setPublishersL] = React.useState(0);
     const [items, setItems] = React.useState([]);
     const [fDatasets, setFDatasets] = React.useState([])
-    const [boardsLength, setBoardsLength] = React.useState(null)
+    const [boardsLength, setBoardsLength] = React.useState(0)
 
 
     React.useEffect(() => {
@@ -29,9 +29,9 @@ const Home = () => {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/theme/items`)
             setThemes(data);
         }
-        async function getPublishers() {
+        async function getPublishersL() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/publisher/items`)
-            setPublishers(data);
+            setPublishersL(data.length);
         }
         async function getBoardsLength() {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search?publisher__name=Medellín%20en%20cifras`)
@@ -42,7 +42,7 @@ const Home = () => {
         if (datasets === null) {
             getDatasets()
             getThemes();
-            getPublishers();
+            getPublishersL();
             getBoardsLength();
         }
         if (datasets) {
@@ -77,7 +77,7 @@ const Home = () => {
                         ciudadanos.
                     </p>
                     <HomeCardsLinks />
-                    <HomeDataSets dataLength={datasetsL} publishersLength={publishers.length} boardsLength={boardsLength}/>
+                    <HomeDataSets dataLength={datasetsL} publishersLength={publishersL} boardsLength={boardsLength}/>
                 </div>
                 <div className="items-image">
                     <img src={ImagenFondo} alt="Imagen complementaria lateral"/>
