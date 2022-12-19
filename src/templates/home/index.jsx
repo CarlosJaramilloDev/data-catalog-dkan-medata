@@ -11,7 +11,7 @@ import HomeSocialMedia from "../../components/Medata/home/home-social-media";
 
 const Home = () => {
     const [datasets, setDatasets] = React.useState(null);
-    const [datasetsL, setDatasetsL] = React.useState(1);
+    const [datasetsL, setDatasetsL] = React.useState(0);
     const [themes, setThemes] = React.useState([]);
     const [publishers, setPublishers] = React.useState([]);
     const [items, setItems] = React.useState([]);
