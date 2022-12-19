@@ -16,6 +16,7 @@ const Home = () => {
     const [publishers, setPublishers] = React.useState([]);
     const [items, setItems] = React.useState([]);
     const [fDatasets, setFDatasets] = React.useState([])
+    const [boardsLength, setBoardsLength] = React.useState(null)
 
 
     React.useEffect(() => {
@@ -32,10 +33,15 @@ const Home = () => {
             const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/publisher/items`)
             setPublishers(data);
         }
+        async function getBoardsLength() {
+            const { total } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search?publisher__name=Medellín%20en%20cifras`)
+            setBoardsLength(total);
+        }
         if (datasets === null) {
             getDatasets()
             getThemes();
             getPublishers();
+            getBoardsLength();
         }
         if (datasets) {
             const orderedDatasets = datasets.sort(function (a, b) {
@@ -69,7 +75,7 @@ const Home = () => {
                         ciudadanos.
                     </p>
                     <HomeCardsLinks />
-                    <HomeDataSets dataLength={datasetsL} publishersLength={publishers.length}/>
+                    <HomeDataSets dataLength={datasetsL} publishersLength={publishers.length} boardsLength={boardsLength}/>
                 </div>
                 <div className="items-image">
                     <img src={ImagenFondo} alt="Imagen complementaria lateral"/>

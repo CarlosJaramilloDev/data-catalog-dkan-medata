@@ -6,7 +6,8 @@ import IconoNumeroVisitas from '../../../medatatheme/assets/icons/group-data/ico
 
 const HomeDataSets = ({
   dataLength,
-  publishersLength
+  publishersLength,
+  boardsLength
 }) => {
   return (
     <div className="data-group">
@@ -39,7 +40,7 @@ const HomeDataSets = ({
         <div className="data-info">
           <img src={IconoNumeroTableros} alt="" />
           <p className="data-info-number">
-            53
+            {boardsLength}
           </p>
           <p className="text">
             Número de tableros de análisis
