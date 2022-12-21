@@ -132,9 +132,9 @@ var SearchFacet = function SearchFacet(_ref) {
 
     if (itemTotal > 0) {
       return /*#__PURE__*/ _react["default"].createElement(
-        "div",
+        "li",
         {
-          className: "dc-facet-option",
+          className: "sidenav-item dc-facet-option",
           key: key,
         },
         /*#__PURE__*/ _react["default"].createElement(_reactstrap.Input, {
@@ -155,7 +155,7 @@ var SearchFacet = function SearchFacet(_ref) {
             _reactFontawesome.FontAwesomeIcon,
             {
               icon: ["fas", checked ? "check-square" : "square"],
-              size: "1x",
+              size: "0.5x",
               "aria-hidden": "true",
               role: "presentation",
             }
@@ -210,11 +210,12 @@ var SearchFacet = function SearchFacet(_ref) {
       /*#__PURE__*/ _react["default"].createElement(
         _ShowMoreContainer["default"],
         {
-          container: "div",
+          container: "ul",
           items: choices,
           limit: 10,
           onMore: onMore,
           onLess: onLess,
+          containerClasses: 'show-more-container '
         }
       )
     )

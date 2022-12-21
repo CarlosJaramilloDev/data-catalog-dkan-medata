@@ -53,7 +53,7 @@ function ToggleBlock(_ref) {
       size: "1x",
       "aria-hidden": "true",
       role: "presentation",
-      style: {float: 'right'}
+      style: {float: 'right', color: 'orange'}
     })));
   }
 
