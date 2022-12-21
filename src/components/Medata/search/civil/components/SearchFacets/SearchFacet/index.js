@@ -134,7 +134,7 @@ var SearchFacet = function SearchFacet(_ref) {
       return /*#__PURE__*/ _react["default"].createElement(
         "li",
         {
-          className: "sidenav-item dc-facet-option",
+          className: "dc-facet-option",
           key: key,
         },
         /*#__PURE__*/ _react["default"].createElement(_reactstrap.Input, {
@@ -149,6 +149,7 @@ var SearchFacet = function SearchFacet(_ref) {
           _reactstrap.Label,
           {
             htmlFor: key,
+            className: "sidenav-item",
           },
           /*#__PURE__*/ _react["default"].createElement(
             _reactFontawesome.FontAwesomeIcon,
