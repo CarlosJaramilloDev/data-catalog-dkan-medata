@@ -149,13 +149,12 @@ var SearchFacet = function SearchFacet(_ref) {
           _reactstrap.Label,
           {
             htmlFor: key,
-            className: "text",
           },
           /*#__PURE__*/ _react["default"].createElement(
             _reactFontawesome.FontAwesomeIcon,
             {
               icon: ["fas", checked ? "check-square" : "square"],
-              size: "0.5x",
+              size: "1x",
               "aria-hidden": "true",
               role: "presentation",
             }
