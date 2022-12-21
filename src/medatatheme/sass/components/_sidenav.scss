@@ -5,6 +5,7 @@
     min-width: 200px;
     min-height: 100vw;
     padding: 2rem;
+    text-align: center;
 
     
     @media (max-width: 768px) {
@@ -12,7 +13,7 @@
     }
 
     p{
-        text-align: right;
+        text-align: center;
         font-family: 'Montserrat Regular';
         font-size: 2rem;
         color: $color-tertiary;
@@ -35,11 +36,13 @@
     &-item{
         display: flex;
         flex-direction: column;
-        justify-content: right;
+        justify-content: center;
         font-family: 'Montserrat Regular';
         font-size: 1.3rem;
         padding: 1rem;
         a{
+            display: block;
+            text-align: center;
             text-decoration: none;
             color: $color-grey-medium;
         }
@@ -48,12 +51,11 @@
             border-bottom: .5px solid $color-grey-light;
             .title{
                 text-decoration: none;
-                display: flex;
                 width: 100%;
-                justify-content: space-between;
                 padding: 1rem;
                 &::after{
                     content: '>';
+                    margin-left: 1rem;
                     color: $color-secondary;
                 }
                 .active{
