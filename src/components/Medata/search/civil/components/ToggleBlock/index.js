@@ -48,12 +48,13 @@ function ToggleBlock(_ref) {
       onClick: function onClick() {
         return toggleShow(!show);
       }
-    }, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
+    }, title, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
       icon: ['fas', show ? 'chevron-down' : 'chevron-right'],
       size: "1x",
       "aria-hidden": "true",
-      role: "presentation"
-    }), title));
+      role: "presentation",
+      style: {float: 'right'}
+    })));
   }
 
   return /*#__PURE__*/_react["default"].createElement("div", {

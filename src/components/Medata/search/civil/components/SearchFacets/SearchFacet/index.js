@@ -200,12 +200,8 @@ var SearchFacet = function SearchFacet(_ref) {
       _ToggleBlock["default"],
       {
         key: facetType, // TODO: Fix this so it's adjustable
-        title: /*#__PURE__*/ _react["default"].createElement(
-          "span",
-          null,
-          myLabel
-        ),
-        headingClasses: "facet-block-"
+        title: myLabel,
+        headingClasses: "sidenav-item sidenav-item-dropdown facet-block-"
           .concat(facetType, "-inner")
           .concat(toggleClasses ? " ".concat(toggleClasses) : ""),
         innerClasses: "inner-".concat(facetType, "-facets"),
