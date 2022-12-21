@@ -209,6 +209,7 @@ var SearchFacet = function SearchFacet(_ref) {
           .concat(facetType, "-inner")
           .concat(toggleClasses ? " ".concat(toggleClasses) : ""),
         innerClasses: "inner-".concat(facetType, "-facets"),
+        defaultClosed: true
       },
       /*#__PURE__*/ _react["default"].createElement(
         _ShowMoreContainer["default"],

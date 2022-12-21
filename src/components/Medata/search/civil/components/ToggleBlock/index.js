@@ -70,7 +70,7 @@ ToggleBlock.defaultProps = {
   headingClasses: 'toggle-block-title',
   innerClasses: 'toggle-block-inner',
   className: 'toggle-block',
-  defaultClosed: false
+  defaultClosed: true
 };
 ToggleBlock.propTypes = {
   customId: _propTypes["default"].string,
