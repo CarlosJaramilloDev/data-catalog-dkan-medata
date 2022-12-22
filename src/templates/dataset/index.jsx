@@ -4,10 +4,10 @@ import { Link, useNavigate } from '@reach/router';
 import Layout from '../../components/Layout';
 import ResourceTemplate from "../../components/Resource";
 import { Spinner } from 'reactstrap';
-
 import Text from "../../components/Medata/search/civil/components/Text";
 import Tags from "../../components/Medata/search/civil/components/Tags";
 import TopicIcon from "../../components/Medata/search/civil/templates/TopicIcon";
+import Breadcrumb from '../../components/Medata/breadcrumb';
 
 const Dataset = ({ id, location }) => {
   const { state } = location;
@@ -165,24 +165,7 @@ const Dataset = ({ id, location }) => {
 
   return (
     <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
-      <nav class="breadcrumb">
-        <ol class="breadcrumb-list">
-          <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="/">
-              <i class="fa-solid fa-house"></i>
-            </a>
-          </li>
-          <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="/">Medata</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="/search">Búsqueda</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a class="breadcrumb-link" href="/">{item.title}</a>
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumb themes={item.theme} />
 
       <section class="header-section data">
         <div class="data-container">

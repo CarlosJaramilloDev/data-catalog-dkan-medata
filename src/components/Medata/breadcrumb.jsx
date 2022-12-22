@@ -8,7 +8,7 @@ const Breadcrumb = ({
     const templatesToAddToBreadcrumb = [
       'publisher__name=Medell%C3%8Dn%20en%20Cifras'
     ]
-    
+
     function getUrl() {
       return window.location.href;
     }
@@ -16,19 +16,26 @@ const Breadcrumb = ({
     const currectUrl = getUrl();
     const elementNewArray = [];
 
-    if (typeof currectUrl !== 'undefined') {  
+    if (typeof currectUrl !== 'undefined') {
       templatesToAddToBreadcrumb.forEach((element, index) => {
         if (currectUrl.includes(element)) {
-          let newElement = (<li className="breadcrumb-item" key={index}>
-            <a className="breadcrumb-link" href={`/search?${element}`}>Medellín en cifras</a>
-          </li>);
-          elementNewArray.push(newElement);
+          elementNewArray.push(<li className="breadcrumb-item" key={index}>
+          <a className="breadcrumb-link" href={`/search?${element}`}>Medellín en cifras</a>
+        </li>);
         }
       });
+      if (elementNewArray.length === 0) {
+        elementNewArray.push(<li className="breadcrumb-item" key={'datos'}>
+          <a className="breadcrumb-link" href={`/search?`}>Datos</a>
+        </li>);
+      }
     };
 
-    if(themes.length > 0){
-
+    if (themes.length > 0) {
+      const theme = themes[0];
+      elementNewArray.push(<li className="breadcrumb-item" key={theme.identifier}>
+          <a className="breadcrumb-link" href={`/search?theme=${theme.data}`}>{theme.data}</a>
+        </li>);
     }
     setBreadcrumbExtra(elementNewArray);
 
@@ -44,9 +51,7 @@ const Breadcrumb = ({
         <li className="breadcrumb-item">
           <a className="breadcrumb-link" href="/">Medata</a>
         </li>
-        {breadcrumbExtra.length === 0 ? <li className="breadcrumb-item">
-          <a className="breadcrumb-link" href="/search">Datos</a>
-        </li> : breadcrumbExtra}
+        {breadcrumbExtra}
       </ol>
     </nav>
   );
