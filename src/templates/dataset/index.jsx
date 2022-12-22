@@ -165,7 +165,7 @@ const Dataset = ({ id, location }) => {
 
   return (
     <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
-      <Breadcrumb themes={item.theme} />
+      <Breadcrumb themes={item.theme} curretItem={{title: item.title}}/>
 
       <section class="header-section data">
         <div class="data-container">

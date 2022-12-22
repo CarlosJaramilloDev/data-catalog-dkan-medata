@@ -1,7 +1,8 @@
 import React from "react";
 
 const Breadcrumb = ({
-  themes = []
+  themes = [],
+  curretItem = {}
 }) => {
   const [breadcrumbExtra, setBreadcrumbExtra] = React.useState([]);
   React.useState(() => {
@@ -37,6 +38,13 @@ const Breadcrumb = ({
           <a className="breadcrumb-link" href={`/search?theme=${theme.data}`}>{theme.data}</a>
         </li>);
     }
+
+    if (Object.keys(curretItem) > 0 && curretItem.title) {
+      elementNewArray.push(<li className="breadcrumb-item" key={curretItem.title}>
+          <a className="breadcrumb-link" href={getUrl()}>{curretItem.title}</a>
+        </li>);
+    }
+
     setBreadcrumbExtra(elementNewArray);
 
   }, [breadcrumbExtra]);
