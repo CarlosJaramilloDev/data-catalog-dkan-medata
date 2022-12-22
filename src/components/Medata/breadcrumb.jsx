@@ -18,6 +18,7 @@ const Breadcrumb = ({
     }
 
     const currectUrl = getUrl();
+    console.log('currectUrl', currectUrl);
     if (typeof currectUrl !== 'undefined') {
       templatesToAddToBreadcrumb.forEach((element, index) => {
         if (currectUrl.includes(element)) {
@@ -35,6 +36,7 @@ const Breadcrumb = ({
 
     if (themes.length > 0) {
       const theme = themes[0];
+      console.log('theme', theme);
       elementNewArray.push(<li className="breadcrumb-item" key={theme.identifier}>
           <a className="breadcrumb-link" href={`/search?theme=${theme.data}`}>{theme.data}</a>
         </li>);
