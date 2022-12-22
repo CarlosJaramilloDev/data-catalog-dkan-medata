@@ -125,7 +125,6 @@ const Dataset = ({ id, location }) => {
 
     if (Array.isArray(distribution)) {
       var distributionWithUniqueFormats = getUniqueFormats(Object.entries(distribution));
-      console.log('unic dist', distributionWithUniqueFormats);
       return distributionWithUniqueFormats.map(function (dist, idx) {
         dist = dist.data;
         var type = dist.mediaType ? dist.mediaType.split('/') : '';
@@ -198,7 +197,7 @@ const Dataset = ({ id, location }) => {
                 <span>Descargas:</span>
               </li>
               <li class="data-technical-info-item">
-                <span>Formato(s):</span> {formats(item.distribution)}
+                <span>Formato(s):</span> {item.distribution && formats(item.distribution)}
               </li>
               <li class="data-technical-info-item">
                 <span>Categoria/Etiquetas:</span> {theme.length > 0 && themes(theme)}

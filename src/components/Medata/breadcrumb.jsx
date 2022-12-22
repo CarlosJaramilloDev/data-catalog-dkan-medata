@@ -4,8 +4,6 @@ const Breadcrumb = ({
   themes = null,
   curretItem = null
 }) => {
-  console.log('themes', themes);
-  console.log('curretItem', curretItem);
   const [breadcrumbExtra, setBreadcrumbExtra] = React.useState([]);
 
   React.useEffect(() => {
@@ -19,7 +17,6 @@ const Breadcrumb = ({
 
     const currectUrl = getUrl();
     const elementNewArray = [];
-    console.log('currectUrl', currectUrl);
     if (typeof currectUrl !== 'undefined') {
       templatesToAddToBreadcrumb.forEach((element, index) => {
         if (currectUrl.includes(element)) {
@@ -35,10 +32,8 @@ const Breadcrumb = ({
       }
     };
 
-    console.log('themesEF', themes);
     if (themes && themes.length && themes.length > 0) {
       const theme = themes[0];
-      console.log('theme', theme);
       elementNewArray.push(<li className="breadcrumb-item" key={theme.identifier}>
           <a className="breadcrumb-link" href={`/search?theme=${theme.data}`}>{theme.data}</a>
         </li>);
@@ -50,6 +45,8 @@ const Breadcrumb = ({
           <a className="breadcrumb-link" href={getUrl()}>{curretItem.title}</a>
         </li>);
     }
+
+    console.log("elementNewArray", elementNewArray);
 
     setBreadcrumbExtra(elementNewArray);
 
