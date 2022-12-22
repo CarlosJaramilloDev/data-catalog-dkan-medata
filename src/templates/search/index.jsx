@@ -29,7 +29,7 @@ const SearchTemplate = ({ path }) => {
 
   return (
     <Layout title="Resultados" headerClass='header header--small'>
-      {themes && <Breadcrumb themes={themes} curretItem={{}} />}
+      {themes && themes.length && <Breadcrumb themes={themes} curretItem={{}} />}
       <Search
         searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
         defaultFacets={defaultFacets}
@@ -41,7 +41,7 @@ const SearchTemplate = ({ path }) => {
       >
         <div className="movility">
           <SearchSidebar
-            title={themes && themes.length && themes.length > 0 ? themes[0] : ''}
+            title={themes && themes.length && themes.length > 0 ? themes[0].title : ''}
           />
           <SearchContent />
         </div>
