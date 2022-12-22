@@ -23,13 +23,12 @@ const SearchTemplate = ({ path }) => {
       let themesString = currectUrl.substring(currectUrl.indexOf("theme=") + 6);
       let themeArray = themesString.split(',');
       let theme = themeArray[0];
-      themes.push({identifies: theme, data: theme});
+      themes.push({identifies: theme, data: theme.replace('%20', ' ')});
     }
   };
 
   return (
     <Layout title="Resultados" headerClass='header header--small'>
-      {themes && themes.length && <Breadcrumb themes={themes} curretItem={{}} />}
       <Search
         searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
         defaultFacets={defaultFacets}
@@ -40,8 +39,9 @@ const SearchTemplate = ({ path }) => {
         normalize={normalizeItems}
       >
         <div className="movility">
+          
           <SearchSidebar
-            title={themes && themes.length && themes.length > 0 ? themes[0].title : ''}
+            title={themes && themes.length && themes.length > 0 ? themes[0].data : ''}
           />
           <SearchContent />
         </div>
