@@ -9,25 +9,43 @@ import Layout from "../../components/Layout";
 
 const SearchTemplate = ({ path }) => {
   const location = useLocation();
+
+  const template = 'theme=';
+
+  function getUrl() {
+    return window.location.href;
+  }
+
+  const currectUrl = getUrl();
+  const themes = [];
+  if (typeof currectUrl !== 'undefined') {
+    if (currectUrl.includes(template)) {
+      let themesString = currectUrl.substring(currectUrl.indexOf("theme=") + 6);
+      let themeArray = themesString.split(',');
+      let theme = themeArray[0];
+      themes.push({identifies: theme, data: theme});
+    }
+  };
+
   return (
     <Layout title="Resultados" headerClass='header header--small'>
-        <Breadcrumb themes={[]} curretItem={{}}/>
-        <Search
-          searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
-          defaultFacets={defaultFacets}
-          sortOptions={sortOptions}
-          setSearchUrl={true}
-          path={path}
-          location={location}
-          normalize={normalizeItems}
-        >
-          <div className="movility">
-            <SearchSidebar 
-            title={'Ensayo'}
-            />
-            <SearchContent />
-          </div>
-        </Search>
+      {themes && <Breadcrumb themes={themes} curretItem={{}} />}
+      <Search
+        searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
+        defaultFacets={defaultFacets}
+        sortOptions={sortOptions}
+        setSearchUrl={true}
+        path={path}
+        location={location}
+        normalize={normalizeItems}
+      >
+        <div className="movility">
+          <SearchSidebar
+            title={themes && themes.length && themes.length > 0 ? themes[0] : ''}
+          />
+          <SearchContent />
+        </div>
+      </Search>
     </Layout>
   );
 }
