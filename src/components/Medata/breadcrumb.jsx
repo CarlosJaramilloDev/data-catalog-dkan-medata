@@ -42,7 +42,7 @@ const Breadcrumb = ({
     console.log('curretItemEF', curretItem);
     console.log('Object.keys(curretItem)', Object.keys(curretItem));
     console.log('curretItem.title', curretItem.title);
-    if (curretItem && Object.keys(curretItem) > 0 && curretItem.title) {
+    if (curretItem && Object.keys(curretItem).length && Object.keys(curretItem).length > 0 && curretItem.title) {
       console.log('Entré');
       elementNewArray.push(<li className="breadcrumb-item" key={curretItem.title}>
           <a className="breadcrumb-link" href={getUrl()}>{curretItem.title}</a>
