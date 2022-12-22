@@ -7,7 +7,7 @@ const Breadcrumb = ({
   console.log('themes', themes);
   console.log('curretItem', curretItem);
   const [breadcrumbExtra, setBreadcrumbExtra] = React.useState([]);
-  const elementNewArray = [];
+
   React.useEffect(() => {
     const templatesToAddToBreadcrumb = [
       'publisher__name=Medell%C3%8Dn%20en%20Cifras'
@@ -18,6 +18,7 @@ const Breadcrumb = ({
     }
 
     const currectUrl = getUrl();
+    const elementNewArray = [];
     console.log('currectUrl', currectUrl);
     if (typeof currectUrl !== 'undefined') {
       templatesToAddToBreadcrumb.forEach((element, index) => {
@@ -34,6 +35,7 @@ const Breadcrumb = ({
       }
     };
 
+    console.log('themesEF', themes);
     if (themes.length > 0) {
       const theme = themes[0];
       console.log('theme', theme);
@@ -42,6 +44,7 @@ const Breadcrumb = ({
         </li>);
     }
 
+    console.log('curretItemEF', curretItem);
     if (Object.keys(curretItem) > 0 && curretItem.title) {
       elementNewArray.push(<li className="breadcrumb-item" key={curretItem.title}>
           <a className="breadcrumb-link" href={getUrl()}>{curretItem.title}</a>
@@ -50,7 +53,7 @@ const Breadcrumb = ({
 
     setBreadcrumbExtra(elementNewArray);
 
-  }, []);
+  }, [themes, curretItem]);
   return (
     <nav className="breadcrumb">
       <ol className="breadcrumb-list">
