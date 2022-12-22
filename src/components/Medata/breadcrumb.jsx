@@ -4,7 +4,7 @@ const Breadcrumb = ({
   themes = []
 }) => {
   const [breadcrumbExtra, setBreadcrumbExtra] = React.useState([]);
-  React.useEffect(() => {
+  React.useState(() => {
     const templatesToAddToBreadcrumb = [
       'publisher__name=Medell%C3%8Dn%20en%20Cifras'
     ]
@@ -30,8 +30,6 @@ const Breadcrumb = ({
     if(themes.length > 0){
 
     }
-
-
     setBreadcrumbExtra(elementNewArray);
 
   }, [breadcrumbExtra]);
