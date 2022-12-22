@@ -41,8 +41,8 @@ const SearchTemplate = ({ path }) => {
       >
         <div className="movility">
           <SearchSidebar
-            title={themes && themes.length && themes.length > 0 ? themes[0].data : ''}
-            withIcon={themes && themes.length && themes.length > 0 ? true : false} 
+            title={themes && Array.isArray(themes) && themes.length > 0 ? themes[0].data : ''}
+            withIcon={themes && Array.isArray(themes) && themes.length > 0 ? true : false} 
           />
           <SearchContent />
         </div>

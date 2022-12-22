@@ -32,7 +32,7 @@ const Breadcrumb = ({
       }
     };
 
-    if (themes && themes.length && themes.length > 0) {
+    if (themes && Array.isArray(themes) && themes.length > 0) {
       const theme = themes[0];
       elementNewArray.push(<li className="breadcrumb-item" key={theme.identifier}>
           <a className="breadcrumb-link" href={`/search?theme=${theme.data}`}>{theme.data}</a>
