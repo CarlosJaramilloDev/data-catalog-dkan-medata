@@ -7,18 +7,17 @@ const Breadcrumb = ({
   console.log('themes', themes);
   console.log('curretItem', curretItem);
   const [breadcrumbExtra, setBreadcrumbExtra] = React.useState([]);
-  React.useState(() => {
+  const elementNewArray = [];
+  React.useEffect(() => {
     const templatesToAddToBreadcrumb = [
       'publisher__name=Medell%C3%8Dn%20en%20Cifras'
-    ]
+    ];
 
     function getUrl() {
       return window.location.href;
     }
 
     const currectUrl = getUrl();
-    const elementNewArray = [];
-
     if (typeof currectUrl !== 'undefined') {
       templatesToAddToBreadcrumb.forEach((element, index) => {
         if (currectUrl.includes(element)) {
@@ -49,7 +48,7 @@ const Breadcrumb = ({
 
     setBreadcrumbExtra(elementNewArray);
 
-  }, [breadcrumbExtra]);
+  }, []);
   return (
     <nav className="breadcrumb">
       <ol className="breadcrumb-list">
