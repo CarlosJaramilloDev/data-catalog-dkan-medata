@@ -1,8 +1,8 @@
 import React from "react";
 
 const Breadcrumb = ({
-  themes = [],
-  curretItem = {}
+  themes = null,
+  curretItem = null
 }) => {
   console.log('themes', themes);
   console.log('curretItem', curretItem);
@@ -36,7 +36,7 @@ const Breadcrumb = ({
     };
 
     console.log('themesEF', themes);
-    if (themes.length > 0) {
+    if (themes && themes.length && themes.length > 0) {
       const theme = themes[0];
       console.log('theme', theme);
       elementNewArray.push(<li className="breadcrumb-item" key={theme.identifier}>
@@ -45,7 +45,7 @@ const Breadcrumb = ({
     }
 
     console.log('curretItemEF', curretItem);
-    if (Object.keys(curretItem) > 0 && curretItem.title) {
+    if (curretItem && Object.keys(curretItem) > 0 && curretItem.title) {
       elementNewArray.push(<li className="breadcrumb-item" key={curretItem.title}>
           <a className="breadcrumb-link" href={getUrl()}>{curretItem.title}</a>
         </li>);

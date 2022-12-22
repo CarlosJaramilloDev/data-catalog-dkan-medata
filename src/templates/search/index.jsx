@@ -11,7 +11,7 @@ const SearchTemplate = ({ path }) => {
   const location = useLocation();
   return (
     <Layout title="Resultados" headerClass='header header--small'>
-        <Breadcrumb />
+        <Breadcrumb themes={[]} curretItem={{}}/>
         <Search
           searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
           defaultFacets={defaultFacets}
