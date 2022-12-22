@@ -9,23 +9,25 @@ import Layout from "../../components/Layout";
 
 const SearchTemplate = ({ path }) => {
   const location = useLocation();
+  const [themes, setThemes] = React.useState([]);
+  React.useEffect(() => {
+    const template = 'theme=';
 
-  const template = 'theme=';
-
-  function getUrl() {
-    return window.location.href;
-  }
-
-  const currectUrl = getUrl();
-  const themes = [];
-  if (typeof currectUrl !== 'undefined') {
-    if (currectUrl.includes(template)) {
-      let themesString = currectUrl.substring(currectUrl.indexOf("theme=") + 6);
-      let themeArray = themesString.split(',');
-      let theme = themeArray[0];
-      themes.push({ identifies: theme, data: theme.replaceAll('%20', ' ') });
+    function getUrl() {
+      return window.location.href;
     }
-  };
+
+    const currectUrl = getUrl();
+    
+    if (typeof currectUrl !== 'undefined') {
+      if (currectUrl.includes(template)) {
+        let themesString = currectUrl.substring(currectUrl.indexOf("theme=") + 6);
+        let themeArray = themesString.split(',');
+        let theme = themeArray[0];
+        setThemes([{ identifies: theme, data: theme.replaceAll('%20', ' ') }]);
+      }
+    };
+  }, []);
 
   return (
     <Layout title="Resultados" headerClass='header header--small'>
@@ -42,7 +44,7 @@ const SearchTemplate = ({ path }) => {
         <div className="movility">
           <SearchSidebar
             title={themes && Array.isArray(themes) && themes.length > 0 ? themes[0].data : ''}
-            withIcon={themes && Array.isArray(themes) && themes.length > 0 ? true : false} 
+            withIcon={themes && Array.isArray(themes) && themes.length > 0 ? true : false}
           />
           <SearchContent />
         </div>
