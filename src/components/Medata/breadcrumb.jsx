@@ -4,6 +4,8 @@ const Breadcrumb = ({
   themes = [],
   curretItem = {}
 }) => {
+  console.log('themes', themes);
+  console.log('curretItem', curretItem);
   const [breadcrumbExtra, setBreadcrumbExtra] = React.useState([]);
   React.useState(() => {
     const templatesToAddToBreadcrumb = [
