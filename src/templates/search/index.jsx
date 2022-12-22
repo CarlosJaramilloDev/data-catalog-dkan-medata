@@ -43,6 +43,7 @@ const SearchTemplate = ({ path }) => {
 
           <SearchSidebar
             title={themes && themes.length && themes.length > 0 ? themes[0].data : ''}
+            withIcon={themes && themes.length && themes.length > 0 ? true : false} 
           />
           <SearchContent />
         </div>
