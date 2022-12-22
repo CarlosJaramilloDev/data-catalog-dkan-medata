@@ -23,7 +23,7 @@ const SearchTemplate = ({ path }) => {
       let themesString = currectUrl.substring(currectUrl.indexOf("theme=") + 6);
       let themeArray = themesString.split(',');
       let theme = themeArray[0];
-      themes.push({ identifies: theme, data: theme.replace('%20', ' ') });
+      themes.push({ identifies: theme, data: theme.replaceAll('%20', ' ') });
     }
   };
 
