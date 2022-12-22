@@ -4,28 +4,14 @@ import { defaultFacets, normalizeItems, sortOptions } from '../../config/search'
 import Search from "../../components/Medata/search/civil/components/Search";
 import SearchSidebar from "../../components/Medata/search/civil/templates/SearchSidebar";
 import SearchContent from "../../components/Medata/search/civil/templates/SearchContent";
+import Breadcrumb from '../../components/Medata/breadcrumb';
 import Layout from "../../components/Layout";
 
 const SearchTemplate = ({ path }) => {
   const location = useLocation();
   return (
     <Layout title="Resultados" headerClass='header header--small'>
-      <nav className="breadcrumb">
-        <ol className="breadcrumb-list">
-          <li className="breadcrumb-item">
-            <a className="breadcrumb-link" href="/">
-              <i className="fa-solid fa-house"></i>
-            </a>
-          </li>
-          <li className="breadcrumb-item">
-            <a className="breadcrumb-link" href="/">Medata</a>
-          </li>
-          <li className="breadcrumb-item">
-            <a className="breadcrumb-link" href="/search">Búsqueda</a>
-          </li>
-        </ol>
-      </nav>
-
+        <Breadcrumb />
         <Search
           searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
           defaultFacets={defaultFacets}

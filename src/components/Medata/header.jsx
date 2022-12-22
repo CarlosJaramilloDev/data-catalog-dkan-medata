@@ -44,28 +44,28 @@ const Header = ({
   return (
     <header className={headerClass} id="header">
       <nav className="navbar container-home">
-        <div class="logos">
-          <a href="https://www.medellin.gov.co/" class="brand">
+        <div className="logos">
+          <a href="https://www.medellin.gov.co/" className="brand">
             <img src={LogoAlcaldiaVertical} alt="Logo alcaldía de Medellín" />
           </a>
-          <a href="/" class="logo">
+          <a href="/" className="logo">
             <img src={LogoMedata} alt="Logo MeData" />
           </a>
         </div>
         <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle"></label>
-        <div class="burger" id="burger">
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
+        <label className='menu-button-container' htmlFor="menu-toggle"></label>
+        <div className="burger" id="burger">
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
         </div>
         <div className="menu" id="menu">
-          <div class="menu-container">
-            <div class="logos-mobile">
-              <a href="https://www.medellin.gov.co/" class="brand">
+          <div className="menu-container">
+            <div className="logos-mobile">
+              <a href="https://www.medellin.gov.co/" className="brand">
                 <img src={LogoAlcaldiaVertical} alt="Logo alcaldía de Medellín" />
               </a>
-              <a href="/" class="logo">
+              <a href="/" className="logo">
                 <img src={LogoMedata} alt="Logo MeData" />
               </a>
             </div>
