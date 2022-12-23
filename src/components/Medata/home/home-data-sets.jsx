@@ -2,7 +2,6 @@ import React from "react";
 import IconoNumeroDatos from '../../../medatatheme/assets/icons/group-data/icon-1.png';
 import IconoDependenciaDatos from '../../../medatatheme/assets/icons/group-data/icon-2.png';
 import IconoNumeroTableros from '../../../medatatheme/assets/icons/group-data/icon-3.png';
-import IconoNumeroVisitas from '../../../medatatheme/assets/icons/group-data/icon-4.png';
 
 const HomeDataSets = ({
   dataLength,

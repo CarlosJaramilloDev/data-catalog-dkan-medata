@@ -13,6 +13,8 @@ const Dataset = ({ id, location }) => {
   const { state } = location;
   const [item, setItem] = useState(state && state.dataset ? state.dataset : {})
   const [hasWindow, checkForWindow] = useState(false);
+  const [display, setDisplay] = useState('block');
+  const [iconCardClass, setIconCardClass] = useState('fa-chevron-down');
 
   useEffect(() => {
     if (window !== undefined) {
@@ -162,7 +164,7 @@ const Dataset = ({ id, location }) => {
 
   return (
     <Layout title={`Dataset - ${item.title}`} headerClass='header header--small'>
-      {item && item.theme && <Breadcrumb themes={item.theme} curretItem={{title: item.title}}/>}
+      {item && item.theme && <Breadcrumb themes={item.theme} curretItem={{ title: item.title }} />}
 
       <section class="header-section data">
         <div class="data-container">
@@ -173,7 +175,7 @@ const Dataset = ({ id, location }) => {
             </p>
           </div>
           <div class="button-close">
-            <button onClick={() => navigate(-1)} style={{background: 'none', border: 'none'}}> x </button>
+            <button onClick={() => navigate(-1)} style={{ background: 'none', border: 'none' }}> x </button>
           </div>
         </div>
       </section>
@@ -204,9 +206,9 @@ const Dataset = ({ id, location }) => {
               <p class="subtitle subtitle--black">
                 <b>Ficha técnica</b>
               </p>
-              <i id="icon-card" class="fa-solid fa-chevron-up"></i>
+              <i id="icon-card" className={`fa-solid ${iconCardClass}`}></i>
             </div>
-            <div id="card-body" class="data-card-body" style={{ display: 'block' }}>
+            <div id="card-body" class="data-card-body" style={{ display: display }}>
               <table class="data-table">
                 <tbody><tr>
                   <th>Dependencias</th>
