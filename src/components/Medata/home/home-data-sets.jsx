@@ -15,7 +15,17 @@ const HomeDataSets = ({
       </p>
       <hr className="separator separator--black" />
       <p className="text">
-        Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir
+      Los datos abiertos son información pública, dispuesta en diferentes formatos, que permite su uso y reutilización bajo licencia abierta y sin restricciones legales para su aprovechamiento.</p>
+      <p className="text">
+      ¿Para qué pueden servirte los datos abiertos de MEData? Te damos algunas ideas:
+      </p>
+      <p className="text">
+      Planear tus procesos y negocios.<br/>
+      Hacer veeduría a la Administración Pública.<br/>
+      Diseñar productos.<br/>
+      Escribir artículos.<br/>
+      Basar tus investigaciones en información de primera mano.<br/>
+      Conocer a Medellín y sus múltiples realidades.<br/>
       </p>
       <div className="grid">
         <div className="data-info">

@@ -3,7 +3,7 @@ import HomeDataTopicDetail from "./home-data-topic-detail"
 
 const HomeDataTopics = ({
   title = 'Temáticas de datos',
-  text = 'Texto de introducción o explicación del tipo de contenido al cual podrá acceder el usuario visitante… Pendiente por definir.',
+  text = 'Nuestros datos abiertos se encuentran organizados por  tematicas, lo que permite el acceso de forma rápida a la información de interés.',
   items = []
 }) => {
   const itemsShow = items.map((item) => {
