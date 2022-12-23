@@ -59,8 +59,8 @@ const ResourceTemplate = ({ resource }) => {
       default:
         content = (
           <FileDownload
-            title={'Descargar'}
-            description={'Texto aicional'}
+            title={`Descargar ${format.toUpperCase()}`}
+            description={resource.data.title}
             label={'Descargar'}
             format={format}
             downloadURL={resource.data.downloadURL}
