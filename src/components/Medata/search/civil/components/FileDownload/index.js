@@ -19,27 +19,26 @@ var FileDownload = function FileDownload(_ref) {
   var title = _ref.title,
       format = _ref.format,
       downloadURL = _ref.downloadURL,
+      hasPreview = _ref.hasPreview || true,
       description = _ref.description;
   var label = title || format;
+  const buttonStyle = (!hasPreview ? {'justify-content': 'flex-start'} : {})
 
   //const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
   const finalUrl = downloadURL;
 
   return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "data-actions"
+    className: "data-actions",
+    style: buttonStyle
   }, /*#__PURE__*/_react["default"].createElement("a", {
     href: finalUrl,
     title: label,
     className: 'button button-secondary'
   }, /*#__PURE__*/_react["default"].createElement("i", {
     className: 'fa-solid fa-download'
-  }),' ', label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
-    value: description,
-    wrapper: {
-      tag: 'div',
-      classes: 'dc-file-description'
-    }
-  }));
+  }),' ', label), description && /*#__PURE__*/_react["default"].createElement('span', {
+    className: 'paragraph paragraph--black'
+  }, ' ', description));
 };
 
 FileDownload.defaultProps = {
