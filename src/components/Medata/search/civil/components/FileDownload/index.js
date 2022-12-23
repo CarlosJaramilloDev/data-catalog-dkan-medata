@@ -33,7 +33,7 @@ var FileDownload = function FileDownload(_ref) {
     className: 'button button-secondary'
   }, /*#__PURE__*/_react["default"].createElement("i", {
     className: 'fa-solid fa-download'
-  }), label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
+  }),' ', label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
     value: description,
     wrapper: {
       tag: 'div',
