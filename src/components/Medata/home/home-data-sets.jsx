@@ -46,15 +46,6 @@ const HomeDataSets = ({
             Número de tableros de análisis
           </p>
         </div>
-        <div className="data-info">
-          <img src={IconoNumeroVisitas} alt="" />
-          <p className="data-info-number">
-            162.670
-          </p>
-          <p className="text">
-            Número de visitas a la fecha
-          </p>
-        </div>
       </div>
     </div>
   );

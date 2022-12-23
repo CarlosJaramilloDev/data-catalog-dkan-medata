@@ -15,7 +15,7 @@ const HomeDataTopics = ({
   return (
     <div className="data-group">
       <p className="title title--grey">{title}</p>
-      <hr className="separator separator--grey" />
+      <hr className="separator separator--purple" />
       <p className="text">
       {text}
       </p>
