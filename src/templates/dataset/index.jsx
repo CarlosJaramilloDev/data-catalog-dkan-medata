@@ -215,7 +215,9 @@ const Dataset = ({ id, location }) => {
               <p class="subtitle subtitle--black">
                 <b>Ficha técnica</b>
               </p>
-              <span style={{ color: spanColor, marginRight: '10px' }}> {spanText}</span> <i id="icon-card" className={`fa-solid ${iconCardClass}`} onClick={() => toogleTechCardVisibility()}></i>
+              <div onClick={() => toogleTechCardVisibility()}>
+                <span class="text" style={{ color: spanColor, marginRight: '10px' }}> {spanText}</span> <i id="icon-card" className={`fa-solid ${iconCardClass}`} ></i>
+              </div>
             </div>
             <div id="card-body" class="data-card-body" style={{ display: display }}>
               <table class="data-table">
