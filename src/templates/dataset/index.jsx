@@ -160,6 +160,11 @@ const Dataset = ({ id, location }) => {
     }, []);
   };
 
+  function toogleTechCardVisibility() {
+    setDisplay(display == "none" || display == "" ? "block" : "none");
+    setIconCardClass(iconCardClass === 'fa-chevron-down' ? 'fa-chevron-up' : 'fa-chevron-down');
+  };
+
   const navigate = useNavigate();
 
   return (
@@ -206,7 +211,7 @@ const Dataset = ({ id, location }) => {
               <p class="subtitle subtitle--black">
                 <b>Ficha técnica</b>
               </p>
-              <i id="icon-card" className={`fa-solid ${iconCardClass}`}></i>
+              <i id="icon-card" className={`fa-solid ${iconCardClass}`} onClick={toogleTechCardVisibility()}></i>
             </div>
             <div id="card-body" class="data-card-body" style={{ display: display }}>
               <table class="data-table">
