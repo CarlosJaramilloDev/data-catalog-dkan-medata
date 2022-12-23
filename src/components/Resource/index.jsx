@@ -27,31 +27,30 @@ const ResourceTemplate = ({ resource }) => {
             resource={resource}
             showDBColumnNames={true}
           >
+            <DataTableHeader />
+            <DataTable />
             <FileDownload
-              title={`${resource.data.title || 'Archivo'} (Clic para descargar)`}
-              label={resource.data.downloadURL}
+              title={'Descargar'}
+              label={'Descargar'}
               format={format}
               downloadURL={downloadURL ? downloadURL : accessURL}
             />
             <hr />
-            <DataTableHeader />
-            <DataTable />
           </Resource>
         )
         break;
       case 'tablero':
       case 'iframe':
         content = (
-          <div
-          >
+          <div>
+            <DatasetFrame url={downloadURL ? downloadURL : accessURL} />
+            {/* <hr />
             <FileDownload
               title={`${resource.data.title || 'URL'} (Clic para ver)`}
               label={resource.data.downloadURL}
               format={format}
               downloadURL={downloadURL ? downloadURL : accessURL}
-            />
-            <hr />
-            <DatasetFrame url={downloadURL ? downloadURL : accessURL}/>
+            /> */}
           </div>
         )
         break;
@@ -59,8 +58,8 @@ const ResourceTemplate = ({ resource }) => {
       default:
         content = (
           <FileDownload
-            title={`${resource.data.title || 'Archivo o URL'} (Clic para ver o descargar)`}
-            label={resource.data.downloadURL}
+            title={'Descargar'}
+            label={'Descargar'}
             format={format}
             downloadURL={resource.data.downloadURL}
           />

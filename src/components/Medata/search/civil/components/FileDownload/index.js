@@ -26,14 +26,14 @@ var FileDownload = function FileDownload(_ref) {
   const finalUrl = downloadURL;
 
   var item = /*#__PURE__*/_react["default"].createElement("div", {
-    className: "dc-resource"
-  }, /*#__PURE__*/_react["default"].createElement(_FormatIcon["default"], {
-    format: format
-  }), /*#__PURE__*/_react["default"].createElement("a", {
+    className: "data-actions"
+  }, /*#__PURE__*/_react["default"].createElement("a", {
     href: finalUrl,
     title: label,
-    className: 'h5'
-  }, label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
+    className: 'button button-secondary'
+  }, /*#__PURE__*/_react["default"].createElement("i", {
+    className: 'fa-solid fa-download'
+  }), label), description && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
     value: description,
     wrapper: {
       tag: 'div',
