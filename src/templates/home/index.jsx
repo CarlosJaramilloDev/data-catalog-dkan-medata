@@ -58,7 +58,7 @@ const Home = () => {
         setItems(themes.map(x => {
             let item = {
                 identifier: x.identifier,
-                ref: `search?theme=${x.data}`,
+                ref: `search/?theme=${x.data}`,
                 title: x.data,
             };
             return item;

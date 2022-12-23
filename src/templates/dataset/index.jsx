@@ -247,7 +247,7 @@ const Dataset = ({ id, location }) => {
                       item.distribution.map(dist => {
                         return <ResourceTemplate key={dist.identifier} resource={dist} identifier={dist.identifier} />;
                       })}
-                    <Tags tags={tag} path="/search?keyword=" label="Etiquetas" />
+                    <Tags tags={tag} path="/search/?keyword=" label="Etiquetas" />
                     <hr />
                     <p>La información de esta página también está disponible vía {" "}
                       <Link
