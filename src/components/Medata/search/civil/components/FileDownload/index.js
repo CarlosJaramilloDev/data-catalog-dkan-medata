@@ -19,11 +19,12 @@ var FileDownload = function FileDownload(_ref) {
   var title = _ref.title,
       format = _ref.format,
       downloadURL = _ref.downloadURL,
-      hasPreview = _ref.hasPreview || true,
+      hasPreview = _ref.hasPreview,
       description = _ref.description;
   var label = title || format;
   const buttonStyle = (!hasPreview) ? { justifyContent: 'flex-start'} : {};
 
+  console.log(_ref);
   console.log(buttonStyle);
 
   //const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
@@ -45,13 +46,15 @@ var FileDownload = function FileDownload(_ref) {
 
 FileDownload.defaultProps = {
   description: '',
-  title: ''
+  title: '',
+  hasPreview: true
 };
 FileDownload.propTypes = {
   title: _propTypes["default"].string,
   format: _propTypes["default"].string.isRequired,
   downloadURL: _propTypes["default"].string.isRequired,
-  description: _propTypes["default"].string
+  description: _propTypes["default"].string,
+  hasPreview: _propTypes["default"].boolean
 };
 var _default = FileDownload;
 exports["default"] = _default;

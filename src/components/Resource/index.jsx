@@ -7,7 +7,6 @@ import DataTableHeader from "../Medata/search/civil/templates/DataTableHeader";
 import DatasetFrame from "../Medata/dataset/dataset-frame";
 
 const ResourceTemplate = ({ resource }) => {
-  console.log(resource);
   const type = resource.hasOwnProperty('data') && resource.data.hasOwnProperty('mediaType') ? resource.data.mediaType.split("/") : '';
   const backup = type ? type[1] : 'data';
   const format = resource.hasOwnProperty('data') && resource.data.hasOwnProperty('format') ? resource.data.format : backup;
