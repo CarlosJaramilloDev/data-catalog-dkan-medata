@@ -113,6 +113,7 @@ var SearchFacet = function SearchFacet(_ref) {
           newFacet: newFacet,
         },
       });
+      window.location.reload();
     };
 
     if (InputComponent) {
