@@ -27,7 +27,7 @@ const Header = ({
             Consulta y accede a más de <b> {datasetsL} conjunto(s) de datos en línea </b>
           </p>
           <div className="search-wrapper">
-            <form action="/search" method="get">
+            <form action="/search/" method="get">
               <input
                 required="required"
                 type="text"
