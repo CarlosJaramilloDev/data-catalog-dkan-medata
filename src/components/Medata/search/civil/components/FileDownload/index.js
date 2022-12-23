@@ -23,10 +23,7 @@ var FileDownload = function FileDownload(_ref) {
       description = _ref.description;
   var label = title || format;
   const buttonStyle = (!hasPreview) ? { justifyContent: 'flex-start'} : {};
-
-  console.log(_ref);
-  console.log(buttonStyle);
-
+  
   //const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
   const finalUrl = downloadURL;
 

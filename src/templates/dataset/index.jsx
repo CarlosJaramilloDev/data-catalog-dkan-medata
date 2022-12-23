@@ -15,6 +15,8 @@ const Dataset = ({ id, location }) => {
   const [hasWindow, checkForWindow] = useState(false);
   const [display, setDisplay] = useState('block');
   const [iconCardClass, setIconCardClass] = useState('fa-chevron-down');
+  const [spanText, setSpanText] = useState('Cerrar detalles');
+  const [spanColor, setSpanColor] = useState('#FA8D2D');
 
   useEffect(() => {
     if (window !== undefined) {
@@ -163,6 +165,8 @@ const Dataset = ({ id, location }) => {
   function toogleTechCardVisibility() {
     setDisplay(display == "none" || display == "" ? "block" : "none");
     setIconCardClass(iconCardClass === 'fa-chevron-down' ? 'fa-chevron-up' : 'fa-chevron-down');
+    setSpanColor(spanColor === '#FA8D2D' ? '#53ACE9' : '#FA8D2D');
+    setSpanText(spanText === 'Cerrar detalles' ? 'Abrir detalles' : 'Cerrar detalles');
   };
 
   const navigate = useNavigate();
@@ -211,7 +215,7 @@ const Dataset = ({ id, location }) => {
               <p class="subtitle subtitle--black">
                 <b>Ficha técnica</b>
               </p>
-              <i id="icon-card" className={`fa-solid ${iconCardClass}`} onClick={() => toogleTechCardVisibility()}></i>
+              <span style={{ color: spanColor, marginRight: '10px' }}> {spanText}</span> <i id="icon-card" className={`fa-solid ${iconCardClass}`} onClick={() => toogleTechCardVisibility()}></i>
             </div>
             <div id="card-body" class="data-card-body" style={{ display: display }}>
               <table class="data-table">
