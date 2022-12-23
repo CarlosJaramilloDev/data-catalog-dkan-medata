@@ -25,7 +25,7 @@ var FileDownload = function FileDownload(_ref) {
   //const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
   const finalUrl = downloadURL;
 
-  var item = /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "data-actions"
   }, /*#__PURE__*/_react["default"].createElement("a", {
     href: finalUrl,
@@ -40,10 +40,6 @@ var FileDownload = function FileDownload(_ref) {
       classes: 'dc-file-description'
     }
   }));
-
-  return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "dc-file-download"
-  }, item);
 };
 
 FileDownload.defaultProps = {
