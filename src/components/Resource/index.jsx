@@ -63,6 +63,7 @@ const ResourceTemplate = ({ resource }) => {
             description={resource.data.title}
             label={'Descargar'}
             format={format}
+            hasPreview={false}
             downloadURL={resource.data.downloadURL}
           />
         );
