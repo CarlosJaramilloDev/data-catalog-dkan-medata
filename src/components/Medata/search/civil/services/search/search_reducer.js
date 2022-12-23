@@ -32,6 +32,7 @@ function updateSelectedFacetsState(state, action) {
     newSelectedFacets.push(newFacet);
   }
 
+  console.log('_objectSpread');
   return _objectSpread(_objectSpread({}, state), {}, {
     selectedFacets: newSelectedFacets,
     page: action.data.page || 1
