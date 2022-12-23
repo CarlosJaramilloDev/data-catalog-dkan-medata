@@ -183,7 +183,7 @@ var Search = function Search(_ref) {
       var currentUrl = "".concat(loc.pathname).concat(loc.search);
 
       if (window !== undefined && searchUrl !== currentUrl) {
-        window.history.pushState({}, 'Buscar', "".concat(searchUrl));
+        //window.history.pushState({}, 'Buscar', "".concat(searchUrl));
         window.location.reload();
       }
     }
