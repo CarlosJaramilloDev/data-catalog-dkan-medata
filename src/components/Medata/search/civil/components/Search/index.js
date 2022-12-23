@@ -184,6 +184,7 @@ var Search = function Search(_ref) {
 
       if (window !== undefined && searchUrl !== currentUrl) {
         window.history.pushState({}, 'Buscar', "".concat(searchUrl));
+        console.log("Por acá pasé");
       }
     }
   }, [searchState.items, searchState.facetsResults]);
