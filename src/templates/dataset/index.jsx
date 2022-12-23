@@ -20,7 +20,6 @@ const Dataset = ({ id, location }) => {
     }
     async function getItem() {
       const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/metastore/schemas/dataset/items/${id}?show-reference-ids`);
-      console.log("ITEM", data);
       setItem(data);
     }
     if (!state || !state.dataset) {
@@ -118,7 +117,6 @@ const Dataset = ({ id, location }) => {
   }
 
   function formats(distribution) {
-    console.log('dist', distribution);
     if (!distribution) {
       return null;
     }
@@ -189,12 +187,6 @@ const Dataset = ({ id, location }) => {
               </li>
               <li class="data-technical-info-item">
                 <span>Última modificación:</span> {item.modified || ''}
-              </li>
-              <li class="data-technical-info-item">
-                <span>Vistas:</span>
-              </li>
-              <li class="data-technical-info-item">
-                <span>Descargas:</span>
               </li>
               <li class="data-technical-info-item">
                 <span>Formato(s):</span> {item.distribution && formats(item.distribution)}

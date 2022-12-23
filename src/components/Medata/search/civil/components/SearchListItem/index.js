@@ -25,8 +25,6 @@ var _router = require("@reach/router");
 
 /* eslint-disable */
 var SearchListItem = function SearchListItem(_ref) {
-/*   console.log(`Ref: ${JSON.stringify(_ref)}`);
-  console.log(`Item: ${JSON.stringify(_ref.item)}`); */
   var className = _ref.className,
       item = _ref.item,
       color = _ref.color;
@@ -121,10 +119,10 @@ var SearchListItem = function SearchListItem(_ref) {
     className: "results-data"
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-headings"
-  },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),  /*#__PURE__*/_react["default"].createElement('p', null, "Vistas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Descargas"),  /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
+  },  /*#__PURE__*/_react["default"].createElement('p', null, "Última modificación"),   /*#__PURE__*/_react["default"].createElement('p', null, "Formato")),
   /*#__PURE__*/_react["default"].createElement("div", {
     className: "results-info"
-  },  /*#__PURE__*/_react["default"].createElement('p', null, modified),  /*#__PURE__*/_react["default"].createElement('p', null, "0"),  /*#__PURE__*/_react["default"].createElement('p', null, "0"),  /*#__PURE__*/_react["default"].createElement('p', null, format && formats(format))))),
+  },  /*#__PURE__*/_react["default"].createElement('p', null, modified), /*#__PURE__*/_react["default"].createElement('p', null, format && formats(format))))),
   /*#__PURE__*/_react["default"].createElement('div', {
     className: 'results-card-footer'
   },/*#__PURE__*/_react["default"].createElement('div', {

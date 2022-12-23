@@ -19,7 +19,6 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function updateSelectedFacetsState(state, action) {
-  console.log('updateSelectedFacetsState', state, action);
   var selectedFacets = state.selectedFacets;
   var newFacet = action.data.newFacet;
   var newSelectedFacets = (0, _toConsumableArray2["default"])(selectedFacets);
@@ -33,7 +32,6 @@ function updateSelectedFacetsState(state, action) {
     newSelectedFacets.push(newFacet);
   }
 
-  console.log('_objectSpread');
   return _objectSpread(_objectSpread({}, state), {}, {
     selectedFacets: newSelectedFacets,
     page: action.data.page || 1
@@ -41,7 +39,6 @@ function updateSelectedFacetsState(state, action) {
 }
 
 function mergedFacets(state, action) {
-  console.log('mergedFacets', state, action);
   if ((0, _typeof2["default"])(action.data) !== 'object' || !Array.isArray(action.data.facetsResults)) {
     return _objectSpread({}, state);
   }
@@ -67,7 +64,6 @@ function mergedFacets(state, action) {
     });
   }
 
-  console.log('finish mergedFacets');
   return _objectSpread(_objectSpread({}, state), {}, {
     facetsResults: _final
   });
