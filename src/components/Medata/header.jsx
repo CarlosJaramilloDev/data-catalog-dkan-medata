@@ -29,6 +29,7 @@ const Header = ({
           <div className="search-wrapper">
             <form action="/search" method="get">
               <input
+                required="required"
                 type="text"
                 placeholder="¿Qué deseas buscar? Ej: Parque automotor"
                 className="search-input"

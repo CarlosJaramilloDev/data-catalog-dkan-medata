@@ -33,7 +33,7 @@ const SearchTemplate = ({ path }) => {
     <Layout title="Resultados" headerClass='header header--small'>
       {themes && Array.isArray(themes) && <Breadcrumb themes={themes} curretItem={{}} />}
       <Search
-        searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search`}
+        searchEndpoint={`${process.env.REACT_APP_ROOT_URL}/search/`}
         defaultFacets={defaultFacets}
         sortOptions={sortOptions}
         setSearchUrl={true}

@@ -34,7 +34,7 @@ const Home = () => {
             setPublishersL(data.length);
         }
         async function getBoardsLength() {
-            const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search?publisher__name=Medellín%20en%20cifras`)
+            const { data } = await axios.get(`${process.env.REACT_APP_ROOT_URL}/search/?publisher__name=Medellín%20en%20cifras`)
             if (data && data.total) {
                 setBoardsLength(data.total);
             }

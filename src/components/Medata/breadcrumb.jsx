@@ -21,13 +21,13 @@ const Breadcrumb = ({
       templatesToAddToBreadcrumb.forEach((element, index) => {
         if (currectUrl.includes(element)) {
           elementNewArray.push(<li className="breadcrumb-item" key={index}>
-          <a className="breadcrumb-link" href={`/search?${element}`}>Medellín en cifras</a>
+          <a className="breadcrumb-link" href={`/search/?${element}`}>Medellín en cifras</a>
         </li>);
         }
       });
       if (elementNewArray.length === 0) {
         elementNewArray.push(<li className="breadcrumb-item" key={999}>
-          <a className="breadcrumb-link" href={`/search?`}>Datos</a>
+          <a className="breadcrumb-link" href={`/search/`}>Datos</a>
         </li>);
       }
     };
@@ -35,7 +35,7 @@ const Breadcrumb = ({
     if (themes && Array.isArray(themes) && themes.length > 0) {
       const theme = themes[0];
       elementNewArray.push(<li className="breadcrumb-item" key={theme.identifier}>
-          <a className="breadcrumb-link" href={`/search?theme=${theme.data}`}>{theme.data}</a>
+          <a className="breadcrumb-link" href={`/search/?theme=${theme.data}`}>{theme.data}</a>
         </li>);
     }
 

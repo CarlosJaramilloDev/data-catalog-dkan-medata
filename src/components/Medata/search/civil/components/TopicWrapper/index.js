@@ -20,7 +20,7 @@ var TopicWrapper = function TopicWrapper(_ref) {
   return /*#__PURE__*/_react["default"].createElement(_router.Link, {
     className: "dc-topic-wrapper",
     key: "dist-".concat(topic, "-").concat(Math.random() * 10),
-    to: "/search?theme=".concat(topic)
+    to: "/search/?theme=".concat(topic)
   }, /*#__PURE__*/_react["default"].createElement(ComponentToRender, {
     title: topic,
     height: "16",
