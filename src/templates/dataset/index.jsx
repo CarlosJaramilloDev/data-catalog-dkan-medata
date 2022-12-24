@@ -14,7 +14,7 @@ const Dataset = ({ id, location }) => {
   const [item, setItem] = useState(state && state.dataset ? state.dataset : {})
   const [hasWindow, checkForWindow] = useState(false);
   const [display, setDisplay] = useState('block');
-  const [iconCardClass, setIconCardClass] = useState('fa-chevron-down');
+  const [iconCardClass, setIconCardClass] = useState('fa-chevron-up');
   const [spanText, setSpanText] = useState('Cerrar detalles');
   const [spanColor, setSpanColor] = useState('#FA8D2D');
 
