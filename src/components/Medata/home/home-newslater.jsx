@@ -4,7 +4,7 @@ import IconoNews from "../../../medatatheme/assets/icons/newspaper.png"
 const HomeNewslater = () => {
   return (
     <div className="newsletter-info">
-      <div className="d-flex align-items-center">
+      <div className="newsletter-info-title d-flex align-items-center">
         <img className="d-ib" src={IconoNews} alt="newspaper" />
         <div className="d-ib">
           <p class="newsletter-title">

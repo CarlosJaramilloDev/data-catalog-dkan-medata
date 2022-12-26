@@ -9,7 +9,7 @@
 .main {
     width: 100%;
     position: relative;
-    margin-top: -11.5rem;
+    margin-top: 30rem;
     overflow-x: hidden;
 }
 
@@ -74,7 +74,7 @@
         background: $color-grey-light;
         padding: 6rem;
         @media (max-width: 768px) {
-            padding: 6rem 4rem;
+            padding: 6rem 2rem;
         }
     }
     .grid {
@@ -186,6 +186,12 @@
         @include grid-auto(2);
         @media (max-width: 768px) {
             @include grid(1);
+        }
+
+        &-title{
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
         }
 
         img {

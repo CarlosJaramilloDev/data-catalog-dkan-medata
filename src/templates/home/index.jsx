@@ -69,13 +69,6 @@ const Home = () => {
         <Layout title="Inicio">
             <section className="data-section">
                 <div className="container-home">
-                    <p className="text text-center">
-                        <b>Encuentre los datos abiertos generados y publicados por las diferentes dependencias de la Alcaldía de
-                            Medellín,</b>
-                        <br />
-                        además de las visualizaciones y análisis que se han creado para generar valor y conocimiento para los
-                        ciudadanos.
-                    </p>
                     <HomeCardsLinks />
                     <HomeDataSets dataLength={datasetsL} publishersLength={publishersL} boardsLength={boardsLength}/>
                 </div>

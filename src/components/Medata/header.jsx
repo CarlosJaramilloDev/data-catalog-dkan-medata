@@ -38,6 +38,15 @@ const Header = ({
               <button className="search-button">Buscar</button>
             </form>
           </div>
+          <div className="container-text">
+            <p className="text text-center">
+              <b>Encuentre los datos abiertos generados y publicados por las diferentes dependencias de la Alcaldía de
+                Medellín,</b>
+              <br />
+              además de las visualizaciones y análisis que se han creado para generar valor y conocimiento para los
+              ciudadanos.
+            </p>
+          </div>
         </div>);
     }
   }, [datasetsL, headerClass]);
