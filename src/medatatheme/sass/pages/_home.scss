@@ -2,7 +2,7 @@
     max-width: 80vw;
     margin: auto;
     @media (max-width: 768px) {
-        max-width: 90vw;
+        max-width: 95vw;
     }
 }
 
@@ -20,7 +20,7 @@
         padding: 6rem;
 
         @media (max-width: 768px) {
-            padding: 8rem 4rem;
+            padding: 8rem 1rem;
         }
     }
     .items-image {
@@ -74,7 +74,7 @@
         background: $color-grey-light;
         padding: 6rem;
         @media (max-width: 768px) {
-            padding: 6rem 2rem;
+            padding: 6rem 1rem;
         }
     }
     .grid {
@@ -177,7 +177,7 @@
             background: $color-green-blue;
             padding: 3rem 6rem;
             @media (max-width: 768px) {
-                padding: 3rem 4rem;
+                padding: 3rem 1rem;
             }
         }
     }
@@ -261,7 +261,7 @@
             background: $color-white;
             padding: 6rem;
             @media (max-width: 768px) {
-                padding: 6rem 4rem;
+                padding: 6rem 1rem;
             }
         }
     }
@@ -300,7 +300,7 @@
             padding: 6rem;
 
             @media (max-width: 768px) {
-                padding: 3rem;
+                padding: 3rem 1rem;
             }
         }
     }
@@ -460,7 +460,7 @@
             background: $color-white;
             padding: 6rem 6rem 0 6rem;
             @media (max-width: 768px) {
-                padding: 6rem 4rem 0 4rem;
+                padding: 6rem 1rem 0 1rem;
                 text-align: center;
             }
         }

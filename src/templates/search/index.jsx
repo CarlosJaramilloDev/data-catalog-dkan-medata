@@ -41,7 +41,7 @@ const SearchTemplate = ({ path }) => {
         location={location}
         normalize={normalizeItems}
       >
-        <div className="movility">
+        <div className="container movility">
           <SearchSidebar
             title={themes && Array.isArray(themes) && themes.length > 0 ? themes[0].data : ''}
             withIcon={themes && Array.isArray(themes) && themes.length > 0 ? true : false}
