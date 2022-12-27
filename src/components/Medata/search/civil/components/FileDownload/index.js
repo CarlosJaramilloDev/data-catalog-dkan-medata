@@ -23,9 +23,11 @@ var FileDownload = function FileDownload(_ref) {
       description = _ref.description;
   var label = title || format;
   const buttonStyle = (!hasPreview) ? { justifyContent: 'flex-start'} : {};
-  
-  //const finalUrl = (downloadURL.indexOf('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL;
-  const finalUrl = downloadURL;
+
+  const currentUrl = window.location.href;
+
+  const finalUrl = (currentUrl.startsWith('https://') ? ((downloadURL.startsWith('http://') >= 0 ) ? downloadURL.replace('http://', 'https://') : downloadURL) : downloadURL);
+  //const finalUrl = downloadURL;
 
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "data-actions",
