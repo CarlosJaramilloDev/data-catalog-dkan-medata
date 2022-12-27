@@ -8,7 +8,8 @@ const Breadcrumb = ({
 
   React.useEffect(() => {
     const templatesToAddToBreadcrumb = [
-      'publisher__name=Medell%C3%8Dn%20en%20Cifras'
+      'publisher__name=Medell%C3%8Dn%20en%20Cifras',
+      'publisher__name=Medellín%20en%20Cifras'
     ];
 
     function getUrl() {
