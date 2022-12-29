@@ -21,7 +21,6 @@ const SearchTemplate = ({ path }) => {
     
     if (typeof currectUrl !== 'undefined') {
       if (currectUrl.includes(template)) {
-        console.log(currectUrl);
         let themesString = currectUrl.substring(currectUrl.indexOf("theme=") + 6);
         let themeArray = themesString.split(',');
         let theme = themeArray[0];
