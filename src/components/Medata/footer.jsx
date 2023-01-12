@@ -85,7 +85,7 @@ const Header = () => {
             <a href="/" className="footer-brand">
               <img src={LogoCo} alt="Logo Co" />
             </a>
-            <a href="/" className="footer-brand">
+            <a href="https://www.gov.co/" className="footer-brand">
               <img src={LogoGov} alt="Logo gobernación" />
             </a>
           </div>
