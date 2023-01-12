@@ -118,7 +118,7 @@ const HomeDataTopicDetail = ({
 
   return (
     <a href={url} className="category-info" key={id}>
-      <i className={`category-icon icon-${iconClass}`}></i>
+      <i className={`category-icon ${iconClass}`}></i>
       <p className="text">{title}</p>
     </a>
   );
