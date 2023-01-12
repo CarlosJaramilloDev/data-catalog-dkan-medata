@@ -72,9 +72,12 @@
     padding: 1rem 0;
 
     .logo img {
-        max-height: 80px;
         max-height: 70px;
         margin-left: 1rem;
+
+        @media (max-width: 768px) {
+            max-height: 50px;
+        }
     }
 
     .search {
@@ -84,6 +87,10 @@
 
     .brand img {
         max-height: 70px;
+
+        @media (max-width: 768px) {
+            max-height: 50px;
+        }
     }
 }
 
@@ -273,10 +280,10 @@
         display: flex;
         width: 100vw;
         height: 100vh;
-        background-color: rgba($color-grey-dark, 0.8);
+        background-color: rgba(57, 65, 91, 0.56);
         position: fixed;
         top: 0;
-        right: 0; 
+        right: 0;
         z-index: 999;
 
         .logos-mobile{
