@@ -54,6 +54,22 @@
             @include title($color-primary);
         }
     }
+
+    &--primary-dark{
+        @include title($color-tertiary);
+
+        &:hover{
+            @include title($color-tertiary);
+        }
+
+        &:focus{
+            @include title($color-tertiary);
+        }
+
+        &:visited{
+            @include title($color-tertiary);
+        }
+    }
     
     &--grey{
         @include title($color-grey-dark)
