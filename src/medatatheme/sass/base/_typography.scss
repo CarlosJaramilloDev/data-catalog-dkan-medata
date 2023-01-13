@@ -40,7 +40,19 @@
 
 .title{
     &--primary{
-        @include title($color-primary)
+        @include title($color-primary);
+
+        &:hover{
+            @include title($color-primary);
+        }
+
+        &:focus{
+            @include title($color-primary);
+        }
+
+        &:visited{
+            @include title($color-primary);
+        }
     }
     
     &--grey{
