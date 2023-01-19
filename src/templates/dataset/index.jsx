@@ -194,7 +194,7 @@ const Dataset = ({ id, location }) => {
           <div class="data-block">
             <ul class="data-technical-info-list">
               <li class="data-technical-info-item">
-                <span>Fuente:</span> {orgName}
+                <span>Dependencia:</span> {orgName}
               </li>
               <li class="data-technical-info-item">
                 <span>Última modificación:</span> {item.modified || ''}
