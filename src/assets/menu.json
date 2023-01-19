@@ -7,7 +7,7 @@
     },
     {
       "label": "Datos",
-      "url": "/search/",
+      "url": "/search/?keyword=datos",
       "target": "_top"
     },
     {

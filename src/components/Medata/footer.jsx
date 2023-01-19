@@ -15,7 +15,7 @@ const Header = () => {
               <ul className="contact-list">
                 <li className="contact-item">
                   <span className="contact-decorator"></span>
-                  <a href="https://www.medellin.gov.co/" className="contact-link">Portal Alcaldia de Medellín</a>
+                  <a href="https://www.medellin.gov.co/" className="contact-link">Portal Alcaldía de Medellín</a>
                 </li>
                 <li className="contact-item">
                   <span className="contact-decorator"></span>
