@@ -5,7 +5,7 @@ import Footer from "../Medata/footer";
 
 const Layout = ({
   children,
-  title,
+  title = 'Inicio',
   description,
   headerClass = 'header'
 }) => {
