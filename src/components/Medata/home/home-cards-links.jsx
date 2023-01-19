@@ -20,7 +20,7 @@ const HomeCardsLinks = () => {
               Alcaldía de Medellín
             </p>
           </div>
-          <a className="button button-primary" href="/search/">
+          <a className="button button-primary" href="/search/?keyword=datos">
             CONOCE MÁS
           </a>
         </div>

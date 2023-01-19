@@ -28,7 +28,7 @@ const Breadcrumb = ({
       });
       if (elementNewArray.length === 0) {
         elementNewArray.push(<li className="breadcrumb-item" key={999}>
-          <a className="breadcrumb-link" href={`/search/`}>Datos</a>
+          <a className="breadcrumb-link" href={`/search/?keyword=datos`}>Datos</a>
         </li>);
       }
     };
