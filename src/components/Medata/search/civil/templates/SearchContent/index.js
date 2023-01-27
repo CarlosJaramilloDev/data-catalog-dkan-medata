@@ -126,8 +126,7 @@ var SearchContent = function SearchContent(_ref) {
     }
   })));
   function getTotalInfo(total) {
-    console.log("Total", total);
-    console.log(typeof total);
+    total = parseInt(total);
     var text = [];
     if(total === 0) {
       text.push('No se encontró información. Por favor realiza otra búsqueda');
