@@ -163,7 +163,7 @@ const Dataset = ({ id, location }) => {
   };
 
   function toogleTechCardVisibility() {
-    setDisplay(display == "none" || display == "" ? "block" : "none");
+    setDisplay(display === "none" || display === "" ? "block" : "none");
     setIconCardClass(iconCardClass === 'fa-chevron-down' ? 'fa-chevron-up' : 'fa-chevron-down');
     setSpanColor(spanColor === '#FA8D2D' ? '#53ACE9' : '#FA8D2D');
     setSpanText(spanText === 'Cerrar detalles' ? 'Abrir detalles' : 'Cerrar detalles');

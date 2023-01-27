@@ -227,6 +227,7 @@
         z-index: 998;
     }
     &-input {
+        appearance: none;
         background: $color-white;
         font-family: "Montserrat Regular";
         font-size: 1.4rem;
@@ -234,7 +235,7 @@
         outline: none;
         border-radius: 5rem;
         border: none;
-        box-shadow: 0 0 5px 5px rgba($color-grey-dark, 0.2);
+        box-shadow: 0 0 5px 5px rgba($color-grey-dark, 0.2);  
         min-width: 50vw;
         @media (max-width: 768px) {
             min-width: 75vw;

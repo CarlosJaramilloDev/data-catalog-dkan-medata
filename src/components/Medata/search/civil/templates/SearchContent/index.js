@@ -128,8 +128,12 @@ var SearchContent = function SearchContent(_ref) {
   function getTotalInfo(total) {
     var text = [];
     text.push(total.toLocaleString('es'));
-    text.push(total !== 1 ? 'resultados' : 'resultado');
-    text.push(total !== 1 ? 'encontrados' : 'encontrado');
+    if(total === 0) {
+      text.push('No se encontró información. Por favor realiza otra búsqueda');
+    } else {
+      text.push(total !== 1 ? 'resultados' : 'resultado');
+      text.push(total !== 1 ? 'encontrados' : 'encontrado');
+    }
     return text.join(" ");
   }
 };
