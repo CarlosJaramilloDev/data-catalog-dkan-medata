@@ -8,6 +8,10 @@
     z-index: 999;
     top: 0;
 
+    @media (max-width: 768px) {
+        min-height: 22rem;
+    }
+
     .brand{
         margin-right: 1rem;
     }
@@ -39,15 +43,6 @@
             width: 90vw;
             bottom: -4rem;
         }
-
-        @media (max-width: 470px){
-            bottom: -8rem;
-        }
-
-        @media (max-width: 350px){
-            bottom: -12rem;
-            padding: 3rem 2rem 1rem 2rem;
-        } 
     }
 
     &--small {
@@ -64,6 +59,25 @@
         font-size: 1.8rem;
         color: $color-white;
         padding: 2rem;
+    }
+}
+
+
+#text-header{
+    p{
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        height: 2rem;
+    }
+}
+
+#text-header-mobile{
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
     }
 }
 

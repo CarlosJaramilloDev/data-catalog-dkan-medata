@@ -69,16 +69,21 @@ const Home = () => {
         <Layout title="Inicio">
             <section className="data-section">
                 <div className="container-home">
+                    <p id="text-header-mobile" class="text text-center">
+                        <b>Encuentre los datos abiertos generados y publicados por las diferentes dependencias de laAlcaldía de Medellín,</b>
+                        <br />
+                        además de las visualizaciones y análisis que se han creado para generar valor y conocimiento para los ciudadanos.
+                    </p>
                     <HomeCardsLinks />
-                    <HomeDataSets dataLength={datasetsL} publishersLength={publishersL} boardsLength={boardsLength}/>
+                    <HomeDataSets dataLength={datasetsL} publishersLength={publishersL} boardsLength={boardsLength} />
                 </div>
                 <div className="items-image">
-                    <img src={ImagenFondo} alt="Imagen complementaria lateral"/>
+                    <img src={ImagenFondo} alt="Imagen complementaria lateral" />
                 </div>
             </section>
             <section className="category-section">
                 <div className="container-home">
-                    <HomeDataTopics items={items}/>
+                    <HomeDataTopics items={items} />
                 </div>
             </section>
             <section className="newsletter-section">
@@ -93,7 +98,7 @@ const Home = () => {
             </section>
             <section className="blog-section">
                 <div className="container-home">
-                    <HomeReports items={fDatasets}/>
+                    <HomeReports items={fDatasets} />
                 </div>
                 <div className="blog-image">
                     <img src={ImagenFondo} alt="Imagen complementaria lateral" />

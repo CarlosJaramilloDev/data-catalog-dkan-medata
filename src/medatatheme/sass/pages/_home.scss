@@ -11,6 +11,9 @@
     position: relative;
     margin-top: 30rem;
     overflow-x: hidden;
+    @media (max-width: 768px) {
+        margin-top: 18rem;
+    }
 }
 
 .data-section {

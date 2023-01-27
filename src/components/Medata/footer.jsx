@@ -12,51 +12,51 @@ const Header = () => {
           <div className="contact-containers">
             <p className="contact-title">Links de interés</p>
             <hr className="contact-separator" />
-              <ul className="contact-list">
-                <li className="contact-item">
-                  <span className="contact-decorator"></span>
-                  <a href="https://www.medellin.gov.co/" className="contact-link">Portal Alcaldía de Medellín</a>
-                </li>
-                <li className="contact-item">
-                  <span className="contact-decorator"></span>
-                  <a href="https://www.rutanmedellin.org/" className="contact-link">Página Corporación Ruta N</a>
-                </li>
-                <li className="contact-item">
-                  <span className="contact-decorator"></span>
-                  <a href="https://www.datos.gov.co/" className="contact-link">Portal Datos Abiertos Colombia</a>
-                </li>
-              </ul>
+            <ul className="contact-list">
+              <li className="contact-item">
+                <span className="contact-decorator"></span>
+                <a href="https://www.medellin.gov.co/" className="contact-link">Portal Alcaldía de Medellín</a>
+              </li>
+              <li className="contact-item">
+                <span className="contact-decorator"></span>
+                <a href="https://www.rutanmedellin.org/" className="contact-link">Página Corporación Ruta N</a>
+              </li>
+              <li className="contact-item">
+                <span className="contact-decorator"></span>
+                <a href="https://www.datos.gov.co/" className="contact-link">Portal Datos Abiertos Colombia</a>
+              </li>
+            </ul>
           </div>
           <div className="contact-containers">
             <p className="contact-title">Contacto</p>
             <hr className="contact-separator" />
-              <ul className="contact-list">
-                <li className="contact-item">
-                  <span className="contact-icon">
-                    <i className="fa-solid fa-location-dot"></i>
-                  </span>
-                  <a href="#!" className="contact-link">Calle 44 N 52 – 165 Centro Administrativo la Alpujarra
-                    – Medellín, Colombia.</a>
-                </li>
-                <li className="contact-item">
-                  <span className="contact-icon">
-                    <i className="fa-solid fa-envelope"></i>
-                  </span>
-                  <a href="mailto:medata@medellin.gov.co" className="contact-link">medata@medellin.gov.co</a>
-                </li>
-                <li className="contact-item">
-                  <span className="contact-icon">
-                    <i className="fa-solid fa-phone"></i>
-                  </span>
-                  <a href="tel:+5744444144" className="contact-link">Línea única de atención ciudadana: (574) 44 44 144</a>
-                </li>
-                <li className="contact-item">
-                  <span className="contact-icon">
-                    <i className="fa-solid fa-headset"></i>
-                  </span>
-                  <a href="tel:018000411144" className="contact-link">Línea gratuita nacional: 01 8000 411 144</a>
-                </li>
-              </ul>
+            <ul className="contact-list">
+              <li className="contact-item">
+                <span className="contact-icon">
+                  <i className="fa-solid fa-location-dot"></i>
+                </span>
+                <a href="#!" className="contact-link">Calle 44 N 52 – 165 Centro Administrativo la Alpujarra
+                  – Medellín, Colombia.</a>
+              </li>
+              <li className="contact-item">
+                <span className="contact-icon">
+                  <i className="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:medata@medellin.gov.co" className="contact-link">medata@medellin.gov.co</a>
+              </li>
+              <li className="contact-item">
+                <span className="contact-icon">
+                  <i className="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+5744444144" className="contact-link">Línea única de atención ciudadana: (574) 44 44 144</a>
+              </li>
+              <li className="contact-item">
+                <span className="contact-icon">
+                  <i className="fa-solid fa-headset"></i>
+                </span>
+                <a href="tel:018000411144" className="contact-link">Línea gratuita nacional: 01 8000 411 144</a>
+              </li>
+            </ul>
           </div>
           <div
             className="contact-containers contact-social-container d-flex justify-content-center align-items-center">
