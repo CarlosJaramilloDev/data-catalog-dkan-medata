@@ -126,6 +126,7 @@ var SearchContent = function SearchContent(_ref) {
     }
   })));
   function getTotalInfo(total) {
+    console.log("Total", total);
     var text = [];
     text.push(total.toLocaleString('es'));
     if(total === 0) {

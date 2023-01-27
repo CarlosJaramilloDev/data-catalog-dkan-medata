@@ -36,6 +36,7 @@ var SearchResultsMessage2 = function SearchResultsMessage2(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("p", {className: 'subtitle'}, totalInfo));
 
   function getTotalInfo(total) {
+    console.log("Total", total);
     var text = [];
     text.push(total.toLocaleString('es'));
     if(total === 0) {
