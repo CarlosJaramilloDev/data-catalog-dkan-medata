@@ -6,10 +6,11 @@ import ApiDocsFull from './templates/api';
 import NotFound from './templates/not_found';
 import Dataset from './templates/dataset';
 import ApiDocsSpecific from './templates/dataset/api';
-import { Accessibility } from 'accessibility';
+//import { Accessibility } from 'accessibility';
 import './theme/civicindex.css';
 import './theme/index.scss';
-// import './medatatheme/sass/main.scss';
+//import './medatatheme/sass/main.scss';
+//import './medatatheme/css/add.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -18,7 +19,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, fas);
 
 function App() {
-  window.addEventListener('load', function () {
+  /* window.addEventListener('load', function () {
     const options = {
       labels: {
         resetTitle: 'Resetear valores',
@@ -57,7 +58,15 @@ function App() {
       }
     };
     new Accessibility(options);
-  }, false);
+
+    let hrs = document.querySelectorAll('hr.separator, hr.contact-separator');
+    hrs.forEach((hr) => {
+      const brother = hr.previousElementSibling;
+      const syle = getComputedStyle(brother);
+      hr.style.setProperty('--hrsize', syle.width);
+    });
+
+  }, false); */
   return (
     <Router>
       <NotFound default />
