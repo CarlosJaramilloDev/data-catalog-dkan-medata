@@ -173,6 +173,7 @@ const Dataset = ({ id, location }) => {
     if (item && item.theme && Array.isArray(item.theme) && item.theme.length > 0) {
       const theme = item.theme[0];
       window.location.assign(`/search/?theme=${theme.data}`);
+    }
   }
 
   const navigate = useNavigate();
