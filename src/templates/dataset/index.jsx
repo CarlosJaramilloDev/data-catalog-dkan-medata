@@ -169,6 +169,12 @@ const Dataset = ({ id, location }) => {
     setSpanText(spanText === 'Cerrar detalles' ? 'Abrir detalles' : 'Cerrar detalles');
   };
 
+  function goToClose(item) {
+    if (item && item.theme && Array.isArray(item.theme) && item.theme.length > 0) {
+      const theme = item.theme[0];
+      window.location.assign(`/search/?theme=${theme.data}`);
+  }
+
   const navigate = useNavigate();
 
   return (
@@ -184,7 +190,7 @@ const Dataset = ({ id, location }) => {
             </p>
           </div>
           <div class="button-close">
-            <button onClick={() => navigate(-1)} style={{ background: 'none', border: 'none' }}> x </button>
+            <button onClick={() => goToClose(item)} style={{ background: 'none', border: 'none' }}> x </button>
           </div>
         </div>
       </section>
