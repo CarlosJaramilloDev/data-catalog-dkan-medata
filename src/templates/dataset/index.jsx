@@ -13,10 +13,10 @@ const Dataset = ({ id, location }) => {
   const { state } = location;
   const [item, setItem] = useState(state && state.dataset ? state.dataset : {})
   const [hasWindow, checkForWindow] = useState(false);
-  const [display, setDisplay] = useState('block');
-  const [iconCardClass, setIconCardClass] = useState('fa-chevron-up');
-  const [spanText, setSpanText] = useState('Cerrar detalles');
-  const [spanColor, setSpanColor] = useState('#FA8D2D');
+  const [display, setDisplay] = useState('none');
+  const [iconCardClass, setIconCardClass] = useState('fa-chevron-down');
+  const [spanText, setSpanText] = useState('Abrir detalles');
+  const [spanColor, setSpanColor] = useState('#53ACE9');
 
   useEffect(() => {
     if (window !== undefined) {
