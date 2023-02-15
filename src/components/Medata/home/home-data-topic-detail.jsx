@@ -112,7 +112,7 @@ const HomeDataTopicDetail = ({
       break;
     
     default:
-      iconClass = 'icon-15';
+      iconClass = 'icon-g';
       break;
   }
 
